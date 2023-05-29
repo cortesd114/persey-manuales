@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="../../assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="../../assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../../css/ejemplo.css">
+	<link id="theme-style" rel="stylesheet" href="../../css/filter.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="../../assets/images/logopersey.png" alt="logo"><span class="logo-text"></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box buscador d-none d-lg-flex">
+		                <form class="search-form">
+				            <input id="search" type="text" autocomplete="off" placeholder="Buscar..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+						<table class="doc">
+							<tbody class="datos hidden">            
+							</tbody>
+						</table>
+	                </div>
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a  target="_blank" href="https://www.facebook.com/stzEF"><i class="fa-brands fa-facebook"></i></a></li>
+			            <li class="list-inline-item"><a  target="_blank" href="http://www.sistematizar.co/"><i class="fa-solid fa-globe"></i></a></li>
+		                <li class="list-inline-item"><a  target="_blank" href="https://www.instagram.com/sistematizar_ef/"><i class="fa-brands fa-instagram"></i></a></li>
+		                <li class="list-inline-item"><a  target="_blank" href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i class="fa-brands fa-whatsapp"></i></a></li>
+		            </ul><!--//social-list-->		            
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Buscar..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+
+			<!--Aside bar elements-->
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title">
+						<a class="nav-link scrollto " href="#inicio">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-gauge"></i></i></span>
+							<span class="section-title-text">Primeros pasos</span>
+						</a>
+					</li>
+				    			    
+				    
+
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#factura-electronica">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-box-archive"></i></span>
+							<span class="section-title-text">Factura Electronica</span>
+						</a>
+					</li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#electronica-facturar">Facturar</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#electronica-listar">Listar</a></li>
+
+
+
+				    <li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#reportes">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-file-lines"></i></span>
+							<span class="section-title-text">Reportes</span>
+						</a>
+					</li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-periodos">Ventas por periodo</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-impuestos">Ventas por impuesto</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-grupos">Ventas por grupo</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-ventas-vendedores">Ventas por vendedores</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-articulos">Ventas Articulos/Servicios</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-tiponotas">Ventas por tipos notas</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-clientes">Ventas por clientes</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-previo-vendedores">Previos por vendedores</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-previo-articulos">Previos por articulos </a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-exogena">Exogena</a></li>
+
+				    <li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#catalogos">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-folder-open"></i></span>
+							<span class="section-title-text">Catalogos</span>
+						</a>
+					</li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#catalogos-terceros">Terceros</a></li>					
+
+				    <li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#previos">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-spinner"></i></span>
+							<span class="section-title-text">Previos</span>							
+						</a>
+					</li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#previo-nuevo">Nuevo previo</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#previo-lista">Lista previo</a></li>
+						
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#acusar-compras">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-square-check"></i></span>
+							<span class="section-title-text">Acusar Compras</span>							
+						</a>
+					</li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#acusar-compras">Listar</a></li> 
+					
+					<!--
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#acusar-ventas">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-square-check"></i></span>
+							<span class="section-title-text">Acusar Ventas</span>							
+						</a>
+					</li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#acusar-ventas">Listar</a></li> 
+					-->
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#doc-soporte">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-clipboard"></i></span>
+							<span class="section-title-text">Documento Soporte</span>							
+						</a>
+						</li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#soporte-facturar">Facturar</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#soporte-listar">Listar</a></li>  
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+
+			    <article class="docs-article" id="inicio">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Primeros pasos<a href="#inicio">#</a></h1>
+					    <section class="docs-intro">							
+						    <p>En el menú lateral izquierdo va a encontrar todas las opciones que usted va a poder realizar en el modulo de Facturacion POS en el aplicativo de Persey.</p>
+							
+						</section><!--//docs-intro-->
+						
+						<h5>Guia visual :</h5>
+						<div class="col-12 col-md-12 mb-3">
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/primeros-pasos.gif"/>
+						</div>
+						
+				    </header>
+				    
+						
+			    </article>
+			    
+			    <article class="docs-article" id="factura-electronica">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Factura Electronica<a href="#factura-POS">#</a></h1>
+					    <section class="docs-intro">
+						    <p> Aqui podras guiarte paso a paso como generar una factura electronica, tambien aprenderás a visualizarlas  </p>
+						</section><!--//docs-intro-->
+				    </header>
+
+					<section class="docs-section" id="electronica-facturar">
+						<h2 class="section-heading">Facturar <a href="#electronica-facturar">#</a></h2>
+						<p>En esta sección podrá crear facturas diligenciando un formulario con los datos correspondientes</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/facturacionelectronica.png">
+						<br>
+						<br>
+						<h3 id="pos-paso1">paso 1 <a href="#electronica-paso1">#</a></h3>
+						<p>Debe llenar todos los campos correspondientes o si ya tiene una prefactura solo le da click donde dice prefactura y la selecciona automaticamente se le diligencia. Debe buscar y agregar los productos </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/facturar-electronicacion.gif">
+						<br>
+						<br>
+						<h3>Retenciones</h3>
+						<P>Si su empresa tiene activado las retenciones le aparecerá un formulario al final donde las puede diligenciar </P>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/retenciones.png">
+					</section><!--//section-->
+
+					<section class="docs-section" id="electronica-listar">
+						<h2 class="section-heading">Listar <a href="#electronica-listar">#</a></h2>
+						<p>En esta sección podrá visualizar todas las facturas creadas y enviar la factura a la DIAN  </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/listar-factura.gif">
+						<br>
+						<br>
+						
+				
+			   	 </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="reportes">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Reportes<a href="#reportes">#</a></h1>
+					    <section class="docs-intro">
+						    <p>En esta seccion podrá visualizar todos los reportes por diferentes categorías como por periodos, por impuestos, por grupos y mas.  </p>
+						</section><!--//docs-intro-->
+				    </header>
+
+					<section class="docs-section" id="reportes-periodos">
+						<h2 class="section-heading">Ventas por periodo<a href="#reportes-periodos">#</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha desde-hasta y darle click en el boton que dice <b>VER</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-periodo.gif"/>
+					</section><!--//section-->
+
+					<section class="docs-section" id="reportes-impuestos">
+						<h2 class="section-heading">Ventas por impuesto<a href="#reportes-impuestos">#</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha desde-hasta y darle click en el boton que dice <b>VER</b>. Tambien puede decargarlo en PDF o Excel dando click en el boton PDF o Excel</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-impuestos.gif"/>
+					</section><!--//section-->
+
+					<section class="docs-section" id="reportes-grupos">
+						<h2 class="section-heading">Ventas por grupo<a href="#reportes-grupos">#</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, el grupo, la fecha desde-hasta y darle click en el boton que dice <b>VER</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-grupo.gif"/>
+					</section><!--//section-->
+
+					<section class="docs-section" id="reportes-ventas-vendedores">
+						<h2 class="section-heading">Ventas por vendedores<a href="#reportes-ventas-vendedores">#</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha desde-hasta y darle click en el boton que dice <b>VER</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-vendedores.gif"/>
+					</section><!--//section-->
+					
+				     <section class="docs-section" id="reportes-articulos">
+						<h2 class="section-heading">Ventas por articulos o servicios <a href="#reportes-articulos">#</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton que dice <b>VER</b>. Puede filtrar los reportes  dependiendo si quiere por articulos, cliente y fecha. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-ventas-articulos.gif"/>
+					</section><!--//section-->
+
+					<section class="docs-section" id="reportes-tiponotas">
+						<h2 class="section-heading">Ventas por tipo notas <a href="#reportes-tiponotas">#</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger tipo de nota , la fecha desde-hasta y luego darle click en el boton que dice <b>VER</b>. Tambien puede descargar el reporte en PDF dando click en el boton <b>PDF</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-tiponotas.gif"/>
+					</section><!--//section-->
+
+					<section class="docs-section" id="reportes-clientes">
+						<h2 class="section-heading">Ventas por clientes <a href="#reportes-clientes">#</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, clientes, la fecha desde-hasta y darle click en el boton que dice <b>VER</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-clientes.gif"/>
+					</section>
+
+					<section class="docs-section" id="reportes-previo-vendedores">
+						<h2 class="section-heading">Previos por vendedores <a href="#reportes-previo-vendedores">#</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, el vendedor, la fecha desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton que dice <b>VER</b>.  Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/previos-vendedores.gif"/>
+					</section>
+
+					<section class="docs-section" id="reportes-previo-articulos">
+						<h2 class="section-heading">Previos por articulos <a href="#reportes-previo-articulos">#</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, el articulo, la fecha desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton que dice <b>VER</b>.  Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/previo-articulos.gif"/>
+					</section>
+
+					<section class="docs-section" id="reportes-exogena">
+						<h2 class="section-heading">Exogena <a href="#reportes-exogena">#</a></h2>
+						<p>Para ver el reporte de información  exogena de venta solo  debe seleccionar el año y darle click en el boton que dice <b>VER</b>, Tambien puede descargarlo en formato Excel dandole click en el boton Excel</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-exogena.gif"/>
+					</section>
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="catalogos">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Catalogos <a href="#catalogos">#</a></h1>
+					    <section class="docs-intro">
+						    <p>En esta seccion Usted podrá visualizar todos los terceros que tiene registrados, tambien podrá editarlos, eliminarlos y agregar nuevos</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="catalogos-terceros">
+						<h2 class="section-heading">Terceros <a href="#catalogos-terceros">#</a></h2>
+						<p>Le aparecerán todos los terceros que tenga en una lista, usted puede modificarlos dando click en el boton amarillo y crear uno nuevo dando click en el boton que dice <b>NUEVO</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/terceros.gif"/>
+					</section><!--//section-->	
+				</article>
+
+				<article class="docs-article" id="previos">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Previos<a href="#previos">#</a></h1>
+					    <section class="docs-intro">
+						    <p>En esta seccion usted podrá registrar una  prefactura y tambien podrá visualizar todas las prefacturas que ha registrado</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="previo-nuevo">
+						<h2 class="section-heading">Nuevo Previo <a href="#previo-lista">#</a></h2>
+						<p>Para crear un nuevo previo debe escoger o crear el cliente(tercero). Buscar los productos que desea añadir a  su prefactura y darle guardar </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/nuevo-previo.gif"/>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="previo-lista">
+						<h2 class="section-heading">Listar previos<a href="#previo-lista">#</a></h2>
+						<p>Aqui le apareceran todos los previos o prefacturas que haya generado</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/lista-previos.png"/>												
+					</section><!--//section-->
+					
+					
+				</article>
+
+				<article class="docs-article" id="acusar-compras">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Acusar Compras<a href="#acusar-compras">#</a></h1>
+					    <section class="docs-intro">
+						    <p>En esta seccion usted podrá registrar un acuse de compras. Unicamente se pueden subir la factura en fromato zip y que sea credito</p>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/acusar-compras.gif"/>
+						</section><!--//docs-intro-->
+				    </header>												
+					</section><!--//section-->				
+				</article>
+				<!--
+				<article class="docs-article" id="acusar-ventas">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Acusar Ventas<a href="#acusar-ventas">#</a></h1>
+					    <section class="docs-intro">
+						    <p>En esta secccion usted podra acusar ventas, cuando el cliente suba una factura usted podrá acusarla desde esta sección </p>
+						</section>
+				    </header>
+				</article>
+				-->
+				
+				<article class="docs-article" id="doc-soporte">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Documento Soporte<a href="#previos">#</a></h1>
+					    <section class="docs-intro">
+						    <p>En esta seccion usted podrá registrar un documento soporte. Es una factura para una empresa de una persona natural que no esta obligada a hacer su facturación electronica</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="soporte-facturar">
+						<h2 class="section-heading">Facturar <a href="#soporte-facturar">#</a></h2>
+						<p>Debe llenar todos los campos correspondientes o si ya tiene una prefactura solo le da click donde dice prefactura y la selecciona automaticamente se le diligencia. Debe buscar y agregar los productos</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/nuevo-previo.gif"/>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="soporte-listar">
+						<h2 class="section-heading">Listar <a href="#soporte-listar">#</a></h2>
+						<p>Aqui podrá visualizar todos los documentos soporte y tambien enviarlos a la Dian desde el boton azul <b>"ENVÍO DIAN"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/listardocumentos.gif"/>												
+					</section><!--//section-->
+					
+					
+				</article>
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a  target="_blank" href="https://www.facebook.com/stzEF"><i class="fa-brands fa-facebook"></i></a></li>
+			            	<li class="list-inline-item"><a  target="_blank" href="http://www.sistematizar.co/"><i class="fa-solid fa-globe"></i></a></li>
+		                	<li class="list-inline-item"><a  target="_blank" href="https://www.instagram.com/sistematizar_ef/"><i class="fa-brands fa-instagram"></i></a></li>
+		                	<li class="list-inline-item"><a  target="_blank" href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i class="fa-brands fa-whatsapp"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="../../assets/plugins/popper.min.js"></script>
+    <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="../../assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="../../assets/js/highlight-custom.js"></script> 
+    <script src="../../assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="../../assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="../../assets/js/docs.js"></script> 
+	<script src="filter-electronica.js"></script>
+
+</body>
+</html> 
+

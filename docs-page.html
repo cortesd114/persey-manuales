@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="css/ejemplo.css">
+	<link id="theme-style" rel="stylesheet" href="css/filter.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/LogoDione.png" alt="logo"><span class="logo-text"></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box buscador d-none d-lg-flex">
+		                <form class="search-form">
+				            <input id="search" type="text" autocomplete="off" placeholder="Buscar..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+						<table class="doc">
+							<tbody class="datos hidden">            
+							</tbody>
+						</table>
+	                </div>
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a  target="_blank" href="https://www.facebook.com/stzEF"><i class="fa-brands fa-facebook"></i></a></li>
+			            <li class="list-inline-item"><a  target="_blank" href="http://www.sistematizar.co/"><i class="fa-solid fa-globe"></i></a></li>
+		                <li class="list-inline-item"><a  target="_blank" href="https://www.instagram.com/sistematizar_ef/"><i class="fa-brands fa-instagram"></i></a></li>
+		                <li class="list-inline-item"><a  target="_blank" href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i class="fa-brands fa-whatsapp"></i></a></li>
+		            </ul><!--//social-list-->		            
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Buscar..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+
+			<!--Aside bar elements-->
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title">
+						<a class="nav-link scrollto " href="#inicio">
+						<span class="theme-icon-holder me-2"><i class="fa-solid fa-right-to-bracket"></i></span>
+						<span class="section-title-text">Acceder a la plataforma </span>
+					</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#que-puedo-hacer-en-dione">Que se puede hacer en Dione</a></li>				    
+				    
+
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#cargar-notas">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-upload"></i></span>
+							<span class="section-title-text">Cargar Notas</span>
+						</a>
+					</li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#cargarnotas-aclaracion">A tener en cuenta</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#cargarnotas-paso-1">Paso 1</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#cargarnotas-paso-2">Paso 2</a></li>				    
+						<li class="nav-item"><a class="nav-link scrollto" href="#cargarnotas-paso-3">Paso 3</a></li>					
+						<li class="nav-item"><a class="nav-link scrollto" href="#cargarnotas-paso-4">Paso 4</a></li>
+
+
+				    <li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#cargar-evidencias">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-file-arrow-up"></i></span>
+							<span class="section-title-text">Cargar evidencias</span>
+						</a>
+					</li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#cargarevidencias-paso-1">Paso 1</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#cargarevidencias-paso-2">Paso 2</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#cargarevidencias-paso-3">Paso 3</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#cargarevidencias-aclaracion">A tener en cuenta</a></li>
+
+
+				    <li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#solicitar-laboratorio">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-flask"></i></span>
+							<span class="section-title-text">Solicitar laboratorio</span>
+						</a>
+					</li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#solicitarlaboratorio-a-tener-en-cuenta">A tener en cuenta</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#solicitarlaboratorio-paso1">Paso 1</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#solicitarlaboratorio-paso2">Paso 2</a></li>
+
+
+				    <li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#reporte-rendimiento">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-flag"></i></span>
+							<span class="section-title-text">Reportes de rendimiento</span>
+						</a>
+					</li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reporterendimiento-paso1">Paso 1</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reporterendimiento-paso2">Paso 2</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reporterendimiento-paso3">Paso 3</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reporterendimiento-paso4">Paso 4</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reporterendimiento-ejemplo1">Ejemplo 1</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reporterendimiento-ejemplo2">Ejemplo 2</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reporterendimiento-ejemplo3">Ejemplo 3</a></li>    
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="inicio">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">ACCESO A LA PLATAFORMA <a href="#inicio">#</a></h1>
+					    <section class="docs-intro">							
+						    <p>Para poder ingresar a Dione debes hacerlo desde el enlace oficial <a href="https://dioneacademico.co">https://dioneacademico.co</a>. A continuación entraras al sitio y eligiras el periodo academico al que desees ingresar</p>
+						</section><!--//docs-intro-->
+						
+						<h5>Guia visual :</h5>
+						<div class="col-12 col-md-12 mb-3">
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/acceder.gif"/>
+						</div>
+						<p>Debe acceder con su usuario y contraseña generado por la institución, si no tiene debe informar a la misma para que le asignen una  </p>							
+				    </header>
+				    <section class="docs-section" id="que-puedo-hacer-en-dione">
+						<h2 class="section-heading">Que puedo hacer en Dione? <a href="#que-puedo-hacer-en-dione">#</a></h2>
+						<p>En dione podrá realizar los procesos de <a href="#cargar-notas">cargar notas</a>, <a href="#cargar-evidencias">cargar las evidencias academicas</a>, <a href="#solicitar-laboratorio">solicitar los espacios de laboratorio</a> y <a href="#reporte-rendimiento"> hacer reportes de bajo rendimiento</a> </p>
+						<br>
+						
+						<div class="simplelightbox-gallery row mb-3">
+							<div class="col-12 col-md-12 mb-3">
+						        <a href="assets/images/captura-notas.png">
+									<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/captura-notas.png" alt="" title="Cargar notas"/>
+								</a>
+							</div>
+							<div class="col-12 col-md-12 mb-3">
+						        <a href="assets/images/captura -evidencias.png">
+									<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/captura -evidencias.png" alt="" title="Subir evidencias"/>
+								</a>
+							</div><!--//col-->
+							<div class="col-12 col-md-12 mb-3">
+						        <a href="assets/images/captura-reportes.png">
+									<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/captura-reportes.png" alt="" title="Reportes de bajo rendimiento"/>
+								</a>
+							</div><!--//col-->							
+						</div>
+						<p>A continuación se veran evidenciados todos estos procesos con ejemplos visuales </p>
+						
+                        </div><!--//callout-block-->
+                        
+                        
+                        
+                       
+					</section><!--//section-->
+						
+			    </article>
+			    
+			    <article class="docs-article" id="cargar-notas">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Cargar Notas <a href="#cargar-notas">#</a></h1>
+					    <section class="docs-intro">
+						    <p>En esta seccion podra guiarse del proceso de subir notas a la plataforma Dione, siga las intrucciones. Guía con ejemplos visuales</p>
+						</section><!--//docs-intro-->
+				    </header>
+					<section class="docs-section" id="cargarnotas-aclaracion">
+						<h2 class="section-heading">Aclaración <a href="#cargarnotas-aclaracion">#</a></h2>
+						<p>Debe descargar los formatos excel de las notas. En el lado derecho del menú superior se encuentra una opción que dice "<b>Formatos</b>", lo selecciona y elige el que diga "<b>Notas</b>". <b><a href="/formatos/Formato-Notas.xlsx" download="formato-notas"> DESCARGUE FORMATO AQUÍ</a></b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/aclaracion.gif">
+					</section><!--//section-->
+
+					<section class="docs-section" id="cargarnotas-importante">
+						<h2 class="section-heading">Importante <a href="#cargarnotas-importante">#</a></h2>
+						<p>Si el corte se encuentra cerrado o fuera de la fecha final, no podra subir notas dentro de ese corte, deberá subir las notas antes de que el corte finalice, de lo contrario no podrá cargarlas</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/importantenotas.png">
+					</section><!--//section-->
+					
+				     <section class="docs-section" id="cargarnotas-paso-1">
+						<h2 class="section-heading">Paso 1 <a href="#cargarnotas-paso-1">#</a></h2>
+						<p>Cuando ya tengo acceso al panel de control, dirijase al menu izquierdo donde encontrará un item llamado "<b>DATOS</b>" se desplegaran diferentes acciones, usted debe darle clikc en la que dice "<b>NOTAS</b>"</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/paso-1.gif"/>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="cargarnotas-paso-2">
+						<h2 class="section-heading ">Paso 2 <a href="#cargarnotas-paso-2">#</a></h2>
+						<p>Ya teniendo diligenciado el formato correctamente debe asegurarse de estar situado en la hoja principal del excel y guardar el archivo con una extensión llamada CSV(delimitado por comas). Para esto debe de dar en el boton del menu superior que dice "<b>Archivo</b>" luego da clic donde dice "<b>guardar como</b>" luego elije la opción "<b>Examinar</b>". Se abrira una ventana emergente usted le colocará el nombre dependiendo del corte y en el boton donde dice tipo <b>seleccione el que diga "CSV(delimitado por comas)"</b> </p>
+						<div class=" d-flex flex-wrap align-items-center justify-content-center"><img class="figure-img img-fluid shadow-lg rounded " src="assets/images/fomratocsv.gif"></div>
+					</section><!--//section-->
+
+					<section class="docs-section" id="cargarnotas-paso-3">
+						<h2 class="section-heading">Paso 3 <a href="#cargarnotas-paso-3">#</a></h2>
+						<p>Ya con el documento listo en formato CSV debe seleccionar el Periodo, Grupo  y corte. Arriba le aparecerá un boton que dice "<b>Subir</b>" despues de darle clic le aparecerá una ventana emergente da clic en "<b>seleccionar archivo</b>", escoge el archivo y le da en el boton que dice importar</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/cargarnotas.gif">
+					</section><!--//section-->
+
+
+					<section class="docs-section" id="cargarnotas-paso-4">
+						<h2 class="section-heading">Paso 4 <a href="#cargarnotas-paso-4">#</a></h2>
+						<p>Listo cuando suba las notas podrá visualizarlas desde el panel de control</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/paso4.png">
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="cargar-evidencias">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Cargar evidencias <a href="#cargar-evidencias">#</a></h1>
+					    <section class="docs-intro">
+						    <p>En esta seccion aprenderas a subir las evidencias como syllabus, acuerdos de formación, salidas academicas y informes finales en la plataforma Dione facil, rapido y sencillo</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="cargarevidencias-paso-1">
+						<h2 class="section-heading">Paso 1 <a href="#cargarevidencias-paso-1">#</a></h2>
+						<p>Dirijase al menu izquierdo donde encontrará un item llamado "EVIDENCIAS" se desplegaran diferentes acciones, usted debe darle clikc en la que dice "TODAS"</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/evidencias-paso1.gif"/>
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="cargarevidencias-paso-2">
+						<h2 class="section-heading">Paso 2 <a href="#cargarevidencias-paso-2">#</a></h2>
+						<p>Seleccione el curso al que desea subir las evidencias y le da clic en el boton verde, le apareceran los diferentes campos para subir cada evidencia </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/evidencias-paso2.gif"/>					
+					</section><!--//section-->
+					
+					<section class="docs-section" id="cargarevidencias-paso-3">
+						<h2 class="section-heading">Paso 3 <a href="#cargarevidencias-paso-3">#</a></h2>
+						<p>Ahora debe darle clic en el boton con forma de lupa y selecciona el archivo que desea subir, luego le da clic en el boton que dice subir</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/evidencias-paso3.gif"/>
+					</section><!--//section-->
+
+					<section class="docs-section" id="cargarevidencias-aclaracion">
+						<h2 class="section-heading">Aclaración <a href="#cargarevidencias-aclaracion">#</a></h2>
+						<p>Debe subir los archivos en el formato correcto, si los archivos no tienen el formato correcto le saldra un mensaje en rojo donde le indicará que formato debe usar</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/aclaracion-cargarevidencias.png">
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="solicitar-laboratorio">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Subir Guias de laboratorio para reserva <a href="#solicitar-laboratorio">#</a></h1>
+					    <section class="docs-intro">
+						    <p>En esta seccion aprenderas a subir las respectivas guías para reservar y hacer uso de los laboratorios, desde la plataforma Dione</p>
+						</section><!--//docs-intro-->
+				    </header>
+
+					<section class="docs-section" id="solicitarlaboratorio-a-tener-en-cuenta">
+						<h2 class="section-heading">A tener en cuenta <a href="#solicitarlaboratorio-a-tener-en-cuenta">#</a></h2>
+						<p><b>IMPORTANTE: </b> Debe realizar la reserva de laboratorio con 8 días de anticipación </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/fechaguiamal.png"/>
+					</section><!--//section-->
+					
+				     <section class="docs-section" id="solicitarlaboratorio-paso1">
+						<h2 class="section-heading">Paso 1 <a href="#solicitarlaboratorio-paso1">#</a></h2>
+						<p>Cuando ya tengo acceso al panel de control, dirijase al menu izquierdo donde encontrará un item llamado "<b>EVIDENCIAS</b>" se desplegaran diferentes acciones, usted debe darle clikc en la que dice "<b>GUIAS DE LABORATORIO</b>"</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/guiasLaboratiorio-paso1.gif"/>
+					</section><!--//section-->
+
+					<section class="docs-section" id="solicitarlaboratorio-paso2">
+						<h2 class="section-heading">Paso 2 <a href="#solicitarlaboratorio-paso2">#</a></h2>
+						<p>Encontrará un boton arriba a la derecha  que dice <b>"Nuevo" </b>le da clic y se desplegara un formulario que debe diligenciar. En la ultima casilla debe adjuntar la guia de laboratiorio que va a realizar</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/laboratorio-paso2.gif"/>
+					</section><!--//section-->
+
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="reporte-rendimiento">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Reportes bajo rendimiento <a href="#reporte-rendimiento">#</a></h1>
+					    <section class="docs-intro">
+						    <p>En esta sección podrá evidenciar los reportes de bajo rendimiento de los estudiantes resaltados con colores para una mayor visualizacion. Por curso, asignatura y rango de notas</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="reporterendimiento-paso1">
+						<h2 class="section-heading">Paso 1 <a href="#reporterendimiento-paso1">#</a></h2>
+						<p>Cuando ya tengo acceso al panel de control, dirijase al menu izquierdo donde encontrará un item llamado "<b>REPORTES</b>" se desplegara una accion, usted debe darle clikc en la que dice "<b>BAJO RENDIMIENTO</b>"</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/reportes-paso1.gif"/>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="reporterendimiento-paso2">
+						<h2 class="section-heading">Paso 2 <a href="#reporterendimiento-paso2">#</a></h2>
+						<p>Deberá seleccionar el corte o si es nota final selecciona la opcion que dice "todos"</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/reportes-paso2.gif"/>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="reporterendimiento-paso3">
+							<h2 class="section-heading">Paso 3 <a href="#reporterendimiento-paso3">#</a></h2>
+						<p>Ahora le aparecerán unos filtros de busqueda, usted se debe buscar en el filtro que dice "Docente" dandole clic en la lupa, escribiendo su nombre y seleccionandose</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/reportes-paso3.gif"/>
+					</section><!--//section-->
+
+					<section class="docs-section" id="reporterendimiento-paso4">
+						<h2 class="section-heading">Paso 4 <a href="#reporterendimiento-paso4">#</a></h2>
+					<p>Ahora usted puede filtrar los reportes dependiendo  si quiere por asignatura, grupo y rango de nota. Tambien puede colocar todos los filtros a la vez para una mejor busqueda </p>
+					<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/reporte-paso4.gif"/>
+				</section><!--//section-->
+
+				<section class="docs-section" id="reporterendimiento-ejemplo1">
+					<h2 class="section-heading">Ejemplo 1: Busqueda de reportes por grupo <a href="#reporterendimiento-ejemplo1">#</a></h2>
+					<p>Selecciono corte 1, me busco en el filtro docente por mi nombre , puedo observar que tengo 8 registros, filtro por grupo y selecciono el grupo 1001. Me apareccen los estudiantes de ese grupo con las materias que ven y las notas, me muestra en color amarillo que tienen un bajo rendimiento </p>
+					<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/reporte-ejemplo1.gif"/>
+				</section><!--//section-->
+
+				<section class="docs-section" id="reporterendimiento-ejemplo2">
+					<h2 class="section-heading">Ejemplo 2: Busqueda de reportes por asignatura <a href="#reporterendimiento-ejemplo2">#</a></h2>
+					<p>Selecciono corte 1, me busco en el filtro docente por mi nombre , puedo observar que tengo 8 registros, filtro por asignatura y organizo por las asignaturas que mas tienen registros dandole clic en el boton que tiene un numeral . Me apareccen aparecen de primeras las que mas tienen registros (SALUD OCUPACIONAL(4)), selecciono y me aparece la lista de los 4 estudiantes de esa asignatura </p>
+					<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/reporte-ejemplo2.gif"/>
+				</section><!--//section-->
+
+				<section class="docs-section" id="reporterendimiento-ejemplo3">
+					<h2 class="section-heading">Ejemplo 3: Busqueda de reportes con todos los filtros activos <a href="#reporterendimiento-ejemplo3">#</a></h2>
+					<p>Selecciono el corte, me busco en el filtro docente por mi nombre , puedo observar que tengo 8 registros, filtro por asignatura y organizo por las asignaturas que mas tienen registros dandole clic en el boton que tiene un numeral, selecciono una(TRABAJO DE GRADO(4)) .  filtro por grupo y organizo por grupo que tenga mas registros dandole clic en el boton que tiene un numeral, selecciono el grupo 1001, me aparece la lista de los 4 estudiantes de esa asignatura filtrados por grupo y asignatura  </p>
+					<img class="figure-img img-fluid shadow-lg rounded" src="assets/images/reporte-ejemplo3.gif"/>
+				</section><!--//section-->
+
+				
+			    </article><!--//docs-article-->
+			    
+			    
+		        
+			    </article><!--//docs-article-->
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a  target="_blank" href="https://www.facebook.com/stzEF"><i class="fa-brands fa-facebook"></i></a></li>
+			            	<li class="list-inline-item"><a  target="_blank" href="http://www.sistematizar.co/"><i class="fa-solid fa-globe"></i></a></li>
+		                	<li class="list-inline-item"><a  target="_blank" href="https://www.instagram.com/sistematizar_ef/"><i class="fa-brands fa-instagram"></i></a></li>
+		                	<li class="list-inline-item"><a  target="_blank" href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i class="fa-brands fa-whatsapp"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+	<script src="assets/js/filter.js"></script>
+
+</body>
+</html> 
+

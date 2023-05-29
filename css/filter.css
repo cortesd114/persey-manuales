@@ -1,0 +1,117 @@
+.index {
+    margin: auto;
+        margin-left: 2%;
+        box-shadow: 8px 8px 25px #02020283;
+        text-align: center;
+        width: 49% !important;
+        border-collapse: collapse;
+        position: absolute;
+}
+
+.doc{
+    margin: auto;
+    box-shadow: 8px 8px 25px #02020283;
+    text-align: center;
+    width: 278px !important;
+    border-collapse: collapse;
+    position: fixed;
+    margin-top: 42px;
+    margin-left: 1%;
+}
+
+th {
+    background-color: #ffffff !important;
+    color: black;
+}
+th, td {
+    padding: 8px !important;
+}
+tr {
+    background-color: rgb(255, 255, 255) !important;
+}
+tr:hover {
+    font-weight: 500 !important;
+}
+
+@media(max-width : 1300px){
+    .index{
+        margin: auto;
+        margin-left: 2%;
+        box-shadow: 8px 8px 25px #02020283;
+        text-align: center;
+        width: 49% !important;
+        border-collapse: collapse;
+        position: absolute;
+        
+    } 
+}
+
+@media(max-width : 1199px){
+    .index{
+        margin: auto;
+        margin-left: 2%;
+        box-shadow: 8px 8px 25px #02020283;
+        text-align: center;
+        width: 58% !important;
+        border-collapse: collapse;
+        position: absolute;
+        
+    }
+}
+
+@media(max-width : 990px){
+    .doc{
+
+        margin: auto;
+        box-shadow: 8px 8px 25px #02020283;
+        text-align: center;
+        width: 301px !important;
+        border-collapse: collapse;
+        position: fixed;
+        margin-top: 42px;
+    }
+    .index{
+        margin: auto;
+        margin-left: 2%;
+        box-shadow: 8px 8px 25px #02020283;
+        text-align: center;
+        width: 78% !important;
+        border-collapse: collapse;
+        position: absolute;
+        
+    }
+}
+
+@media(max-width : 768px) {
+    .doc{
+
+        margin: auto;
+        box-shadow: 8px 8px 25px #02020283;
+        text-align: center;
+        width: 90% !important;
+        border-collapse: collapse;
+        position: fixed;
+        margin-top: 42px;
+    }
+    .index{
+        margin: auto;
+        margin-left: 2%;
+        box-shadow: 8px 8px 25px #02020283;
+        text-align: center;
+        width: 79% !important;
+        border-collapse: collapse;
+        position: absolute;
+    }
+}
+@media(max-width : 450px){
+    .index{
+        margin: auto;
+        box-shadow: 8px 8px 25px #02020283;
+        text-align: center;
+        width: 301px !important;
+        border-collapse: collapse;
+        position: relative;
+    }
+}
+
+
