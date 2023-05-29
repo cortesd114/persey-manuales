@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Manual - Persey</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="../../favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="../../assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="../../assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="../../css/ejemplo.css">
+	<link id="theme-style" rel="stylesheet" href="../../css/filter.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+</head><!--Termina head-->
+
+<body class="docs-page">
+	
+	<header class="header fixed-top">
+
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="../../assets/images/logopersey.png" alt="logo"><span class="logo-text"></span></a>
+					</div>
+				</div><!--//docs-logo-wrapper-->
+				
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+					
+					<div class="top-search-box buscador d-none d-lg-flex">
+						<form class="search-form">
+							<input id="search" type="text" autocomplete="off" placeholder="Buscar..." name="search"
+								class="form-control search-input">
+							<button type="submit" class="btn search-btn" value="Search"><i
+									class="fas fa-search"></i></button>
+						</form>
+					</div>
+
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/stzEF"><i
+									class="fa-brands fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a target="_blank" href="http://www.sistematizar.co/"><i
+									class="fa-solid fa-globe"></i></a></li>
+						<li class="list-inline-item"><a target="_blank"
+								href="https://www.instagram.com/sistematizar_ef/"><i
+									class="fa-brands fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a target="_blank"
+								href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i
+									class="fa-brands fa-whatsapp"></i></a></li>
+					</ul><!--//social-list-->
+				
+				
+				</div><!--//docs-top-utilities-->
+			</div><!--//container-->
+		</div><!--//branding-->
+
+	</header><!--//header-->
+
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Buscar..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+
+			<!--Aside bar elements-->
+			<nav id="docs-nav" class="docs-nav navbar">
+
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title">
+						<a class="nav-link scrollto " href="#inicio">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-gauge"></i></i></span>
+							<span class="section-title-text">Primeros pasos</span>
+						</a>
+					</li>
+
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#cajas">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-box-archive"></i></span>
+							<span class="section-title-text">Cajas</span>
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#nueva-caja">Nueva Caja</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#apertura-cierre">Apertura y Cierre</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#anular-caja">Anulación de Caja</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#movimientos-01">Movimientos</a></li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#catalogos">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-folder-open"></i></span>
+							<span class="section-title-text">Catalogos</span>
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#catalogos-terceros">Terceros</a></li>
+
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#reportes">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-file-lines"></i></span>
+							<span class="section-title-text">Reportes</span>
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-por-periodo">Reportes por
+							Periodo</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-por-terceros">Reportes por Terceros</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-por-tipo-movimiento">Reportes por tipo de Movimiento</a></li>
+				</ul>
+			</nav><!--//docs-nav-->
+		</div><!--//docs-sidebar-->
+
+		<div class="docs-content">
+			<div class="container">
+				
+				<article class="docs-article" id="inicio">
+					
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#inicio">Primeros pasos</a></h1>
+						<section class="docs-intro">
+							<p>En el menú lateral izquierdo va a encontrar todas las opciones que usted va a poder
+								realizar en el aplicativo de Persey.</p>
+						</section><!--//docs-intro-->
+
+						<h5>Guia visual :</h5>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/inicio.png" />
+						</div>
+					</header>
+					
+				</article>
+
+				<article class="docs-article" id="cajas">
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#cajas">Cajas</a></h1>
+						<section class="docs-intro">
+							<p>Aquí encontrará la guia paso a paso sobre como crear una caja y las distintas interacciones que
+								se pueden tener con esta sección.</p>
+						</section><!--//docs-intro-->
+					</header>
+
+					<section class="docs-section" id="nueva-caja">
+						<h2>Pasos para crear Cajas</h2>
+						<br>
+						<h3 id="inicial-paso1"><a href="#inicial-paso1">Paso 1</a></h3>
+						<p> Se debe dirigir hacia ell menú en la opcion de <b>"Cajas",</b> luego la opcion <b>"Nueva Caja".</b></p>
+						<h3 id="inicial-paso2"><a href="#inicial-paso2">Paso 2</a></h3>
+						<p>Sobre la parte derecha se debe dar click en un boton verde que dice <b>"NUEVO"</b></p>
+						<h3 id="inicial-paso3"><a href="#inicial-paso3">Paso 3</a></h3>
+						<p>Se debe proceder a escribir el nombre de la caja, posterior a ello, asignele un estado y proceda a
+							<b>"Guardar"</b> como se muestra en el video.
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/creacion-caja.gif">
+						<br>
+						<br>
+						<h3>Aclaración</h3>
+						<p>Cabe aclarar que el usuario podrá eliminar o editar las cajas como se muestra en el video:</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-caja.gif">
+					</section><!--//section-->
+
+					<section class="docs-section" id="apertura-cierre">
+						<h2 class="section-heading"><a href="#apertura-cierre">Apertura y Cierre</a></h2>
+						<p>Despues de tener una caja creada, se tiene la posibilidad de cerrar la caja,
+							si tiene mas disponibilidad de caja, tambien podrá aperturar cajas</p>
+						<h3 id="inicial-paso1"><a href="#inicial-paso1">Abrir Caja</a></h3>
+						<p> Se debe mover hacia el menú, en la opción de <b>"Cajas"</b>, luego la opcion <b>"Apertura y Cierre"</b> y
+							si desea abrir una caja previamente creada, se debe oprimir el botón <b>"Nuevo"</b> y seleccionar la caja que desea
+							aperturar como se ve en el video.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/abrir-caja.gif">
+						<br>
+						<br>
+						<h3 id="inicial-paso2"><a href="#inicial-paso2">Cerrar Caja</a></h3>
+						<p> Se debe dirigir hacia el menú a la opcion de <b>"Cajas"</b>, luego la opcion <b>"Apertura y Cierre"</b> y
+							si desea cerrar una caja previamente creada oprima <b>"Cerrar"</b> y selecciona la caja que desea
+							cerrar como se ve en el video</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/cerrar-caja.gif">
+						<p>Como se observa en el video anterior, despues de cerrar una caja usted tambien tendrá la
+							posibilidad de tener una visualización
+							en PDF con la información de la caja y ademas anular su cierre.
+						</p>
+						<br>
+						<h3>Aclaración</h3>
+						<p>Es trascendental que entienda que si desea abrir una caja nueva, debe verificar previamente que esa caja este cerrada 
+							para que no arroje un error.
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/error-caja.gif">
+					</section><!--//section-->
+
+					<section class="docs-section" id="anular-caja">
+						<h3>Anular Cajas</h3>
+						<p>Es trascendental que entienda que si desea anular una caja nueva, en caso de que tenga un error en 
+							alguna de ellas, lo puede hacer en la sección de <b>"Apertura y Cierre de Cajas"</b> dando al botón 
+							de <b>"Anular"</b> como lo muestra la siguiente imagen:
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/cajas-anular.png">
+						<br>
+						<br>
+					</section><!--//section-->
+
+					<section class="docs-section" id="movimientos-01">
+						<h2 class="section-heading "><a href="#movimientos-01">Movimientos</a></h2>
+						<h3 id="inicial-paso3"><a href="#inicial-paso3">Interactua con movimientos</a></h3>
+						<p>Se listarán los movimientos de la caja, además tendrá la posiblidad de cambiar su estado y
+							por ultimo, cambiar la información
+							respecto a los movimientos generados
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/movimientos.gif">
+						<br>
+						<br>
+					</section><!--//section-->
+				
+				</article><!--//docs-article-->
+
+				<article class="docs-article" id="catalogos">
+				
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#catalogos">Catalogos</a></h1>
+						<section class="docs-intro">
+							<p>En esta seccion podra configurar o definir diferentes aspectos de su negocio tales como,
+								añadir terceros</p>
+						</section><!--//docs-intro-->
+					</header>
+
+					<section class="docs-section" id="catalogos-terceros">
+						<h2 class="section-heading"><a href="#catalogos-terceros">Terceros</a></h2>
+						<p>Es de vital relevancia conocer que un tercero puede ser un cliente o un proveedor.
+							Le aparecerán todos los terceros que tenga en una lista, los terceros se pueden modificar
+							dando click
+							en el boton amarillo y crear uno nuevo dando click en el boton que dice <b>"NUEVO"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/terceros.gif" />
+						<br>
+						<br>
+						<h3>IMPORTANTE: Campos Requeridos</h3>
+						<p>Por favor, los campos que tengan un asterisco (*), se deben llenar
+							obligatoriamente.</p>
+						<br>
+						<h3>IMPORTANTE: Campos a tener en cuenta en Formulario</h3>
+						<p><b>Razón Social y Nombre Comercial:</b> Tenga en cuenta que la razón social y el nombre
+							comercial
+							pueden ser diferentes dependiendo de la información de la empresa</p>
+						<p><b>Lista de Precios:</b> Tenga en cuenta que la lista de precios es dependiente de la
+							configuración
+							de precios que asigno a los articulos y sus listas.</p>
+
+						<h4>Diligenciar Formulario si es Persona Natural</h4>
+						<p>En caso de seleccionar <b>"Persona Natural"</b> se bloqueará el campo de <b>"Razón
+								Social".</b></p>
+						<p>A continuación, se mostrará la vista de como se bloquean los campos si selecciona <b>"Persona
+								Natural"</b>
+							y como diligenciar el formulario:</p>
+						<img class="rounded mx-auto d-block" src="images/persona-natural.png">
+						<img class="figure-img2 img-fluid shadow-lg rounded" src="images/crear-clienteFact.png">
+						<br>
+						<br>
+						<h4>Diligenciar Formulario si es Persona Juridica</h4>
+						<p>En caso de seleccionar <b>"Persona Juridica"</b> se bloquearán los campos de <b>"Primer
+								nombre de la persona",
+								"Segundo nombre de la persona", "Primer apellido de la persona" y "Segundo apellido de
+								la persona".</b></p>
+						<p>A continuación, se motrará la vista de como se bloquean los campos si selecciona <b>"Persona
+								Juridica"</b>
+							y como diligenciar el formulario:</p>
+						<img class="rounded mx-auto d-block" src="images/persona-juridica.png">
+						<img class="figure-img2 img-fluid shadow-lg rounded" src="images/crear-cliente-juridico2.png">
+						<p>Por ultimo, se ilustrará como crear un cliente:</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-cliente.gif">
+					
+						
+						<p>Para agregar un tercero a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe
+							diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos
+							que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle
+							click en el boton que dice <b>"GUARDAR"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-tercero-cajas.gif" />
+						<br>
+						<br>
+						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar un tercero
+							como se
+							observa en el video
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-tercero.gif" />
+					</section><!--//section-->
+
+				</article><!--//docs-article-->
+
+				<article class="docs-article" id="reportes">
+				
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#reportes">Reportes</a></h1>
+						<section class="docs-intro">
+							<p>En esta sección podrá revisar los reportes de los movimientos por "Periodo", "Cliente" y
+								por "Tipo de Movimiento".
+							</p>
+						</section><!--//docs-intro-->
+					</header>
+				
+					<section class="docs-section" id="reportes-por-periodo">
+						<h2 class="section-heading"><a
+								href="#reportes-por-periodo">Reporte de Movimiento por Periodos</a></h2>
+						<p>Se debe dirigir  hacia la sección de <b>"Reportes"</b> y elegir la opción de <b>"Movimientos por
+								Periodo"</b>.
+							Se deben escoger las fechas sobre las cuales quiere usted ver el reporte y posterior a ello oprima en
+							<b>"Ver"</b>
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-por-periodo.gif" />
+					</section><!--//section-->
+
+					<section class="docs-section" id="reportes-por-terceros">
+						<h2 class="section-heading"><a href="#reportes-por-terceros">Reportes por Cliente</a></h2>
+						<p>En esta seccion se puede visualizar los reportes teniendo en cuenta un tercero y los tiempos a
+							evaluar, para
+							lo anterior se be ir a la opción <b>"Movimientos por Cliente"</b>, elegir el tercero y sus
+							tiempos a reportar
+							para posteriormente oprimir en <b>"Ver"</b> </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-por-terceros.gif" />
+						<br>
+						<br>
+					</section><!--//section-->
+
+					<section class="docs-section" id="reportes-por-tipo-movimiento">
+						<h2 class="section-heading"><a href="#reportes-por-tipo-movimiento">Reportes por Tipo de Movimiento</a></h2>
+						<p>En esta seccion puede visualizar los reportes por tipo de movimiento y los tiempos a evaluar,
+							para
+							lo anterior se debe dirigir a la opción <b>"Movimientos por Tipo de Movimiento"</b>, elegir el tipo
+							de movimiento y sus tiempos a reportar
+							para posteriormente oprimir en <b>"Ver"</b>. Hay que tener en cuenta que tambien se podrá filtrar las
+							lista con la opción de egresos si
+							así lo requiere </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/movimientos-por-tipo-movimiento.gif" />
+						<br>
+						<br>
+					</section><!--//section-->
+
+				</article><!--//docs-article-->
+
+				<footer class="footer">
+					<div class="container text-center py-5">
+						<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+						<small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"
+								style="color: #fb866a;"></i> by <a class="theme-link"
+								href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for
+							developers</small>
+						<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/stzEF"><i
+										class="fa-brands fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" href="http://www.sistematizar.co/"><i
+										class="fa-solid fa-globe"></i></a></li>
+							<li class="list-inline-item"><a target="_blank"
+									href="https://www.instagram.com/sistematizar_ef/"><i
+										class="fa-brands fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a target="_blank"
+									href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i
+										class="fa-brands fa-whatsapp"></i></a></li>
+						</ul><!--//social-list-->
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div><!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="../../assets/plugins/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="../../assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="../../assets/js/highlight-custom.js"></script>
+	<script src="../../assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="../../assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="../../assets/js/docs.js"></script>
+	<script src="filter-inventario.js"></script>
+
+</body>
+
+</html>

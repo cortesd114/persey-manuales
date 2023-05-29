@@ -1,11 +1,11 @@
 var contenido=[
     {
-        titulo:"Facturación Post",
-        ref : "/docs-page.html#inicio" 
+        titulo:"Facturación Pos",
+        ref : "guia.html#inicio-pos" 
     },
     {
         titulo:"Facturacion electronica",
-        ref : "/docs-page.html#cargar-notas" 
+        ref : "guia.html#inicio-electronica" 
     },
     {
         titulo:"Inventario",

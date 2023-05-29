@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
+    <title>Manual - Persey</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     
     <meta name="description" content="Bootstrap 4 Template For Software Startups">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="shortcut icon" href="../../favicon.ico"> 
     
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
@@ -30,7 +30,8 @@
 
 </head> 
 
-<body class="docs-page">    
+<body class="docs-page">   
+	 
     <header class="header fixed-top">	    
         <div class="branding docs-branding">
             <div class="container-fluid position-relative py-2">
@@ -67,7 +68,8 @@
 
     
     <div class="docs-wrapper">
-	    <div id="docs-sidebar" class="docs-sidebar">
+	    
+		<div id="docs-sidebar" class="docs-sidebar">
 		    <div class="top-search-box d-lg-none p-3">
                 <form class="search-form">
 		            <input type="text" placeholder="Buscar..." name="search" class="form-control search-input">
@@ -77,16 +79,15 @@
 
 			<!--Aside bar elements-->
 		    <nav id="docs-nav" class="docs-nav navbar">
-			    <ul class="section-items list-unstyled nav flex-column pb-3">
-				    <li class="nav-item section-title">
+			    
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+				    
+					<li class="nav-item section-title">
 						<a class="nav-link scrollto " href="#inicio">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-gauge"></i></i></span>
 							<span class="section-title-text">Primeros pasos</span>
 						</a>
 					</li>
-				    			    
-				    
-
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#inventario">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-box-archive"></i></span>
@@ -96,11 +97,9 @@
 						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-aclaracion">Aclaración</a></li>
 						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-inicial">inventario inicial</a></li>
 						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-entradas">Entradas</a></li>				    
-						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-salidas">Salidas</a></li>					
-						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-articulos">Articulos</a></li>
-
-
-
+						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-salidas">Salidas</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-traslados">Traslados</a></li>						
+						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-articulos">Articulos/Servicios</a></li>
 				    <li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#reportes">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-file-lines"></i></span>
@@ -119,9 +118,6 @@
 						<li class="nav-item"><a class="nav-link scrollto" href="#catalogos-bodegas">Bodegas</a></li>
 						<li class="nav-item"><a class="nav-link scrollto" href="#catalogos-unidadesmedida">Unidades de medida</a></li>						
 						<li class="nav-item"><a class="nav-link scrollto" href="#catalogos-terceros">Terceros</a></li>
-
-
-
 				    <li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#procesos">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-spinner"></i></span>
@@ -129,15 +125,20 @@
 						</a>
 					</li>
 						<li class="nav-item"><a class="nav-link scrollto" href="#procesos-costeo">Costeo</a></li>
+				
 						<li class="nav-item"><a class="nav-link scrollto" href="#procesos-salidas-de-inventario">Salidas de inventario</a></li>  
 			    </ul>
 
 		    </nav><!--//docs-nav-->
 	    </div><!--//docs-sidebar-->
+
+
 	    <div class="docs-content">
 		    <div class="container">
-			    <article class="docs-article" id="inicio">
-				    <header class="docs-header">
+			    
+				<article class="docs-article" id="inicio">
+				    
+					<header class="docs-header">
 					    <h1 class="docs-heading">Primeros pasos<a href="#inicio">#</a></h1>
 					    <section class="docs-intro">							
 						    <p>En el menú lateral izquierdo va a encontrar todas las opciones que usted va a poder realizar en el aplicativo de Persey.</p>
@@ -146,15 +147,14 @@
 						<h5>Guia visual :</h5>
 						<div class="col-12 col-md-12 mb-3">
 						<img class="figure-img img-fluid shadow-lg rounded" src="images/inicio.png"/>
-						</div>
-						
-				    </header>
-				    
+						</div>	
+				    </header>    
 						
 			    </article>
 			    
 			    <article class="docs-article" id="inventario">
-				    <header class="docs-header">
+				    
+					<header class="docs-header">
 					    <h1 class="docs-heading">Inventario <a href="#inventario">#</a></h1>
 					    <section class="docs-intro">
 						    <p>Aqui podras guiarte paso a paso como realizar un inventario inicial, registrar una entrada, una salida, crear articulos o productos y mas</p>
@@ -246,6 +246,31 @@
 						<br>	
 					</section><!--//section-->
 
+					<section class="docs-section" id="inventario-traslados">
+						<h2 class="section-heading">Traslados <a href="#inventario-traslados">#</a></h2>
+						<h3>Aclaración parametros de administración</h3>
+						<p>Con el fin de que la creación de traslados sea correcta, se debe tener en cuenta que los parametros
+							de configuración en el modulo de administración deben estar dados de la siguiente forma:
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/parentesis.png" alt="">
+						<br>
+						<br>
+						<p>En esta sección podra registrar todos los traslados de una bodega a otra</p>
+						<br>
+						<br>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/salidas.gif">
+						<h3 id="salidas-paso1"> Paso 1 <a href="#salidas-paso1">#</a></h3>
+						<p>Dirijase a la sección de "Inventario" -> <b>"Salidas"</b> y oprima el botón <b>"Nuevo"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/salidas-paso1.gif">
+						<br>
+						<br>
+						<h3 id="salidas-paso2" >Paso 2 <a href="#salidas-paso2">#</a></h3>
+						<p>Seleccione el tipo de movimiento <b>"Salida Traslado Bodegas"</b>, rellene los campos con la información necesaria</p>
+						<h3 id="salidas-paso3" >Paso 3 <a href="#salidas-paso3">#</a></h3>
+						<p>Oprima el botón <b>"Trasladar"</b>, seleccione la bodega de origen y la bodega destino para el correspondiente traslado y por ultimo dele en <b>"Guardar"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-traslado.gif">
+					</section><!--//section-->
+
 					<section class="docs-section" id="inventario-articulos">
 						<h2 class="section-heading">Articulos <a href="#inventario-articulos">#</a></h2>
 						<p>En esta sección podra registrar todos los articulos que maneje su empresa. </p>
@@ -263,15 +288,18 @@
 					</section><!--//section-->
 
 			    </article><!--//docs-article-->
-			    		    
+			    	
+				
 			    <article class="docs-article" id="reportes">
-				    <header class="docs-header">
+				
+					<header class="docs-header">
 					    <h1 class="docs-heading">Reportes<a href="#reportes">#</a></h1>
 					    <section class="docs-intro">
 						    <p>En esta sección podrá revisar los reportes de inventario y los kardex de los articulos </p>
 						</section><!--//docs-intro-->
 				    </header>
-				     <section class="docs-section" id="libro-de-inventarios">
+				
+					<section class="docs-section" id="libro-de-inventarios">
 						<h2 class="section-heading">Libro de inventarios <a href="#libro-de-inventarios">#</a></h2>
 						<p>Este reporte detalla las cantidades por tipo, las cantidades iniciales, entradas, salidas, y el saldo de los articulos filtrados por grupos.
 						</p>
@@ -299,11 +327,14 @@
 						<img class="figure-img img-fluid shadow-lg rounded" src="images/kardex-paso1.gif">
 						<br>
 					</section><!--//section-->
+				
 					
 			    </article><!--//docs-article-->
 			    
+
 			    <article class="docs-article" id="catalogos">
-				    <header class="docs-header">
+				
+					<header class="docs-header">
 					    <h1 class="docs-heading">Catalogos<a href="#catalogos">#</a></h1>
 					    <section class="docs-intro">
 						    <p>En esta seccion podra configurar o definir diferentes aspectos de su negocio tales como, un grupo para sus articulos, añadir bodegas para almacenar sus articulos, crear unidades de medida, y añadir terceros </p>
@@ -337,13 +368,15 @@
 			    </article><!--//docs-article-->
 			    
 			    <article class="docs-article" id="procesos">
-				    <header class="docs-header">
+				
+					<header class="docs-header">
 					    <h1 class="docs-heading">Procesos <a href="#procesos">#</a></h1>
 					    <section class="docs-intro">
 						    <p>En esta seccion encontramos dos apartados, Costeo y salidas de inventario aquí podremos hacer una actualización de los inventarios finales si se hicieron modificaciones </p>
 						</section><!--//docs-intro-->
 				    </header>
-				     <section class="docs-section" id="procesos-costeo">
+				
+					<section class="docs-section" id="procesos-costeo">
 						<h2 class="section-heading">Costeo <a href="#procesos-costeo">#</a></h2>
 						<p>Este proceso, calcula el costo de cada uno de los articulos (Costeables) en el periodo de tiempo seleccionado. El metodo utilizado para el costeo es promedio. En caso de seleccionar Crear Nota Contable en el Persey se mostrara una ventana con el detallado de la nota contable para su configuracion y guardado. Si no seleccionó Crear Nota Contable, debe repetir el proceso de costeo.</p>
 						<br>						
@@ -361,10 +394,8 @@
 						<br>
 						<h2>importante</h2>
 						<p>si la factura le sale en rojo es porque no tiene un documento generado, usted debe verificar que la factura este seleccionada luego darle click en el boton ejecutar y automaticamente le va a generar el documento a su factura  </p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/facturas-salidas.gif"/>						
-						
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/facturas-salidas.gif"/>								
 					</section><!--//section-->
-					
 					
 				</article>
 

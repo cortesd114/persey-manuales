@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Manual - Persey</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="../../favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="../../assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="../../assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="../../css/ejemplo.css">
+	<link id="theme-style" rel="stylesheet" href="../../css/filter.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+</head><!--Termina head-->
+
+<body class="docs-page">
+
+	<header class="header fixed-top">
+
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="../../assets/images/logopersey.png" alt="logo"><span class="logo-text"></span></a>
+					</div>
+				</div><!--//docs-logo-wrapper-->
+
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+					<div class="top-search-box buscador d-none d-lg-flex">
+						<form class="search-form">
+							<input id="search" type="text" autocomplete="off" placeholder="Buscar..." name="search"
+								class="form-control search-input">
+							<button type="submit" class="btn search-btn" value="Search"><i
+									class="fas fa-search"></i></button>
+						</form>
+					</div>
+
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/stzEF"><i
+									class="fa-brands fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a target="_blank" href="http://www.sistematizar.co/"><i
+									class="fa-solid fa-globe"></i></a></li>
+						<li class="list-inline-item"><a target="_blank"
+								href="https://www.instagram.com/sistematizar_ef/"><i
+									class="fa-brands fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a target="_blank"
+								href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i
+									class="fa-brands fa-whatsapp"></i></a></li>
+					</ul><!--//social-list-->
+				</div><!--//docs-top-utilities-->
+			</div><!--//container-->
+		</div><!--//branding-->
+	</header><!--//header-->
+
+
+	<div class="docs-wrapper">
+
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Buscar..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+
+			<!--Aside bar elements-->
+			<nav id="docs-nav" class="docs-nav navbar">
+
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title">
+						<a class="nav-link scrollto " href="#inicio">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-gauge"></i></i></span>
+							<span class="section-title-text">Primeros pasos</span>
+						</a>
+					</li>
+
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#catalogos">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-box-archive"></i></span>
+							<span class="section-title-text">Catalogos</span>
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#terceros">Terceros</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#vendedores">Vendedores</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#bodegas">Bodegas</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#grupos">Grupos</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#unidades">Unidades</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#parametros">Parametros</a>
+						<ul class="section-items list-unstyled nav flex-column pb-3">
+							<li class="nav-item"><a class="nav-link scrollto" href="#generales">Generales</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#inventarios">Inventarios</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#facturacion-electronica">Facturación Electronica</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#facturacion-pos">POS</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#caja">Caja</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#nomina-electronica">Nomina Electronica</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#tipo-movimientos">Tipo de Movimientos</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#servicios">Servicios</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#articulos">Articulos</a></li>
+
+
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#reportes">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-folder-open"></i></span>
+							<span class="section-title-text">Reportes</span>
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-utilidad-venta">Reportes de
+							Utilidad de Venta </a></li>
+				</ul>
+			</nav><!--//docs-nav-->
+		</div><!--//docs-sidebar-->
+
+		<div class="docs-content">
+			<div class="container">
+
+				<article class="docs-article" id="inicio">
+					<header class="docs-header">
+						<h1 class="docs-heading">Primeros pasos<a href="#inicio">#</a></h1>
+						<section class="docs-intro">
+							<p>En el menú lateral izquierdo va a encontrar todas las opciones que usted va a poder
+								realizar en el aplicativo de Persey.</p>
+						</section><!--//docs-intro-->
+
+						<h5>Guia visual :</h5>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/inicio.png" />
+						</div>
+					</header>
+				</article>
+
+				<article class="docs-article" id="catalogos">
+
+					<header class="docs-header">
+						<h1 class="docs-heading">Catalogos<a href="#catalogos">#</a></h1>
+						<section class="docs-intro">
+							<p>Aquí podras guiarte paso a paso para hacer administración de todas las secciones</p>
+						</section><!--//docs-intro-->
+					</header>
+
+					<section class="docs-section" id="terceros">
+						<h2>Adminitración de Terceros</h2>
+						<p>Para agregar un tercero a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe
+							diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos
+							que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle
+							click en el boton que dice <b>"GUARDAR"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-tercero-cajas.gif" />
+						<br>
+						<br>
+						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar un tercero
+							como se
+							observa en el video
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-tercero.gif" />
+					</section><!--//section-->
+
+					<section class="docs-section" id="vendedores">
+						<h2>Administración de Vendedores</h2>
+						<p>Para agregar un vendedor a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe
+							diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos
+							que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle
+							click en el boton que dice <b>"GUARDAR"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/sub-seccion-crear-vendedor.gif" />
+						<br>
+						<br>
+						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar un vendedor
+							como se observa en el video
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/sub-seccion-editar-vendedor.gif" />
+					</section><!--//section-->
+
+					<section class="docs-section" id="bodegas">
+						<h2>Administración de Bodegas</h2>
+						<p>Para agregar una bodega a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe
+							diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos
+							que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle
+							click en el boton que dice <b>"GUARDAR"</b>. Tambien debe tener en cuenta la configuración del estado</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/bodegas.gif" />
+						<br>
+						<br>
+						<p>Es de bien saber, que las bodegas son indispensables para el funcionamiento de los
+							<b>"Traslados"</b>
+						</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="grupos">
+						<h2>Administración de Grupos</h2>
+						<p>Para agregar un grupo a su empresa debe darle en el boton que dice <b>"NUEVO"</b> en la
+							sección de catalogos. Debe diligenciar el formulario con los campos correspondientes de izquierda a
+							derecha, los campos que tienen un asterisco rojo son obligatorios. Cuando complete el 
+							formualario debe darle click en el boton que dice <b>"GUARDAR"</b>. Tambien debe tener en cuenta
+							la configuración del estado</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-grupos.gif" />
+						<br>
+						<br>
+						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar grupos
+							como se observa en el video
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-grupos.gif"
+					</section><!--//section-->
+
+					<section class="docs-section" id="unidades">
+						<h2>Administración de Unidades</h2>
+						<p>Para agregar una unidad en especifico a su empresa debe darle en el boton que dice <b>"NUEVO"</b> en la
+							sección de catalogos. Debe diligenciar el formulario con los campos correspondientes de izquierda a
+							derecha, los campos que tienen un asterisco rojo son obligatorios. Cuando complete el 
+							formualario debe darle click en el boton que dice <b>"GUARDAR"</b>.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-unidad.gif" />
+						<br>
+						<br>
+						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar una unidad
+							como se observa en el video
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-unidad.gif" />
+					</section><!--//section-->
+
+					<section class="docs-section" id="parametros">
+						<h2>Administración de Parametros</h2>
+						<p>En esta sección usted te	ndrá la posibilidad de ajustar los parametros generales y especificos de 
+							cada uno de los modulos del sistema, a continuación, encontrará a detalle como manipular las configuraciones
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/parametros.gif" />
+						
+						<section class="docs-section" id="generales">
+							<h3>Configuración parametros generales: </h3>
+							<br>Aquí podra configurar los aspectos generales del sistema: </br>
+							<li><B>Departamento:</B> Podrá configurar el departamento</li>
+							<li><B>Ciudad:</B> Podrá configurar la ciudad</li>
+							<li><B>Estado por Defecto:</B> Podrá configurar el estado por defecto a la hora de crear cajas, terceros, etc...</li>
+							<li><B>Impresora Bluetooth:</B> Podrá configurar si desea activar/desactivar la impresora Bluetooth para previos</li>
+							<li><B>Retenciones en Facturación:</B> Si desea activar/desactivar las retenciones para facturación</li>
+							<li><B>Retenciones en Proveedores:</B> Si desea activar/desactivar las retenciones para compras</li>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/parametros-generales.gif" />
+							<b>NOTA: Luego de realizar ajustes, NO olvide darle en el boton de "Guardar"</b>
+						</section>
+
+						<section class="docs-section" id="inventarios">
+							<h3>Configuración parametros en modulo de inventarios:</h3>
+							<br>Aquí podra configurar los aspectos del modulo de inventarios: </br>
+							<li><b>Prefijo del inventario inicial:</b> Podrá configurar el prefijo del inventario inicial con el que iniciará todas las notas</li>
+							<li><b>Digitos para el consecutivo del inventario inicial:</b> Podrá configurar los digitos para el consecutivo del inventario inicial</li>
+							<li><b>Configure la bodega por defecto:</b> Podrá configurar la bodega por defecto</li>
+							<li><b>Calculo de Existencia:</b> Podrá configurar como quiere llevar el calculo de existencia de sus articulos, ya sea por existencia, o en linea</li>
+							<li><b>Impoconsumo:</b> Podrá establecer si desea manejar impoconsumo, el cual se verá reflejado en el inventario mismo</li>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/parametros-inventario.gif" />
+							<b>NOTA: Luego de realizar ajustes, NO olvide darle en el boton de "Guardar"</b>
+						</section>
+
+						<section class="docs-section" id="facturacion-electronica">
+							<h3>Configuración parametros en modulo de facturación electronica:</h3>
+							<br>Aquí podra configurar los aspectos del modulo de facturación electronica: </br>
+							<li><b>Talonario por defecto de la facturacion electronica:</b> Podrá configurar el talonario por defecto de la facturación electronica</li>
+							<li><b>Articulo por defecto (Intereses) | Nota Debito:</b> Podrá configurar el articulo por defecto de la nota debito para la generación de intereses con un producto base</li>
+							<li><b>Articulo por defecto (Gastos por cobrar) | Nota Debito:</b> Podrá configurar el articulo por defecto de la nota debito para los gastos por cobrar</li>
+							<li><b>Ampliar Observacion:</b> Podrá configurar la ampliación de observación que se hace en la facturación electronica</li>
+							<li><b>Muestra existencia por Bodega:</b> Podrá establecer si desea activar/desactivar las muestra de existencia por bodega</li>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/parametros-fact-electronica2.gif" />
+							<b>NOTA: Luego de realizar ajustes, NO olvide darle en el boton de "Guardar"</b>
+						</section>
+
+						<section class="docs-section" id="facturacion-pos">
+							<h3>Configuración parametros en modulo de facturación POS:</h3>
+							<br>Aquí podra configurar los aspectos del modulo de facturación POS: </br>
+							<li><b>Talonario por defecto de la Facturacion POS:</b> Podrá configurar el talonario por defecto de la facturación POS</li>
+							<li><b>Cantidad de tickets al generar una factura POS:</b> Podrá configurar la cantidad de tickets al generar una factura POS</li>
+							<li><b>Nombre Impresora POS:</b> Podrá configurar el nombre de la impresora POS</li>
+							<li><b>Lista de Impresoras en tu Equipo:</b> Podrá ver la lista de impresoras POS instaladas en el equipo</li>
+							<li><b>Cajón Monedero:</b> Podrá elegir si desea que automaticamente se abra el cajón monedero al facturar en POS</li>
+							<li><b>Correo Predeterminado:</b> Podrá elegir si desea que automaticamente se establezca un correo por defecto</li>
+							<li><b>Muestra existencia por Bodega:</b> Podrá establecer si desea activar/desactivar las muestra de existencia por bodega</li>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/parametros-fact-pos.gif" />
+							<b>NOTA: Luego de realizar ajustes, NO olvide darle en el boton de "Guardar"</b>
+						</section>
+
+						<section class="docs-section" id="caja">
+							<h3>Configuración parametros en modulo de caja:</h3>
+							<br>Aquí podra configurar los aspectos del modulo de caja: </br>
+							<li><b>Prefijo para los cierre de caja:</b> Podrá configurar el prefijo para los cierre de caja</li>
+							<li><b>Tipo de movimiento para las Salidas de Caja:</b> Podrá configurar el tipo de movimiento predeterminado para las salidas de caja</li>
+							<li><b>Digitos para el consecutivo del cierre de caja:</b> Podrá configurar la cantidad de digitos que llevará el cierre de caja, despues del prefijo</li>
+							<li><b>Tipo de movimiento para las Entradas de Caja:</b> Podrá definir el tipo de movimiento predeterminado para las entradas de caja</li>
+							<li><b>Desea Facturar sin Caja:</b> Podrá elegir si desea facturar sin abrir caja</li>
+							<li><b>Desea realizar Movimientos sin abrir Caja:</b> Podrá elegir si desea realizar movimientos de caja sin abrir ninguna caja</li>
+							<li><b>Crear automaticamente Recibos de Caja al Facturar:</b> Podrá elegir si desea crear automaticamente recibos de caja al facturar</li>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/parametros-caja.gif" />
+							<br>
+							<br>
+							<h4>Configurar tira cierre de caja</h4>
+							<p>Otro aspecto importante, es que usted tendrá la posibilidad de editar la tira de cierre de Caja.
+								Por ejemplo: tiene usted la posibilidad de editar los datos que quiere que se muestren en la sección
+								de <b>"Encabezado", "Información de Cierre", "Rango de Facturas", "Ventas por Grupos", "Formas de 
+									Pago"</b> entre otros, para mas ilustración vease el siguiente video:  
+							</p>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/configurar-tira.gif" />
+							<b>NOTA: Luego de realizar ajustes, NO olvide darle en el boton de "Guardar"</b>
+						</section>
+
+						<section class="docs-section" id="nomina-electronica">
+							<h3>Configuración parametros en modulo de Nomina Electronica:</h3>
+							<br>Aquí podrá configurar los aspectos del modulo de Nomina Electronica: </br>
+							<li><b>EPS:</b> Podrá configurar el periodo de tipo de nomina, si es mensual o quincenal</li>
+							<li><b>FPO:</b> Podrá configurar el periodo de tipo de nomina, si es mensual o quincenal</li>
+							<li><b>CCF:</b> Podrá configurar el periodo de tipo de nomina, si es mensual o quincenal</li>
+							<li><b>ARL:</b> Podrá configurar el periodo de tipo de nomina, si es mensual o quincenal</li>
+							<li><b>Numero de horas de trabajo:</b> Podrá configurar el numero de horas de trabajo de la empresa por defecto</li>
+							<li><b>Periodo de Tipo de Nomina:</b> Podrá configurar el periodo de tipo de nomina si es mensual o quincenal</li>
+							<li><b>Valor Subsidio de Transporte:</b> Podrá configurar el valor subsidio de transporte para el concepto</li>
+							<li><b>Pais:</b> Podrá configurar el pais de la empresa</li>
+							<li><b>Divisa:</b> Podrá configurar la moneda que usa su pais</li>
+							<li><b>Tasa de cambio representativa del mercado (TRM):</b> Configure la tasa de cambio representativa del mercado segun su moneda</li>
+							<li><b>Movimiento Contable:</b> Configure el movimiento contable por defecto para la nomina</li>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/parametros-nomina-electronica.gif" />
+							<b>NOTA: Luego de realizar ajustes, NO olvide darle en el boton de "Guardar"</b>
+						</section>
+					</section><!--//section-->
+
+					<section class="docs-section" id="tipo-movimientos">
+						<h2>Tipo de Movimientos</h2>
+						<p>Para agregar un movimiento a su empresa debe darle en el boton que dice <b>"NUEVO"</b> en la
+							sección de catalogos. Debe diligenciar el formulario con los campos correspondientes de izquierda a
+							derecha, los campos que tienen un asterisco rojo son obligatorios. Cuando complete el 
+							formualario debe darle click en el boton que dice <b>"GUARDAR"</b>.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/tipo-movimiento.gif" />
+						<br>
+						<br>
+						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar un tipo de movimiento
+							como se observa en el video
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-tipo-movimiento.gif" />
+					</section><!--//section-->
+
+					<section class="docs-section" id="servicios">
+						<h2>Servicios</h2>
+						<p>Para agregar un servicio a su empresa debe darle en el boton que dice <b>"NUEVO"</b> en la
+							sección de catalogos. Debe diligenciar el formulario con los campos correspondientes de izquierda a
+							derecha, los campos que tienen un asterisco rojo son obligatorios. Cuando complete el 
+							formualario debe darle click en el boton que dice <b>"GUARDAR"</b>.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-servicio-admin.gif" />
+						<br>
+						<br>
+						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar un servicio
+							como se observa en el video
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-producto-servicio.gif" />
+					</section><!--//section-->
+
+					<section class="docs-section" id="articulos">
+						<h2>Articulos</h2>
+						<p>Para agregar un articulo a su empresa debe darle en el boton que dice <b>"NUEVO"</b> en la
+							sección de catalogos. Debe diligenciar el formulario con los campos correspondientes de izquierda a
+							derecha, los campos que tienen un asterisco rojo son obligatorios. Cuando complete el 
+							formualario debe darle click en el boton que dice <b>"GUARDAR"</b>.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-articulo-admin.gif" />
+						<br>
+						<br>
+						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar un articulo
+							como se observa en el video
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-articulo-admin.gif" />
+					</section><!--//section-->
+
+				</article><!--//docs-article-->
+
+				<article class="docs-article" id="reportes">
+
+					<header class="docs-header">
+						<h1 class="docs-heading">Reportes<a href="#reportes">#</a></h1>
+						<section class="docs-intro">
+							<p>Aquí podras guiarte paso a paso como generar reportes para el posterior análisis</p>
+						</section><!--//docs-intro-->
+					</header>
+
+					<section class="docs-section" id="reporte-utilidad-venta">
+						<h2>Pasos para revisar Reportes de Utilidad de Venta</h2>
+						<br>
+						<p>Dirijase hacia la sección de <b>"Reportes"</b> y elija la opción de <b>"Compras por
+								Periodo"</b>.
+							elija las fechas sobre las cuales quiere usted ver el reporte y posterior a ello oprima en
+							<b>"Ver"</b>
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-utilidad-admin.gif" />
+					</section><!--//section-->
+
+				</article><!--//docs-article-->
+
+				<footer class="footer">
+					<div class="container text-center py-5">
+						<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+						<small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"
+								style="color: #fb866a;"></i> by <a class="theme-link"
+								href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for
+							developers</small>
+						<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/stzEF"><i
+										class="fa-brands fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" href="http://www.sistematizar.co/"><i
+										class="fa-solid fa-globe"></i></a></li>
+							<li class="list-inline-item"><a target="_blank"
+									href="https://www.instagram.com/sistematizar_ef/"><i
+										class="fa-brands fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a target="_blank"
+									href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i
+										class="fa-brands fa-whatsapp"></i></a></li>
+						</ul><!--//social-list-->
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div><!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="../../assets/plugins/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="../../assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="../../assets/js/highlight-custom.js"></script>
+	<script src="../../assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="../../assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="../../assets/js/docs.js"></script>
+	<script src="filter-inventario.js"></script>
+
+</body>
+
+</html>

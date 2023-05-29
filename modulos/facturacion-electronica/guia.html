@@ -1,91 +1,111 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="description" content="Bootstrap 4 Template For Software Startups">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome JS-->
-    <script defer src="../../assets/fontawesome/js/all.min.js"></script>
-    
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
-    <link rel="stylesheet" href="../../assets/plugins/simplelightbox/simple-lightbox.min.css">
+<html lang="en">
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="../../css/ejemplo.css">
+<head>
+	<title>Manual - Persey</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="../../favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="../../assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="../../assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="../../css/ejemplo.css">
 	<link id="theme-style" rel="stylesheet" href="../../css/filter.css">
 
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
 
-</head> 
+</head>
 
-<body class="docs-page">    
-    <header class="header fixed-top">	    
-        <div class="branding docs-branding">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper">
-					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
-	                    <span></span>
-	                    <span></span>
-	                    <span></span>
-	                </button>
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="../../assets/images/logopersey.png" alt="logo"><span class="logo-text"></span></a></div>    
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	                <div class="top-search-box buscador d-none d-lg-flex">
-		                <form class="search-form">
-				            <input id="search" type="text" autocomplete="off" placeholder="Buscar..." name="search" class="form-control search-input">
-				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				        </form>
+<body class="docs-page">
+
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="../../assets/images/logopersey.png" alt="logo"><span class="logo-text"></span></a>
+					</div>
+				</div><!--//docs-logo-wrapper-->
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+					<div class="top-search-box buscador d-none d-lg-flex">
+						<form class="search-form">
+							<input id="search" type="text" autocomplete="off" placeholder="Buscar..." name="search"
+								class="form-control search-input">
+							<button type="submit" class="btn search-btn" value="Search"><i
+									class="fas fa-search"></i></button>
+						</form>
 						<table class="doc">
-							<tbody class="datos hidden">            
+							<tbody class="datos hidden">
 							</tbody>
 						</table>
-	                </div>
-	
-					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a  target="_blank" href="https://www.facebook.com/stzEF"><i class="fa-brands fa-facebook"></i></a></li>
-			            <li class="list-inline-item"><a  target="_blank" href="http://www.sistematizar.co/"><i class="fa-solid fa-globe"></i></a></li>
-		                <li class="list-inline-item"><a  target="_blank" href="https://www.instagram.com/sistematizar_ef/"><i class="fa-brands fa-instagram"></i></a></li>
-		                <li class="list-inline-item"><a  target="_blank" href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i class="fa-brands fa-whatsapp"></i></a></li>
-		            </ul><!--//social-list-->		            
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
+					</div>
 
-    
-    <div class="docs-wrapper">
-	    <div id="docs-sidebar" class="docs-sidebar">
-		    <div class="top-search-box d-lg-none p-3">
-                <form class="search-form">
-		            <input type="text" placeholder="Buscar..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
-            </div>
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/stzEF"><i
+									class="fa-brands fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a target="_blank" href="http://www.sistematizar.co/"><i
+									class="fa-solid fa-globe"></i></a></li>
+						<li class="list-inline-item"><a target="_blank"
+								href="https://www.instagram.com/sistematizar_ef/"><i
+									class="fa-brands fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a target="_blank"
+								href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i
+									class="fa-brands fa-whatsapp"></i></a></li>
+					</ul><!--//social-list-->
+				</div><!--//docs-top-utilities-->
+			</div><!--//container-->
+		</div><!--//branding-->
+	</header><!--//header-->
+
+
+	<div class="docs-wrapper">
+
+
+		<div id="docs-sidebar" class="docs-sidebar">
+
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Buscar..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
 
 			<!--Aside bar elements-->
-		    <nav id="docs-nav" class="docs-nav navbar">
-			    <ul class="section-items list-unstyled nav flex-column pb-3">
-				    <li class="nav-item section-title">
+			<nav id="docs-nav" class="docs-nav navbar">
+
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+
+					<li class="nav-item section-title">
 						<a class="nav-link scrollto " href="#inicio">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-gauge"></i></i></span>
 							<span class="section-title-text">Primeros pasos</span>
 						</a>
 					</li>
-				    			    
-				    
+
+
 
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#factura-electronica">
@@ -93,53 +113,73 @@
 							<span class="section-title-text">Factura Electronica</span>
 						</a>
 					</li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#electronica-facturar">Facturar</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#electronica-listar">Listar</a></li>
 
+					<li class="nav-item"><a class="nav-link scrollto" href="#electronica-facturar">Facturar</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#electronica-listar">Listar</a></li>
 
-
-				    <li class="nav-item section-title mt-3">
+					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#reportes">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-file-lines"></i></span>
 							<span class="section-title-text">Reportes</span>
 						</a>
 					</li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-periodos">Ventas por periodo</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-impuestos">Ventas por impuesto</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-grupos">Ventas por grupo</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-ventas-vendedores">Ventas por vendedores</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-articulos">Ventas Articulos/Servicios</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-tiponotas">Ventas por tipos notas</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-clientes">Ventas por clientes</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-previo-vendedores">Previos por vendedores</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-previo-articulos">Previos por articulos </a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#reportes-exogena">Exogena</a></li>
 
-				    <li class="nav-item section-title mt-3">
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-periodos">Ventas por periodo</a>
+					</li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-impuestos">Ventas por impuesto</a>
+					</li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-grupos">Ventas por grupo</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-ventas-vendedores">Ventas por
+							vendedores</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-articulos">Ventas
+							Articulos/Servicios</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-tiponotas">Ventas por tipos
+							notas</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-clientes">Ventas por clientes</a>
+					</li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-previo-vendedores">Previos por
+							vendedores</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-previo-articulos">Previos por
+							articulos </a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-exogena">Exogena</a></li>
+
+					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#catalogos">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-folder-open"></i></span>
 							<span class="section-title-text">Catalogos</span>
 						</a>
 					</li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#catalogos-terceros">Terceros</a></li>					
 
-				    <li class="nav-item section-title mt-3">
+					<li class="nav-item"><a class="nav-link scrollto" href="#catalogos-terceros">Terceros</a></li>
+
+					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#previos">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-spinner"></i></span>
-							<span class="section-title-text">Previos</span>							
+							<span class="section-title-text">Previos</span>
 						</a>
 					</li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#previo-nuevo">Nuevo previo</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#previo-lista">Lista previo</a></li>
-						
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#previo-nuevo">Nuevo previo</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#previo-lista">Lista previo</a></li>
+
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#acusar-compras">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-square-check"></i></span>
-							<span class="section-title-text">Acusar Compras</span>							
+							<span class="section-title-text">Acusar Compras</span>
 						</a>
 					</li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#acusar-compras">Listar</a></li> 
-					
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#acusar-compras">Listar</a></li>
+
 					<!--
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#acusar-ventas">
@@ -152,184 +192,487 @@
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#doc-soporte">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-clipboard"></i></span>
-							<span class="section-title-text">Documento Soporte</span>							
+							<span class="section-title-text">Documento Soporte</span>
 						</a>
-						</li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#soporte-facturar">Facturar</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#soporte-listar">Listar</a></li>  
-			    </ul>
+					</li>
 
-		    </nav><!--//docs-nav-->
-	    </div><!--//docs-sidebar-->
-	    <div class="docs-content">
-		    <div class="container">
+					<li class="nav-item"><a class="nav-link scrollto" href="#soporte-facturar">Facturar</a></li>
 
-			    <article class="docs-article" id="inicio">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Primeros pasos<a href="#inicio">#</a></h1>
-					    <section class="docs-intro">							
-						    <p>En el menú lateral izquierdo va a encontrar todas las opciones que usted va a poder realizar en el modulo de Facturacion POS en el aplicativo de Persey.</p>
-							
+					<li class="nav-item"><a class="nav-link scrollto" href="#soporte-listar">Listar</a></li>
+
+				</ul>
+
+			</nav><!--//docs-nav-->
+
+		</div><!--//docs-sidebar-->
+
+
+		<div class="docs-content">
+
+			<div class="container">
+
+				<article class="docs-article" id="inicio">
+
+					<header class="docs-header">
+
+						<h1 class="docs-heading"><a href="#inicio">Primeros pasos</a></h1>
+						<section class="docs-intro">
+							<p>En el menú lateral izquierdo se encontrará con todas las opciones que se podrán realizar
+								en el modulo de Facturacion POS en el aplicativo de Persey.</p>
 						</section><!--//docs-intro-->
-						
-						<h5>Guia visual :</h5>
+
+						<h2>Guia visual :</h2>
 						<div class="col-12 col-md-12 mb-3">
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/primeros-pasos.gif"/>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/primeros-pasos.gif" />
 						</div>
-						
-				    </header>
-				    
-						
-			    </article>
-			    
-			    <article class="docs-article" id="factura-electronica">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Factura Electronica<a href="#factura-POS">#</a></h1>
-					    <section class="docs-intro">
-						    <p> Aqui podras guiarte paso a paso como generar una factura electronica, tambien aprenderás a visualizarlas  </p>
+
+					</header>
+
+				</article>
+
+
+				<article class="docs-article" id="factura-electronica">
+
+					<header class="docs-header">
+						<h1 id="factura-electronica" class="docs-heading"><a href="#factura-electronica">Factura
+								Electronica</a></h1>
+						<section class="docs-intro">
+							<p> Aqui se podrá guiar paso a paso sobre como generar una factura Electronica, tambien
+								aprenderá a
+								visualizarlas, acusar compras, ventas y documentos de soporte.</p>
 						</section><!--//docs-intro-->
-				    </header>
+					</header>
 
 					<section class="docs-section" id="electronica-facturar">
-						<h2 class="section-heading">Facturar <a href="#electronica-facturar">#</a></h2>
-						<p>En esta sección podrá crear facturas diligenciando un formulario con los datos correspondientes</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/facturacionelectronica.png">
+						<h2 class="section-heading"><a href="#electronica-facturar">Facturar</a></h2>
+						<p>En esta sección se podrá crear facturas diligenciando un formulario con los datos
+							correspondientes teniendo en cuenta la siguiente información en la imagen.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/factura.png">
 						<br>
 						<br>
-						<h3 id="pos-paso1">paso 1 <a href="#electronica-paso1">#</a></h3>
-						<p>Debe llenar todos los campos correspondientes o si ya tiene una prefactura solo le da click donde dice prefactura y la selecciona automaticamente se le diligencia. Debe buscar y agregar los productos </p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/facturar-electronicacion.gif">
+						<h3 id="pos-paso1"><a href="#pos-paso1">Paso 1</a></h3>
+						<p>Para la creación de una factura Electronica es trascendental tener un cliente o proveedor
+							creado con
+							anterioridad.
+							Si no tiene un cliente o proveedor, por favor registre un nuevo <b>cliente o proveedor</b>
+							para dicha facturación;
+							en caso de que ya tenga un cliente registrado, <b>se ignora el Paso 1</b>.</p>
+						<p>Para registrar un nuevo cliente lo puede hacer desde la misma ventana como se muestra en la
+							siguiente imagen
+							o dirigirse hacia el modulo de <b>"Administracion</b> en la sección de <b><a
+									href="#catalogos">"Terceros"</a></b>.
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/header-fact-pos.png">
+						<p>Es importante que se diligencien los campos del formulario teniendo en cuenta, si es persona
+							natural
+							o persona juridica, posterior a eso clickee el botón <b>"Guardar"</b> en la parte inferior.
+						</p>
+
+						<h3>IMPORTANTE: Campos Requeridos</h3>
+						<p>Por favor, los campos que tengan un asterisco (*), se deben llenar
+							obligatoriamente.</p>
 						<br>
 						<br>
-						<h3>Retenciones</h3>
-						<P>Si su empresa tiene activado las retenciones le aparecerá un formulario al final donde las puede diligenciar </P>
+						<h3>IMPORTANTE: Campos a tener en cuenta en Formulario</h3>
+						<p><b>Razón Social y Nombre Comercial:</b> Tenga en cuenta que la razón social y el nombre
+							comercial
+							pueden ser diferentes dependiendo de la información de la empresa</p>
+						<p><b>Lista de Precios:</b> Tenga en cuenta que la lista de precios es dependiente de la
+							configuración
+							de precios que asigno a los articulos y sus listas.</p>
+
+						<h4>Diligenciar Formulario si es Persona Natural</h4>
+						<p>En caso de seleccionar <b>"Persona Natural"</b> se bloqueará el campo de <b>"Razón
+								Social".</b></p>
+						<p>A continuación, se mostrará la vista de como se bloquean los campos si selecciona <b>"Persona
+								Natural"</b>
+							y como diligenciar el formulario:</p>
+						<img class="rounded mx-auto d-block" src="images/persona-natural.png">
+						<img class="figure-img2 img-fluid shadow-lg rounded" src="images/crear-clienteFact.png">
+						<br>
+						<br>
+						<h4>Diligenciar Formulario si es Persona Juridica</h4>
+						<p>En caso de seleccionar <b>"Persona Juridica"</b> se bloquearán los campos de <b>"Primer
+								nombre de la persona",
+								"Segundo nombre de la persona", "Primer apellido de la persona" y "Segundo apellido de
+								la persona".</b></p>
+						<p>A continuación, se motrará la vista de como se bloquean los campos si selecciona <b>"Persona
+								Juridica"</b>
+							y como diligenciar el formulario:</p>
+						<img class="rounded mx-auto d-block" src="images/persona-juridica.png">
+						<img class="figure-img2 img-fluid shadow-lg rounded" src="images/crear-cliente-juridico2.png">
+						<p>Por ultimo, se ilustrará como crear un cliente:</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-cliente.gif">
+					</section><!--//section-->
+
+					<section class="docs-section" id="electronica-facturar">
+						<h3 id="pos-paso2"><a href="#pos-paso2">paso 2</a></h3>
+						<h4>Partes del formulario:</h4>
+						<h5>Encabezado: </h5>
+						<p>En esta sección debe diligenciar los campos correspondientes a la información del documento
+							, hay que tener en cuenta que si da click donde dice <b>"Seleccionar Prefactura"</b> y
+							la selecciona, automaticamente se le diligenciarán los campos del formulario con la
+							prefactura
+							y solo habria que darle a <b>"Guardar Factura"</b>.
+						</p>
+						<b>Nota: Es importante verificar los valores de las cantidades, descuentos y precios de los
+							prouctos para proceder a guardar</b>
+						<br>
+						<br>
+						<p>En caso de no tener prefactura, se deben llenar todos los campos correspondientes
+							teniendo
+							en cuenta los siguientes pasos:
+						</p>
+						<h5>Cuerpo del Formulario: </h5>
+						<ol>
+							<li>Se debe buscar un producto dando al botón de <b>"Buscar Producto"</b>.
+							</li>
+							<li>
+								Se debe añadir un producto, rellenar los
+								campos y posterior a eso oprimir el botón<b>"Agregar"</b> teniendo en cuenta que los
+								campos
+								se ajusten a lo requerido.
+							</li>
+							<li>
+								En la sección de produtos registrados, podrá visualizar los productos que se están
+								agregando
+								a la factura, editarlos o hasta eliminarlos, ademas en la parte inferior a esta sección
+								se
+								puede escribir las observaciones o novedades de la factura.
+							</li>
+							<li>
+								Se debe realizar este paso con cada producto que se desee agregar a la factura y
+								posteriormente
+								oprmir el botón <b>"Guardar Factura"</b>.
+							</li>
+						</ol>
+						<h4>Editar factura sin haberla guardado</h4>
+						<p>En ocasiones, puede que se necesite editar la factura sin si quiera haberla guardado, para lo
+							anterior
+							es necesario digirse hacia producto y, en la zona derecha del mismmo podrá editarlo o
+							eliminarlo según sea
+							el concepto. Cabe aclarar que si lo elimina, desaparecerá completamente de la factura, pero
+							si se elige la opción editar, el producto saldrá de la sección de Productos registrados y se
+							deberá
+							agregar nuevamente para que se regitre en la factura.
+						</p>
+						<b>NOTA: El anterior proceso funciona si se cargo una prefactura o si se está diligenciando una
+							factura manualmente.
+						</b>
+						<br>
+						<br>
+						<h4>Eliminación de modificaciones de articulos sin haberla guardado.</h4>
+						<h5>Eliminación de Articulos</h5>
+						<p>Para eliminar un producto se debe seleccionar la opción de eliminar que corresponde al
+							producto de interes</p>
+						<img class="figure-img img-fluid shadow-lg rounded"
+							src="images/eliminar-articulo-en-proceso.png">
+						<br>
+						<br>
+						<h5>Edición de Articulos</h5>
+						<ol>
+							<li>
+								<p>Se debe seleccionar la opción de editar articulo</p>
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-producto-1.png">
+							</li>
+							<li>
+								<p>Hay que tener en cuenta que el producto se direccioná hacia la sección <b> "detalle
+										de factura"</b>, por lo
+									tanto, cuando se edite el producto, se debe dar al botón <b>"Agregar"</b> nuevamente
+									y
+									cuando este completamente seguro de los cambios, se debe dar en <b>"Guardar
+										Factura".</b>
+								</p>
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-producto-2.png">
+							</li>
+						</ol>
+
+
+						<h5>Retenciones</h5>
+						<P>Si la empresa tiene activado las retenciones le aparecerá un formulario al final donde las
+							puede diligenciar teniendo en cuenta campos como: <b>"Porcentaje de ReteFuente", "Tarifa X
+								1000
+								para la ReteICa", sus respectivas bases y los totales.
+							</b>.</P>
 						<img class="figure-img img-fluid shadow-lg rounded" src="images/retenciones.png">
+						<h5>Ilustración de una Facturación Electronica</h5>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/pos-facturar.gif">
+						<br>
+						<br>
 					</section><!--//section-->
 
 					<section class="docs-section" id="electronica-listar">
-						<h2 class="section-heading">Listar <a href="#electronica-listar">#</a></h2>
-						<p>En esta sección podrá visualizar todas las facturas creadas y enviar la factura a la DIAN  </p>
+						<h2 class="section-heading"><a href="#electronica-listar">Listar</a></h2>
+						<p>En esta sección podrá visualizar todas las facturas creadas y enviar la factura a la DIAN.
+							Para ello contará con el campo <b>"Estado"</b> y así podrá ver si ya se envió o no.
+						</p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="images/listar-factura.gif">
 						<br>
 						<br>
-						
-				
-			   	 </article><!--//docs-article-->
-			    
-			    <article class="docs-article" id="reportes">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Reportes<a href="#reportes">#</a></h1>
-					    <section class="docs-intro">
-						    <p>En esta seccion podrá visualizar todos los reportes por diferentes categorías como por periodos, por impuestos, por grupos y mas.  </p>
+					</section>
+
+				</article><!--//docs-article-->
+
+
+				<article class="docs-article" id="reportes">
+
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#reportes">Reportes</a></h1>
+						<section class="docs-intro">
+							<p>En esta seccion podrá visualizar todos los reportes por diferentes categorías como por
+								periodos, por impuestos, por grupos y mas. </p>
+							<p>Es importante saber que para ver cualquier tipo de reporte es necesario dar click sobre
+								la opción <b>"Reportes"</b> como lo muestra la siguiente imagen.
+							</p>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes1.png" />
 						</section><!--//docs-intro-->
-				    </header>
+					</header>
 
 					<section class="docs-section" id="reportes-periodos">
-						<h2 class="section-heading">Ventas por periodo<a href="#reportes-periodos">#</a></h2>
-						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha desde-hasta y darle click en el boton que dice <b>VER</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-periodo.gif"/>
+						<h2 class="section-heading"><a href="#reportes-periodos">Ventas por periodo</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha
+							desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien puede descargarlo en
+							PDF
+							dandole click en el boton que dice <b>"PDF"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-periodo.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-impuestos">
-						<h2 class="section-heading">Ventas por impuesto<a href="#reportes-impuestos">#</a></h2>
-						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha desde-hasta y darle click en el boton que dice <b>VER</b>. Tambien puede decargarlo en PDF o Excel dando click en el boton PDF o Excel</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-impuestos.gif"/>
+						<h2 class="section-heading"><a href="#reportes-impuestos">Ventas por impuesto</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha
+							desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien puede decargarlo en PDF
+							o
+							Excel dando click en el boton "PDF" o "Excel"</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-impuestos.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-grupos">
-						<h2 class="section-heading">Ventas por grupo<a href="#reportes-grupos">#</a></h2>
-						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, el grupo, la fecha desde-hasta y darle click en el boton que dice <b>VER</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-grupo.gif"/>
+						<h2 class="section-heading"><a href="#reportes-grupos">Ventas por grupo</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario, escoger el talonario, el grupo, la
+							fecha desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien puede descargarlo
+							en PDF dandole click en el boton que dice <b>"PDF"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-grupo.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-ventas-vendedores">
-						<h2 class="section-heading">Ventas por vendedores<a href="#reportes-ventas-vendedores">#</a></h2>
-						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha desde-hasta y darle click en el boton que dice <b>VER</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-vendedores.gif"/>
+						<h2 class="section-heading"><a href="#reportes-ventas-vendedores">Ventas por vendedores</a>
+						</h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha
+							desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien puede descargarlo en
+							PDF
+							dandole click en el boton que dice <b>"PDF"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-vendedores.gif" />
 					</section><!--//section-->
-					
-				     <section class="docs-section" id="reportes-articulos">
-						<h2 class="section-heading">Ventas por articulos o servicios <a href="#reportes-articulos">#</a></h2>
-						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton que dice <b>VER</b>. Puede filtrar los reportes  dependiendo si quiere por articulos, cliente y fecha. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-ventas-articulos.gif"/>
+
+					<section class="docs-section" id="reportes-articulos">
+						<h2 class="section-heading"><a href="#reportes-articulos">Ventas por articulos o servicios</a>
+						</h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha
+							desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton que
+							dice <b>"VER"</b>. Puede filtrar los reportes dependiendo si quiere por articulos, cliente y
+							fecha. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>"PDF"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded"
+							src="images/reportes-ventas-articulos.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-tiponotas">
-						<h2 class="section-heading">Ventas por tipo notas <a href="#reportes-tiponotas">#</a></h2>
-						<p>Para ver este reporte debe diligenciar el formulario , escoger tipo de nota , la fecha desde-hasta y luego darle click en el boton que dice <b>VER</b>. Tambien puede descargar el reporte en PDF dando click en el boton <b>PDF</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-tiponotas.gif"/>
+						<h2 class="section-heading"><a href="#reportes-tiponotas">Ventas por tipo notas</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger tipo de nota , la fecha
+							desde-hasta y luego darle click en el boton que dice <b>"VER"</b>. Tambien puede descargar
+							el
+							reporte en PDF dando click en el boton <b>"PDF"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-tiponotas.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-clientes">
-						<h2 class="section-heading">Ventas por clientes <a href="#reportes-clientes">#</a></h2>
-						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, clientes, la fecha desde-hasta y darle click en el boton que dice <b>VER</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-clientes.gif"/>
+						<h2 class="section-heading"><a href="#reportes-clientes">Ventas por clientes</a></h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, clientes, la
+							fecha desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien puede descargarlo
+							en PDF dandole click en el boton que dice <b>"PDF"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-clientes.gif" />
 					</section>
 
 					<section class="docs-section" id="reportes-previo-vendedores">
-						<h2 class="section-heading">Previos por vendedores <a href="#reportes-previo-vendedores">#</a></h2>
-						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, el vendedor, la fecha desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton que dice <b>VER</b>.  Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/previos-vendedores.gif"/>
+						<h2 class="section-heading"><a href="#reportes-previo-vendedores">Previos por vendedores</a>
+						</h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, el vendedor, la
+							fecha desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton
+							que dice <b>"VER"</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice
+							<b>"PDF"</b>
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/previos-vendedores.gif" />
 					</section>
 
 					<section class="docs-section" id="reportes-previo-articulos">
-						<h2 class="section-heading">Previos por articulos <a href="#reportes-previo-articulos">#</a></h2>
-						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, el articulo, la fecha desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton que dice <b>VER</b>.  Tambien puede descargarlo en PDF dandole click en el boton que dice <b>PDF</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/previo-articulos.gif"/>
+						<h2 class="section-heading"><a href="#reportes-previo-articulos">Previos por articulos</a>
+						</h2>
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, el articulo, la
+							fecha desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton
+							que dice <b>"VER"</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice
+							<b>"PDF"</b>
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/previo-articulos.gif" />
 					</section>
 
 					<section class="docs-section" id="reportes-exogena">
-						<h2 class="section-heading">Exogena <a href="#reportes-exogena">#</a></h2>
-						<p>Para ver el reporte de información  exogena de venta solo  debe seleccionar el año y darle click en el boton que dice <b>VER</b>, Tambien puede descargarlo en formato Excel dandole click en el boton Excel</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-exogena.gif"/>
+						<h2 class="section-heading"><a href="#reportes-exogena">Exogena</a></h2>
+						<p>Para ver el reporte de información exogena de venta solo debe seleccionar el año y darle
+							click en el boton que dice <b>"VER"</b>, Tambien puede descargarlo en formato Excel dandole
+							click en el boton Excel</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-exogena.gif" />
 					</section>
-			    </article><!--//docs-article-->
-			    
-			    <article class="docs-article" id="catalogos">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Catalogos <a href="#catalogos">#</a></h1>
-					    <section class="docs-intro">
-						    <p>En esta seccion Usted podrá visualizar todos los terceros que tiene registrados, tambien podrá editarlos, eliminarlos y agregar nuevos</p>
+
+				</article><!--//docs-article-->
+
+				<article class="docs-article" id="catalogos">
+
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#catalogos">Catalogos</a></h1>
+						<section class="docs-intro">
+							<p>En esta seccion Usted podrá visualizar todos los terceros que tiene registrados, tambien
+								podrá editarlos, eliminarlos y agregar nuevos</p>
 						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="catalogos-terceros">
-						<h2 class="section-heading">Terceros <a href="#catalogos-terceros">#</a></h2>
-						<p>Le aparecerán todos los terceros que tenga en una lista, usted puede modificarlos dando click en el boton amarillo y crear uno nuevo dando click en el boton que dice <b>NUEVO</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/terceros.gif"/>
-					</section><!--//section-->	
+					</header>
+
+					<section class="docs-section" id="catalogos-terceros">
+						<h2 class="section-heading"><a href="#catalogos-terceros">Terceros</a></h2>
+						<p>Le aparecerán todos los terceros que tenga en una lista, usted puede modificarlos dando click
+							en el boton amarillo y crear uno nuevo dando click en el boton que dice <b>NUEVO</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/terceros.gif" />
+						<br>
+						<br>
+						<h3>IMPORTANTE: Campos Requeridos</h3>
+						<p>Por favor, los campos que tengan un asterisco (*), se deben llenar
+							obligatoriamente.</p>
+						<br>
+						<h3>IMPORTANTE: Campos a tener en cuenta en Formulario</h3>
+						<p><b>Razón Social y Nombre Comercial:</b> Tenga en cuenta que la razón social y el nombre
+							comercial
+							pueden ser diferentes dependiendo de la información de la empresa</p>
+						<p><b>Lista de Precios:</b> Tenga en cuenta que la lista de precios es dependiente de la
+							configuración
+							de precios que asigno a los articulos y sus listas.</p>
+
+						<h4>Diligenciar Formulario si es Persona Natural</h4>
+						<p>En caso de seleccionar <b>"Persona Natural"</b> se bloqueará el campo de <b>"Razón
+								Social".</b></p>
+						<p>A continuación, se mostrará la vista de como se bloquean los campos si selecciona <b>"Persona
+								Natural"</b>
+							y como diligenciar el formulario:</p>
+						<img class="rounded mx-auto d-block" src="images/persona-natural.png">
+						<img class="figure-img2 img-fluid shadow-lg rounded" src="images/crear-clienteFact.png">
+						<br>
+						<br>
+						<h4>Diligenciar Formulario si es Persona Juridica</h4>
+						<p>En caso de seleccionar <b>"Persona Juridica"</b> se bloquearán los campos de <b>"Primer
+								nombre de la persona",
+								"Segundo nombre de la persona", "Primer apellido de la persona" y "Segundo apellido de
+								la persona".</b></p>
+						<p>A continuación, se motrará la vista de como se bloquean los campos si selecciona <b>"Persona
+								Juridica"</b>
+							y como diligenciar el formulario:</p>
+						<img class="rounded mx-auto d-block" src="images/persona-juridica.png">
+						<img class="figure-img2 img-fluid shadow-lg rounded" src="images/crear-cliente-juridico2.png">
+						<p>Por ultimo, se ilustrará como crear un cliente:</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-cliente.gif">
+					</section><!--//section-->
+
 				</article>
+
 
 				<article class="docs-article" id="previos">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Previos<a href="#previos">#</a></h1>
-					    <section class="docs-intro">
-						    <p>En esta seccion usted podrá registrar una  prefactura y tambien podrá visualizar todas las prefacturas que ha registrado</p>
+
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#previos">Previos</a></h1>
+						<section class="docs-intro">
+							<p>En esta seccion usted podrá registrar una prefactura y tambien podrá visualizar todas las
+								prefacturas que ha registrado</p>
 						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="previo-nuevo">
-						<h2 class="section-heading">Nuevo Previo <a href="#previo-lista">#</a></h2>
-						<p>Para crear un nuevo previo debe escoger o crear el cliente(tercero). Buscar los productos que desea añadir a  su prefactura y darle guardar </p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/nuevo-previo.gif"/>
+					</header>
+
+					<section class="docs-section" id="previo-nuevo">
+						<h2 class="section-heading"><a href="#previo-lista">Nuevo Previo</a></h2>
+						<p>Para crear un nuevo previo debe escoger o crear el cliente(tercero). Buscar los productos que
+							desea añadir a su prefactura y darle guardar </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/nuevo-previo.gif" />
 					</section><!--//section-->
-					
+
 					<section class="docs-section" id="previo-lista">
-						<h2 class="section-heading">Listar previos<a href="#previo-lista">#</a></h2>
+						<h2 class="section-heading"><a href="#previo-lista">Listar previos</a></h2>
 						<p>Aqui le apareceran todos los previos o prefacturas que haya generado</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/lista-previos.png"/>												
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/lista-previos.png" />
 					</section><!--//section-->
-					
-					
+
 				</article>
 
+
 				<article class="docs-article" id="acusar-compras">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Acusar Compras<a href="#acusar-compras">#</a></h1>
-					    <section class="docs-intro">
-						    <p>En esta seccion usted podrá registrar un acuse de compras. Unicamente se pueden subir la factura en fromato zip y que sea credito</p>
-							<img class="figure-img img-fluid shadow-lg rounded" src="images/acusar-compras.gif"/>
+
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#acusar-compras">Acusar Compras</a></h1>
+						<section class="docs-intro">
+							<p>En esta seccion se podrá registrar un acuse de compras. Unicamente se pueden subir la
+								factura en formato <b>ZIP</b> y que sea credito.</p>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/acusar-compras.gif" />
+							<br>
+							<br>
+							<h2>Aceptación Acuse de Compra</h2>
+							<p>Hay que tener en cuenta los acuses de compra se deben generar cuando se realiza una
+								compra
+								a credito. Cuando usted está haciendo un acuse de compra se pueden hacer las siguientes
+								acciones.
+							</p>
+							<ol>
+								<li>
+									<p>
+										Se Acusa una Compra.
+									</p>
+								</li>
+								<li>
+									<p>
+										Solo despues de acusar una compra se puede hacer un recibo de <b>"B/S"</b>
+										(Bienes y Servicios).
+									</p>
+								</li>
+								<li>
+									<p>
+										Posterior a eso puede hacer la <b>"Aceptación de Factura"</b>.
+									</p>
+								</li>
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/opciones-aceptacion-factura.png" />
+							</ol>
+							<h2>Reclamo de Factura</h2>
+							<p>Si por alguna razón se quiere hacer un <b>"Reclamo de Factura"</b> lo puede hacer de la
+								siguiente forma:</p>
+							<ol>
+								<li>
+									<p>
+										Oprima la opción <b>"Reclamo de Factura"</b>
+									</p>
+
+								</li>
+								<li>
+									<p>
+										Le aparecerá un formulario, el cual se autocompletará en gran parte, solo se
+										deberá
+										diligenciar la opción <b>"Concepto Reclamos"</b> donde deberá elegir el concepto de
+											reclamo
+											como puede ser: <b>"Documento con inconsistencias", "Mercancia no entregada
+												totalmente",
+												"Mercancia no entregada parcialmente" ó "Servicio no prestado". </b>,
+											tambien deberá
+											escoger la <b>"Fecha"</b> y su correspondiente
+											<b>"Talonario"</b> para posteriormente darle en <b>"Reclamo Factura</b> y
+											listo.
+									</p>
+									<img class="figure-img img-fluid shadow-lg rounded" src="images/acusar-fact.png" />
+								</li>
+							</ol>
+
+
 						</section><!--//docs-intro-->
-				    </header>												
-					</section><!--//section-->				
+					</header>
+
 				</article>
 				<!--
 				<article class="docs-article" id="acusar-ventas">
@@ -341,60 +684,172 @@
 				    </header>
 				</article>
 				-->
-				
+
 				<article class="docs-article" id="doc-soporte">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Documento Soporte<a href="#previos">#</a></h1>
-					    <section class="docs-intro">
-						    <p>En esta seccion usted podrá registrar un documento soporte. Es una factura para una empresa de una persona natural que no esta obligada a hacer su facturación electronica</p>
+
+					<header id="doc-soporte" class="docs-header">
+						<h1 class="docs-heading"><a href="#doc-soporte">Documento Soporte</a></h1>
+						<section class="docs-intro">
+							<p>En esta seccion usted podrá registrar un documento soporte. Es una factura para una
+								empresa de una persona natural que no esta obligada a hacer su facturación electronica
+							</p>
 						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="soporte-facturar">
-						<h2 class="section-heading">Facturar <a href="#soporte-facturar">#</a></h2>
-						<p>Debe llenar todos los campos correspondientes o si ya tiene una prefactura solo le da click donde dice prefactura y la selecciona automaticamente se le diligencia. Debe buscar y agregar los productos</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/nuevo-previo.gif"/>
+					</header>
+
+					<section class="docs-section" id="soporte-facturar">
+						<h2 class="section-heading"> <a href="#soporte-facturar">Facturar</a></h2>
+						<p>Debe llenar todos los campos correspondientes o si ya tiene una prefactura solo le da click
+							donde dice prefactura y la selecciona automaticamente se le diligencia. Debe buscar y
+							agregar los servicios</p>
+						<img class="figure-img img-fluid shadow-lg rounded"
+							src="images/facturar-doc-soporte-fact-electronica.gif" />
+						<p>Es importante que seleccione un servicio según sea la categoria para su posterior agregación
+						</p>
+						<p>Por ultimo, se le da al botón "Agregar" y posteriormente se le da "Guardar" en la parte
+							inferior</p>
+						<strong>Es importante no olvidar que se deben rellenar los campos del servicio
+							seleccionado</strong>
+						
+							<h4>Partes del formulario:</h4>
+							<h5>Encabezado: </h5>
+							<p>En esta sección debe diligenciar los campos correspondientes a la información del documento
+								, hay que tener en cuenta que si da click donde dice <b>"Seleccionar Prefactura"</b> y
+								la selecciona, automaticamente se le diligenciarán los campos del formulario con la
+								prefactura
+								y solo habria que darle a <b>"Guardar Factura"</b>.
+							</p>
+							<b>Nota: Es importante verificar los valores de las cantidades, descuentos y precios de los
+								prouctos para proceder a guardar</b>
+							<br>
+							<br>
+							<p>En caso de no tener prefactura, se deben llenar todos los campos correspondientes
+								teniendo
+								en cuenta los siguientes pasos:
+							</p>
+							<h5>Cuerpo del Formulario: </h5>
+							<ol>
+								<li>Se debe buscar un producto dando al botón de <b>"Buscar Producto"</b>.
+								</li>
+								<li>
+									Se debe añadir un producto, rellenar los
+									campos y posterior a eso oprimir el botón<b>"Agregar"</b> teniendo en cuenta que los
+									campos
+									se ajusten a lo requerido.
+								</li>
+								<li>
+									En la sección de produtos registrados, podrá visualizar los productos que se están
+									agregando
+									a la factura, editarlos o hasta eliminarlos, ademas en la parte inferior a esta sección
+									se
+									puede escribir las observaciones o novedades de la factura.
+								</li>
+								<li>
+									Se debe realizar este paso con cada producto que se desee agregar a la factura y
+									posteriormente
+									oprmir el botón <b>"Guardar Factura"</b>.
+								</li>
+							</ol>
+							<h4>Editar factura sin haberla guardado</h4>
+							<p>En ocasiones, puede que se necesite editar la factura sin si quiera haberla guardado, para lo
+								anterior
+								es necesario digirse hacia producto y, en la zona derecha del mismmo podrá editarlo o
+								eliminarlo según sea
+								el concepto. Cabe aclarar que si lo elimina, desaparecerá completamente de la factura, pero
+								si se elige la opción editar, el producto saldrá de la sección de Productos registrados y se
+								deberá
+								agregar nuevamente para que se regitre en la factura.
+							</p>
+							<b>NOTA: El anterior proceso funciona si se cargo una prefactura o si se está diligenciando una
+								factura manualmente.
+							</b>
+							<br>
+							<br>
+							<h4>Eliminación de modificaciones de articulos sin haberla guardado.</h4>
+							<h5>Eliminación de Articulos</h5>
+							<p>Para eliminar un producto se debe seleccionar la opción de eliminar que corresponde al
+								producto de interes</p>
+							<img class="figure-img img-fluid shadow-lg rounded"
+								src="images/eliminar-articulo-en-proceso.png">
+							<br>
+							<br>
+							<h5>Edición de Articulos</h5>
+							<ol>
+								<li>
+									<p>Se debe seleccionar la opción de editar articulo</p>
+									<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-producto-1.png">
+								</li>
+								<li>
+									<p>Hay que tener en cuenta que el producto se direccioná hacia la sección <b> "detalle
+											de factura"</b>, por lo
+										tanto, cuando se edite el producto, se debe dar al botón <b>"Agregar"</b> nuevamente
+										y
+										cuando este completamente seguro de los cambios, se debe dar en <b>"Guardar
+											Factura".</b>
+									</p>
+									<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-producto-2.png">
+								</li>
+							</ol>
 					</section><!--//section-->
-					
+
 					<section class="docs-section" id="soporte-listar">
 						<h2 class="section-heading">Listar <a href="#soporte-listar">#</a></h2>
-						<p>Aqui podrá visualizar todos los documentos soporte y tambien enviarlos a la Dian desde el boton azul <b>"ENVÍO DIAN"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/listardocumentos.gif"/>												
+						<p>Aqui podrá visualizar todos los documentos soporte y tambien enviarlos a la Dian desde el
+							boton azul <b>"ENVÍO DIAN"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/listardocumentos.gif" />
+						<p>Tambien podrá observar las opciones por cada documento de soporte, usted podrá imprimir,
+							contabilizar, visualizar o realizar una nota de ajuste</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/opciones-lista-soportes.png" />
+						<h5>Pasos para realizar Nota de Ajuste</h5>
+						<p>Debe dar click sobre la opción de nota de ajuste, dele "ok" y luego marque la opción "Anular
+							Documento Soporte"</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/nota-ajuste1.png" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/nota-ajuste2.png" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/nota-ajuste3.png" />
 					</section><!--//section-->
-					
-					
+
 				</article>
 
-			    <footer class="footer">
-				    <div class="container text-center py-5">
-				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-			            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-				        <ul class="social-list list-unstyled pt-4 mb-0">
-						    <li class="list-inline-item"><a  target="_blank" href="https://www.facebook.com/stzEF"><i class="fa-brands fa-facebook"></i></a></li>
-			            	<li class="list-inline-item"><a  target="_blank" href="http://www.sistematizar.co/"><i class="fa-solid fa-globe"></i></a></li>
-		                	<li class="list-inline-item"><a  target="_blank" href="https://www.instagram.com/sistematizar_ef/"><i class="fa-brands fa-instagram"></i></a></li>
-		                	<li class="list-inline-item"><a  target="_blank" href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i class="fa-brands fa-whatsapp"></i></a></li>
-				        </ul><!--//social-list-->
-				    </div>
-			    </footer>
-		    </div> 
-	    </div>
-    </div><!--//docs-wrapper-->
-   
-       
-    <!-- Javascript -->          
-    <script src="../../assets/plugins/popper.min.js"></script>
-    <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
-    
-    
-    <!-- Page Specific JS -->
-    <script src="../../assets/plugins/smoothscroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script src="../../assets/js/highlight-custom.js"></script> 
-    <script src="../../assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
-    <script src="../../assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
-    <script src="../../assets/js/docs.js"></script> 
+
+				<footer class="footer">
+					<div class="container text-center py-5">
+						<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+						<small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"
+								style="color: #fb866a;"></i> by <a class="theme-link"
+								href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for
+							developers</small>
+						<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/stzEF"><i
+										class="fa-brands fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" href="http://www.sistematizar.co/"><i
+										class="fa-solid fa-globe"></i></a></li>
+							<li class="list-inline-item"><a target="_blank"
+									href="https://www.instagram.com/sistematizar_ef/"><i
+										class="fa-brands fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a target="_blank"
+									href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i
+										class="fa-brands fa-whatsapp"></i></a></li>
+						</ul><!--//social-list-->
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div><!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="../../assets/plugins/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="../../assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="../../assets/js/highlight-custom.js"></script>
+	<script src="../../assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="../../assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="../../assets/js/docs.js"></script>
 	<script src="filter-electronica.js"></script>
 
 </body>
-</html> 
 
+</html>
