@@ -107,7 +107,6 @@
 					</li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#listar">Listar</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#nuevo">Nuevo</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#anular">Anular</a></li>
 					
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#cuentas">
@@ -127,7 +126,6 @@
 					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#asginacion">Asignación</a></li>
 					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#formas-de-pago">Formas de Pago</a></li>
 					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#periodos-contables">Periodos Contables</a></li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#tipo-de-movimientos">Tipo de Movimientos</a></li>
 
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#reportes">
@@ -146,7 +144,6 @@
 						</a>
 					</li>
 					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#contabilizar-facturas">Contabilizar Facturas</a></li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#contabilizar-nomina">Contabilizar Nomina</a></li>
 					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#actualizar-saldos">Actualizar Saldos</a></li>
 					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#generar-mov-cajas">Generar Mov. Cajas</a></li>
 
@@ -165,62 +162,93 @@
 								realizar en el aplicativo de Persey.</p>
 						</section><!--//docs-intro-->
 
-						<h5>Guia visual :</h5>
+						<h5>Guia visual:</h5>
 						<div class="col-12 col-md-12 mb-3">
-							<img class="figure-img img-fluid shadow-lg rounded" src="images/inicio.png" />
+							<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/Menu1.PNG" height="550px"/>
 						</div>
 					</header>
 				</article>
 
-				<article class="docs-article" id="nomina">
+				<article class="docs-article" id="documento">
 
 					<header class="docs-header">
-						<h1 class="docs-heading">Compras<a href="#nomina">#</a></h1>
+						<h1 class="docs-heading">Documentos<a href="#documento">#</a></h1>
 						<section class="docs-intro">
-							<p>Aquí podras guiarte paso a paso para hacer compras de productos</p>
+							<p>Aquí podras guiarte paso a paso para listar o crear un documento contable.</p>
 						</section><!--//docs-intro-->
 					</header>
 
-					<section class="docs-section" id="liquidacion-nomina">
-						<h2>Pasos para comprar productos</h2>
+					<section class="docs-section" id="listar-doc-contable">
+						<h2>Paso a paso para crear y listar documentos contables</h2>
 						<br>
 						<h3 id="inicial-paso1"> Paso 1 </h3>
-						<p> Dirijase en el menú a la opcion de <b>Compras</b>, luego la opcion <b>Comprar</b></p>
+						<p> Dirijase en el menú a la opcion de <b>DOCUMENTOS</b>, luego puede selecionar la opción <b>LISTAR</b> o <b>NUEVO</b>.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/OpcionesDoc.png">
+						<p>Si selecciono la opcion <b>LISTAR</b> le cargara una pantalla donde le saldran los documentos contables que ya haya guardado y en la parte superior derecha le saldra la opcion de agregar nuevos</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/crearDoc.gif">
 						<h3 id="inicial-paso2"> Paso 2 </h3>
-						<p>Pulse sobre el botón <b>"Nuevo"</b> en la parte superior derecha, Rellene los campos
-							correspondientes, teniendo en cuenta el ipoconsumo que debe ser menos al valor del producto.
-							Luego de eso proceda a darle <b>"Guardar"</b>. Para mas detalle vea el siguiente video</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/compra-productos.gif">
-						<p><b>Si usted lo requiere, puede crear un tercero rapidamente de la siguiente manera</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-tercero-gif.gif">
-						<br>
-						<p><b>Nota: No olvide que usted puede ver en PDF los productos comprados o ajustar su
-								información</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-producto.gif">
+						<p>Cuando haya pulsado <b>"Nuevo"</b> en cualquiera de los dos casos anteriores antes mencionados se le abrira una nueva venta con unos campos 
+							que debera rellenar. A continuación le diremos como debe diligencar el formato.
+							<ul>
+								<li>
+									Debera seleccionar el tipo de movimiento <b> -> </b> rectificar la fecha <b> -> </b> agregar una descripción <b> -> </b> seleccionar la cuenta <b> -> </b> seleccionar el tercero <b> -> </b> agregar
+									la referencia del documento <b> -> </b> agregar el valor respectivo en debito o en credito <b> -> </b> pulsar agregar.
+									<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/venta.gif">
+								</li>
+								<li>
+									Ahora agregara el impuesto correspondiente sobre el producto en dado caso de tenerlo y los unicos espacios que debe cambiar son la cuenta, la descripcion
+									y agregar el valor correspondiente de acuerdo al impuesto.
+									<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/iva.gif">
+								</li>
+								<li>
+									Ahora debe cambiar la descripcion, la cuenta teniendo el tipo de movimiento y tambien de acuerdo al tipo de movimiento debera poner el valor total 
+									agregado inicialmente mas el IVA en la casilla de debito o credido. Por ultimo, presionara en guardar si no tiene mas documentos contables para agregar
+									o en su defecto y si no quiere guardar lo que realizo debera presionar en cancelar.
+									<br>
+									<b>Tenga en cuenta que el debito y el credito deben tener el mismo valor y la diferencia debe de ser de 0.</b> 
+									<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/cuentaCobrar.gif">
+								</li>
+								<p><b>Listo, su documento contable a sido creado</b>
+								<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/docContableExito.PNG">
+								</p>
+							</ul>
+							<p><b>Para el ejemplo visual se realizo una venta (credito) la cual sera cobrada al tercero y este debera pagarla (debito)</b></p>
+						<h3 id="inicial-paso2"> Paso 3 </h3>
+						<p>Una vez realizado todo el paso 2, el documento contable quedara listado y para buscarlos se puede hacer de forma manual buscando de pagina en pagina o ingresando 
+							algun valor caracteristico de este en el recuadro de buscar. 
+							<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/docListado.gif">
+						</p>
+						<p>Tambien se cuenta con <b>filtros</b> para mostrar cierta cantidad de registros por pagina o establecer un periodo de tiempo de los cuales se quiera ver 
+							los registros.
+							<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/filtros.gif">
+						</p>
+							
 					</section><!--//section-->
 
-					<section class="docs-section" id="enviar">
-						<h2 class="section-heading">Enviar<a href="#enviar">#</a></h2>
-						<p>Para agregar un tercero a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe
+					<section class="docs-section" id="cuentas">
+						<h1 class="section-heading">Cuentas<a href="#cuentas">#</a></h1>
+						<p>El plan único de cuentas está compuesto por un catálogo de cuentas con la descripción y ordenamiento dinámico para la aplicación de las mismas, las cuales
+							deben observarse en el registro contable de todas las operaciones o transacciones económicas
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/cuentasContables.PNG" />
+						</p>
+						<p>Para agregar una cuenta contable a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe
 							diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos
 							que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle
 							click en el boton que dice <b>"GUARDAR"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-tercero-cajas.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/cuentasContables.gif" />
 						<br>
 						<br>
-						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar un tercero
-							como se
-							observa en el video
+						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar una cuenta contable como se observa en el video.
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-tercero.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/cuentasConEliMod.gif" />
 					</section><!--//section-->
 					
 				</article><!--//docs-article-->
 
-				<article class="docs-article" id="reportes">
+				<article class="docs-article" id="parametros">
 
 					<header class="docs-header">
-						<h1 class="docs-heading">Reportes<a href="#reportes">#</a></h1>
+						<h1 class="docs-heading">Parametros<a href="#parametros">#</a></h1>
 						<section class="docs-intro">
 							<p>Aquí podras guiarte paso a paso como generar reportes para el posterior análisis</p>
 						</section><!--//docs-intro-->
