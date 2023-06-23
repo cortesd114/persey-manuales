@@ -123,9 +123,9 @@
 						</a>
 					</li>
 					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#grupos-contables">Grupos Contables</a></li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#asginacion">Asignación</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#asignacion">Asignación</a></li>
 					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#formas-de-pago">Formas de Pago</a></li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#periodos-contables">Periodos Contables</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#periodo-contable">Periodos Contables</a></li>
 
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#reportes">
@@ -226,7 +226,7 @@
 					</section><!--//section-->
 
 					<section class="docs-section" id="cuentas">
-						<h1 class="section-heading">Cuentas<a href="#cuentas">#</a></h1>
+						<h1 class="docs-heading">Cuentas<a href="#cuentas">#</a></h1>
 						<p>El plan único de cuentas está compuesto por un catálogo de cuentas con la descripción y ordenamiento dinámico para la aplicación de las mismas, las cuales
 							deben observarse en el registro contable de todas las operaciones o transacciones económicas
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/cuentasContables.PNG" />
@@ -235,6 +235,8 @@
 							diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos
 							que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle
 							click en el boton que dice <b>"GUARDAR"</b></p>
+						<br>
+						<p>Nota: el nivel hace referencia a la cantidad de numeros que se asignan en el codigo y este se autocompletara una vez hayamos establecido el codigo</p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/cuentasContables.gif" />
 						<br>
 						<br>
@@ -250,75 +252,98 @@
 					<header class="docs-header">
 						<h1 class="docs-heading">Parametros<a href="#parametros">#</a></h1>
 						<section class="docs-intro">
-							<p>Aquí podras guiarte paso a paso como generar reportes para el posterior análisis</p>
+							<p>Aquí podras guiarte paso a paso como crear grupos contables, su asignacion, formas de pago y sobre los periodos contables.</p>
 						</section><!--//docs-intro-->
 					</header>
 
-					<section class="docs-section" id="reportes-nomina">
-						<h2>Pasos para revisar Reportes de Compras por Periodos</h2>
+					<section class="docs-section" id="grupos-contables">
+						<h2>Pasos para crear grupos contables</h2>
 						<br>
-						<p>Dirijase hacia la sección de <b>"Reportes"</b> y elija la opción de <b>"Compras por
-							Periodo"</b>.
-							elija las fechas sobre las cuales quiere usted ver el reporte y posterior a ello oprima en
-						<b>"Ver"</b>
+						<p>Dirijase hacia la sección de <b>Parametros</b> y elija la opción de <b>Grupos Contables</b>.
+							Alli vera en la parte superior izquierda un boton que dice <b>NUEVO</b> al cual debera darle click para ingresar y crear un nuevo
+							grupo contable.
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/ver-reportes-compras.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/gruposContables.gif" />
+						<p>Una vez realizado el paso anterior, se le abrira una nueva pestaña y debera rellenar todos los espacios obligatirios que son los 
+							que tienen un asterisco rojo.
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/crearGrupoContable.gif" />
+						</p>
+						<p>Para finalizar, al igual que en las otras secciones, esta tambien podra 1. Filtrar el numero de registros que quiere ver por pagina, 2. Buscar
+							ingresando un valor en caracteristico en la barra de buscar, 3. Editar, copiar o eliminar un registro y 4. Desplazarse entre paginas.
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/opcionesGrupoContable.PNG" />
+						</p>
 					</section><!--//section-->
 					
-					<section class="docs-section" id="reportes-comprobante-pago">
-						<h2>Pasos para revisar Reportes de Compras por Impuestos</h2>
+					<section class="docs-section" id="asignacion">
+						<h2>Pasos para asignar articulos de venta o compra</h2>
 						<br>
-						<p>Dirijase hacia la sección de <b>"Reportes"</b> y elija la opción de <b>"Compras por
-							Impuestos"</b>.
-							elija las fechas sobre las cuales quiere usted ver el reporte y posterior a ello oprima en
-						<b>"Ver"</b>
+						<p>Esta opcion le permite asignar a cada uno de los articulos el grupo contable para su contabilizacion automatica. 
+							<ol>
+								<li>Seleccione con click los articulos.</li>
+								<li>Luego seleccione el tipo de grupo contable para que aplique los cambios a los articulos seleccionados.</li>
+								<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/asignacion.gif" />
+							</ol>
+							<p>Este apartado cuenta con diversas opciones como lo son 1. Seleccionar todos los elementos o quitar su seleccion, 2. Filtros para 
+								facilitar la busqueda y 3. Un boton para limpiar todos los filtros.</p>
+								<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/asginacionFiltros.PNG" />
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/compras-por-impuestos.gif" />
+					</section><!--//section-->
+
+					<section class="docs-section" id="periodo-contable">
+						<h2>Pasos para crear un periodo contable</h2>
+						<br>
+						<p>Dirijase hacia la sección de <b>Parametros</b> y elija la opción de <b>Periodo Contable</b>.
+							Alli vera en la parte superior izquierda un boton que dice <b>NUEVO</b> al cual debera darle click para ingresar y crear un nuevo
+							periodo contable.
+							<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/periodoContable.gif" />
+						</p>
+						</p>
 					</section><!--//section-->
 
 				</article><!--//docs-article-->
 
-				<article class="docs-article" id="parametros">
+				<article class="docs-article" id="reportes">
 
 					<header class="docs-header">
-						<h1 class="docs-heading">Parametros<a href="#parametros">#</a></h1>
+						<h1 class="docs-heading">Reportes<a href="#reportes">#</a></h1>
 						<section class="docs-intro">
-							<p>Aquí podras guiarte paso a paso para hacer manipulación de los parametros de nomina electronica</p>
+							<p>Aquí podras guiarte paso a paso ver los reportes de ventas, compras o reportes contables.</p>
 						</section><!--//docs-intro-->
 					</header>
 
 					<section class="docs-section" id="configuraciones">
-						<h2>Pasos para comprar productos</h2>
+						<h2>Pasos para ver reportes de venta o compra</h2>
 						<br>
 						<h3 id="inicial-paso1"> Paso 1 </h3>
-						<p> Dirijase en el menú a la opcion de <b>Compras</b>, luego la opcion <b>Comprar</b></p>
+						<p> Dirijase en el menú a la opcion de <b>Reportes</b>, luego la opcion <b>Ventas</b> o <b>Compras</b></p>
 						<h3 id="inicial-paso2"> Paso 2 </h3>
-						<p>Pulse sobre el botón <b>"Nuevo"</b> en la parte superior derecha, Rellene los campos
-							correspondientes, teniendo en cuenta el ipoconsumo que debe ser menos al valor del producto.
-							Luego de eso proceda a darle <b>"Guardar"</b>. Para mas detalle vea el siguiente video</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/compra-productos.gif">
-						<p><b>Si usted lo requiere, puede crear un tercero rapidamente de la siguiente manera</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-tercero-gif.gif">
-						<br>
-						<p><b>Nota: No olvide que usted puede ver en PDF los productos comprados o ajustar su
-								información</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-producto.gif">
-					</section><!--//section-->
-
-					<section class="docs-section" id="enviar">
-						<h2 class="section-heading">Enviar<a href="#enviar">#</a></h2>
-						<p>Para agregar un tercero a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe
-							diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos
-							que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle
-							click en el boton que dice <b>"GUARDAR"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-tercero-cajas.gif" />
-						<br>
-						<br>
-						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar un tercero
-							como se
-							observa en el video
+						<p> La pagina le cargara una nueva pestaña donde le saldra una lista de los reportes; alli escogera la opción sobre la cual necesite el reporte. </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/reportesVenta.PNG">
+						<h3 id="inicial-paso3"> Paso 3 </h3>
+						<p> Una vez seleccionada una opción de la lista se le abrira una nueva pestaña donde se le mostrara de acuerdo al talonario en un rango de fechas
+							establecido. Recuerde que las <b>Notas Credito</b> se expresan en valores negativos y estaran resaltadas en rojo.
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-tercero.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/reporteVenta.gif">
+						<p>En el video se muestra como es el ejemplo para los reportes de ventas, pero para el caso del compras es el mismo proceso.</p>
+						<br>
+						<p><b>Nota: No olvide que usted puede ver en PDF o en un documento EXCEL los reportes</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/pdfExcel.gif">
+						<br>
+						<h2>Pasos para ver reportes contables</h2>
+						<br>
+						<h3 id="inicial-paso1"> Paso 1 </h3>
+						<p> Dirijase en el menú a la opcion de <b>Reportes</b>, luego la opcion <b>Contables</b></p>
+						<h3 id="inicial-paso2"> Paso 2 </h3>
+						<p> La pagina le cargara una nueva pestaña donde le saldran varias listas de los reportes; alli escogera la opción sobre la cual necesite el reporte.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/reportesAuxiliares.PNG">
+						<h3 id="inicial-paso3"> Paso 3 </h3>
+						<p> Una vez seleccionada una opción de la lista se le abrira una nueva pestaña donde se le mostraras unas casillas las cuales debera diligenciar y que con un rango
+							de cuentas y la seleccion de los periodos contables puede generar el balance de prueba general de la empresa.
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/reporteContable.gif">
+						<br>
+						<p><b>Nota: No olvide que usted puede ver en PDF o en un documento EXCEL los reportes</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/pdfExcelContable.gif">
 					</section><!--//section-->
 					
 				</article><!--//docs-article-->
@@ -327,11 +352,7 @@
 
 				<footer class="footer">
 					<div class="container text-center py-5">
-						<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-						<small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"
-								style="color: #fb866a;"></i> by <a class="theme-link"
-								href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for
-							developers</small>
+
 						<ul class="social-list list-unstyled pt-4 mb-0">
 							<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/stzEF"><i
 										class="fa-brands fa-facebook"></i></a></li>
