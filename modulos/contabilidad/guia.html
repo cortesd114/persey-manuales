@@ -58,6 +58,10 @@
 							<button type="submit" class="btn search-btn" value="Search"><i
 									class="fas fa-search"></i></button>
 						</form>
+						<table class="doc">
+							<tbody class="datos hidden">            
+							</tbody>
+						</table>
 					</div>
 
 					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
@@ -83,7 +87,7 @@
 		<div id="docs-sidebar" class="docs-sidebar">
 			<div class="top-search-box d-lg-none p-3">
 				<form class="search-form">
-					<input type="text" placeholder="Buscar..." name="search" class="form-control search-input">
+					<input id="search" type="text" autocomplete="off" placeholder="Buscar..." name="search" class="form-control search-input">
 					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
 				</form>
 			</div>
@@ -169,7 +173,7 @@
 					</header>
 				</article>
 
-				<article class="docs-article" id="documento">
+				<article class="docs-article" id="documentos">
 
 					<header class="docs-header">
 						<h1 class="docs-heading">Documentos<a href="#documento">#</a></h1>
@@ -178,7 +182,7 @@
 						</section><!--//docs-intro-->
 					</header>
 
-					<section class="docs-section" id="listar-doc-contable">
+					<section class="docs-section" id="listar">
 						<h2>Paso a paso para crear y listar documentos contables</h2>
 						<br>
 						<h3 id="inicial-paso1"> Paso 1 </h3>
@@ -201,7 +205,7 @@
 									<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/iva.gif">
 								</li>
 								<li>
-									Ahora debe cambiar la descripcion, la cuenta teniendo el tipo de movimiento y tambien de acuerdo al tipo de movimiento debera poner el valor total 
+									Ahora debe cambiar la descripcion de la cuenta teniendo encuenta el tipo de movimiento y tambien de acuerdo a este, debera poner el valor total 
 									agregado inicialmente mas el IVA en la casilla de debito o credido. Por ultimo, presionara en guardar si no tiene mas documentos contables para agregar
 									o en su defecto y si no quiere guardar lo que realizo debera presionar en cancelar.
 									<br>
@@ -218,7 +222,7 @@
 							algun valor caracteristico de este en el recuadro de buscar. 
 							<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/docListado.gif">
 						</p>
-						<p>Tambien se cuenta con <b>filtros</b> para mostrar cierta cantidad de registros por pagina o establecer un periodo de tiempo de los cuales se quiera ver 
+						<p>Tambien se cuenta con <b>filtros</b> para mostrar cierta cantidad de registros por pagina o establecer un periodo de tiempo del cual se quiera ver 
 							los registros.
 							<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/filtros.gif">
 						</p>
@@ -231,18 +235,20 @@
 							deben observarse en el registro contable de todas las operaciones o transacciones económicas
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/cuentasContables.PNG" />
 						</p>
+						<section class="docs-section" id="nueva">
 						<p>Para agregar una cuenta contable a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe
 							diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos
 							que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle
 							click en el boton que dice <b>"GUARDAR"</b></p>
 						<br>
-						<p>Nota: el nivel hace referencia a la cantidad de numeros que se asignan en el codigo y este se autocompletara una vez hayamos establecido el codigo</p>
+						<p><b>Nota:</b> el nivel hace referencia a la cantidad de numeros que se asignan en el codigo y este se autocompletara una haya establecido el codigo</p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/cuentasContables.gif" />
 						<br>
 						<br>
-						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar una cuenta contable como se observa en el video.
+						<p>Es de bien saber, que tambien tendrá la posibilidad de editar o eliminar una cuenta contable como se observa en el video.
 						</p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/cuentasConEliMod.gif" />
+						</section>
 					</section><!--//section-->
 					
 				</article><!--//docs-article-->
@@ -252,7 +258,7 @@
 					<header class="docs-header">
 						<h1 class="docs-heading">Parametros<a href="#parametros">#</a></h1>
 						<section class="docs-intro">
-							<p>Aquí podras guiarte paso a paso como crear grupos contables, su asignacion, formas de pago y sobre los periodos contables.</p>
+							<p>Aquí podras guiarte paso a paso de como crear grupos contables, su asignacion, formas de pago y sobre los periodos contables.</p>
 						</section><!--//docs-intro-->
 					</header>
 
@@ -268,7 +274,7 @@
 							que tienen un asterisco rojo.
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/crearGrupoContable.gif" />
 						</p>
-						<p>Para finalizar, al igual que en las otras secciones, esta tambien podra 1. Filtrar el numero de registros que quiere ver por pagina, 2. Buscar
+						<p>Para finalizar, al igual que en las otras secciones, en esta tambien podra 1. Filtrar el numero de registros que quiere ver por pagina, 2. Buscar
 							ingresando un valor en caracteristico en la barra de buscar, 3. Editar, copiar o eliminar un registro y 4. Desplazarse entre paginas.
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/opcionesGrupoContable.PNG" />
 						</p>
@@ -307,11 +313,11 @@
 					<header class="docs-header">
 						<h1 class="docs-heading">Reportes<a href="#reportes">#</a></h1>
 						<section class="docs-intro">
-							<p>Aquí podras guiarte paso a paso ver los reportes de ventas, compras o reportes contables.</p>
+							<p>Aquí podras guiarte paso a paso para ver los reportes de ventas, compras o reportes contables.</p>
 						</section><!--//docs-intro-->
 					</header>
 
-					<section class="docs-section" id="configuraciones">
+					<section class="docs-section" id="ventas">
 						<h2>Pasos para ver reportes de venta o compra</h2>
 						<br>
 						<h3 id="inicial-paso1"> Paso 1 </h3>
@@ -324,11 +330,14 @@
 							establecido. Recuerde que las <b>Notas Credito</b> se expresan en valores negativos y estaran resaltadas en rojo.
 						</p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/reporteVenta.gif">
-						<p>En el video se muestra como es el ejemplo para los reportes de ventas, pero para el caso del compras es el mismo proceso.</p>
+						<p>En el video se muestra un ejemplo para los reportes de ventas, pero para el caso de compras es el mismo proceso.</p>
 						<br>
 						<p><b>Nota: No olvide que usted puede ver en PDF o en un documento EXCEL los reportes</b></p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/pdfExcel.gif">
 						<br>
+					</section><!--//section-->
+						
+					<section class="docs-section" id="contables">
 						<h2>Pasos para ver reportes contables</h2>
 						<br>
 						<h3 id="inicial-paso1"> Paso 1 </h3>
@@ -337,16 +346,60 @@
 						<p> La pagina le cargara una nueva pestaña donde le saldran varias listas de los reportes; alli escogera la opción sobre la cual necesite el reporte.</p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/reportesAuxiliares.PNG">
 						<h3 id="inicial-paso3"> Paso 3 </h3>
-						<p> Una vez seleccionada una opción de la lista se le abrira una nueva pestaña donde se le mostraras unas casillas las cuales debera diligenciar y que con un rango
-							de cuentas y la seleccion de los periodos contables puede generar el balance de prueba general de la empresa.
+						<p> Una vez seleccionada una opción de la lista se le abrira una nueva pestaña donde se le mostraran unas casillas las cuales diligenciara seleccionando con un rango 
+							de cuentas y la seleccion de los periodos contables para que asi se pueda generar el reporte.
 						</p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/reporteContable.gif">
 						<br>
-						<p><b>Nota: No olvide que usted puede ver en PDF o en un documento EXCEL los reportes</b></p>
+						<p><b>Nota:</b> No olvide que usted puede ver en PDF o en un documento EXCEL los reportes.</p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/pdfExcelContable.gif">
 					</section><!--//section-->
 					
 				</article><!--//docs-article-->
+
+				<article class="docs-article" id="procesos">
+
+					<header class="docs-header">
+						<h1 class="docs-heading">Procesos<a href="#procesos">#</a></h1>
+						<section class="docs-intro">
+							<p>Aquí podras guiarte paso a paso para contabilizar facturas.</p>
+						</section> <!--//docs-intro-->
+					</header>
+
+					<section class="docs-section" id="contabilizar-facturas">
+						<h2>Pasos para contabilizar facturas</h2>
+						<br>
+						<p>Esta ventana le permite contabilizar de manera automática las facturas filtradas por un tipo de talonario y rango de fecha. En caso de que la factura ya 
+							este contabilizada en el documento de referencia podrá ver el código del documento contable que se ha generado, de lo contrario se le señalara el espacios
+							en rojo.
+							<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/contabilizarFacturas.gif">
+						</p>
+					</section>
+					<hr>
+					<section class="docs-section" id="actualizar-saldos">
+						<h2>Pasos para actualizar saldos</h2>
+						<br>
+						<h3>Paso 1</h3>
+						<p>En este apartado debera seleccionar la cuenta de la cual desea actualizar los saldos. A su vez cuenta con un filro para establecer el rango de periodos.</p>
+						<h3>Paso 2</h3>
+						<p>Una vez llenado estos espacios debera dar click en consultar periodos y en la parte derecha le cargaran los periodos</p>
+						<h3>Paso 3</h3>
+						<p>Para actualizarlos solo debe dar click en <b>actualizar saldos</b>.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/actualizarSaldos.gif">
+					</section>
+					<section class="docs-section" id="generar-mov-cajas">
+						<h2>Generar Movimientos de Cajas</h2>
+						<p>Este apartado es principalmete informativo. Aca podra encontrar informacion detallada sobre los documentos contables y su relación con los documentos
+							de cajas y facturas si son el caso. 
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/movCaja.PNG">
+						<p><b>Nota: </b>En dado caso de que no le se haya generado automaticamente el movimiento de caja podra hacerlo de forma manual seleccionando
+							el documento contable y dando click en crear movimiento de caja.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="imagenes/crearMovCaja.gif">
+					</section>
+
+
+				</article>
 
 				
 
@@ -384,7 +437,7 @@
 	<script src="../../assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
 	<script src="../../assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
 	<script src="../../assets/js/docs.js"></script>
-	<script src="filter-inventario.js"></script>
+	<script src="filter-contabilidad.js"></script> 
 
 </body>
 
