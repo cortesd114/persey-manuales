@@ -151,6 +151,14 @@
 					</li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#previo-nuevo">Nuevo previo</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#previo-lista">Lista previo</a></li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#balanza">
+							<span class="theme-icon-holder me-2"><i class="fa-brands fa-whmcs"></i></span>
+							<span class="section-title-text">Balanza</span>
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#configInicial">Configuracion Inicial</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#facturacionBalanza">Facturación con balanza</a></li>
 
 				</ul>
 
@@ -596,6 +604,8 @@
 				</article>
 
 
+				
+
 				<article class="docs-article" id="previos">
 
 					<header class="docs-header">
@@ -626,6 +636,99 @@
 						<img class="figure-img img-fluid shadow-lg rounded" src="images/modificar-previo.gif" />
 						<strong>No olvidar siempre dar al botón <b>"Guardar"</b> para la persistencia de los cambios
 							realizados</strong>
+					</section><!--//section-->
+
+				</article>
+
+				<article class="docs-article" id="balanza">
+
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="">Balanza</a></h1>
+						<section class="docs-intro">
+							<p>En esta sección podrá vincular la balanza a los procesos de facturación
+								POS, prefactura, Inventario inicial, entradas y salidas.
+							</p>
+						</section><!--//docs-intro-->
+					</header>
+
+					<section class="docs-section" id="configInicial">
+						<h2 class="section-heading"><a href="#configInicial">Configuración Inicial</a></h2>
+						<h3>PASO 1: Conectar la balanza</h3>
+						<p>Para iniciar el proceso se necesita tener la balanza conectada al equipo donde 
+							se realizará todo el proceso. Se puede verificar que el dispositivo esté correctamente 
+							conectado y siendo reconocido a través del administrador de dispositivos.</p>
+						
+						
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/adm-disps.gif" />
+						<br>
+						<br>
+						<h3>PASO2: Instalar plugin de Aurora</h3>
+						<p>Descargar el plugin de Aurora directamente desde la página ofical de <a target="_blank" href="https://sistematizar.co/productos/AuroraPlugin">Sistematizar</a></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/aurora-plugin-descargar.gif">
+						<br>
+						<p>Ejecutar el archivo <strong>AuroraPlugin.exe.</strong> La contraseña para poder ejecutar el instalador debe consultarse con el administrador</p>
+						<br>
+						<h3>IMPORTANTE: Error al instalar:</h3>
+						<p>Si aparece un error al instalar, es porque el plugin de Aurora ya se encontraba instalado y siendo ejecutado, en este caso debemos
+							cerrarlo desde iconos ocultos y continuar con la instalación.
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/error-instalacion.gif">
+						<br>
+						<h4>IMPORTANTE: Instalar también el archivo <strong>driverParaBalanzaRS232</strong></h4>
+						<br>
+						<h3>PASO 3: Verificar a Aurora como plugin de reconocimiento de dispositivos de impresión</h3>
+						<p>En el módulo de administración de Persey, en el menú de Catalogos-Parametros, verificamos que Aurora este siendo utilizado como plugin 
+							de reconocimiento de dispositivos en la pestaña <strong>Prefactura/PE.</strong> 
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/persey-plugin.png">
+						<h3>NOTA: Usar Google Chrome</h3>
+						<p>Es recomendable utilizar el navegador Google Chrome para asegurar que se reconozcan los dispositivos de impresión</p>
+						<br>
+						<h3>PASO 4: Configurar balanza</h3>
+						<p>En la parte inferior, en la sección <strong>Obtención de Peso por Balanza (Procedimiento por Equipo)</strong>, debemos configurar la 
+						lectura y reconocimiento de la balanza.</p>
+						<br>
+						<p>Se configura el puerto donde se está escuchando la balanza (se verifica en panel administrador de dispositivos), se establece una 
+							velocidad de transmisión serial (por defecto es 9600), y en Formateo de peso se configura en <strong>Remover caracteres no numéricos</strong>
+						 para poder usar la balanza en los procesos de facturación.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/config-balanza.gif">
+
+						<br>
+						<br>
+						<h3>PASO 5: Probar lectura de la balanza</h3>
+						<p>Dar click en probar para probar que los valores de la balanza se esten leyendo correctamente en Persey.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/probar-balanza.gif">
+					</section><!--//section-->
+
+					<section class="docs-section" id="facturacionBalanza">
+						<h2 class="section-heading"><a href="#facturacionBalanza">Facturación con balanza</a></h2>
+						<p>En esta sección se demostrarán las pruebas de facturación con la balanza</p>
+						<br>
+						<h3>IMPORTANTE: Granel activado</h3>
+						<p>Los articulos que se quieran facturar usando la balanza, deben tener la opción <strong>Granel</strong> activada 
+						(Módulo inventarios - Articulos Carga Agil)</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/granel.png" />
+						<br>
+						<br>
+						<h3>Inventario inicial:</h3>
+						<p>Seleccionamos el producto</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/inv-inicial-balanza.gif" />
+						<br>
+						<br>
+						<h3>Facturación POS:</h3>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/POS-balanza.gif">
+						<br>
+						<br>
+						<h3>Entradas:</h3>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/entradas-balanza.gif">
+						<br>
+						<br>
+						<h3>Salidas:</h3>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/salidas-balanza.gif">
+						<br>
+						<br>
+						<h3>Prefactura:</h3>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/prefactura-balanza.gif">
 					</section><!--//section-->
 
 				</article>
