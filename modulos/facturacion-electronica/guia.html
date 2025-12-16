@@ -126,31 +126,26 @@
 
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-periodos">Ventas por periodo</a>
 					</li>
-
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-impuestos">Ventas por impuesto</a>
 					</li>
-
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-grupos">Ventas por grupo</a></li>
-
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-ventas-vendedores">Ventas por
 							vendedores</a></li>
-
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-articulos">Ventas
 							Articulos/Servicios</a></li>
-
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-tiponotas">Ventas por tipos
 							notas</a></li>
-
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-clientes">Ventas por clientes</a>
 					</li>
-
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-previo-vendedores">Previos por
 							vendedores</a></li>
-
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-previo-articulos">Previos por
 							articulos </a></li>
-
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-exogena">Exogena</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#reporte-diario">Informe Diario</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#listas-precios">Lista De Precios</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#reporte-formas-pago">Formas De Pago</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#reporte-comision-ventas">Comision De Ventas</a></li>
 
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#catalogos">
@@ -159,6 +154,7 @@
 						</a>
 					</li>
 
+					<li class="nav-item"><a class="nav-link scrollto" href="#catalogos-formas-pago">Forma De Pago</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#catalogos-terceros">Terceros</a></li>
 
 					<li class="nav-item section-title mt-3">
@@ -402,16 +398,55 @@
 					</section><!--//section-->
 
 					<section class="docs-section" id="electronica-listar">
-						<h2 class="section-heading"><a href="#electronica-listar">Listar</a></h2>
+						<h2 class="section-heading"><a href="#electronica-listar">Listarz</a></h2>
 						<p>En esta sección podrá visualizar todas las facturas creadas y enviar la factura a la DIAN.
-							Para ello contará con el campo <b>"Estado"</b> y así podrá ver si ya se envió o no.
+							Para ello contaremos con 6 campos <b>"visualizar", "en la nube", "Nota Credito", "Nota Debito", 
+								"Duplicar", "Notificar"</b> que se encuentran en la parte derecha de cada factura. 						
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/listar-factura.gif">
+						<p>Te explicaremos cada una de ellas a detalle: </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/listar-factura.png">
 						<br>
 						<br>
 					</section>
 
+					<section class="docs-section" >
+						<h2 class="section-heading"><a >Visualizar Documento Electronico</a></h2>
+						<p>Aquí solo podremos visualizar factura a detalle, ademas hay dos botones, uno verde y uno rojo en el cual podremos. 
+							Esos botones es para registrar algún ingreso de dinero o egreso de dinero de forma rápido sin necesidad de ir hasta el módulo de caja y realizar un movimiento de caja  </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/visualizar.png" />
+					</section><!--//section-->
+
+					<section class="docs-section" >
+						<h2 class="section-heading"><a >Visualizar Documento En La Nube</a></h2>
+						<p>En esta opcion odremos ver en una nueva ventana el documento de la factura, el cual podremos acusar o reclamar , según sea el caso.</p>
+						<p>Acusar es la confirmación electrónica de que el comprador recibió la factura electrónica de su proveedor. Es un evento inicial que valida la entrega del documento. </p>
+						<p> Si hay inconsistencias, errores o no se recibieron los bienes/servicios correctamente, el comprador debe realizar un reclamo</p>
+
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/acusar-reclamar.png" />
+					</section><!--//section-->
+
+					<section class="docs-section" >
+						<h2 class="section-heading"><a >Nota Credito</a></h2>
+						<p>Aqui podremos cancelar un a factura que fue a credito, seleccionamos el motivo y guardamos. Se anulará la factura. O congelamos la factura</p>
+
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/anular-factura.png" />
+					</section><!--//section-->
+
+					<section class="docs-section" >
+						<h2 class="section-heading"><a >Nota Debito</a></h2>
+						<p>Aqui podremos Aumentar el valor de una factura, seleccionamos el motivo y guardamos. Se anulará la factura. O congelamos la factura</p>
+
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/nota-debito.png" />
+					</section><!--//section-->
+
+	
 				</article><!--//docs-article-->
+
+
+
 
 
 				<article class="docs-article" id="reportes">
@@ -424,7 +459,7 @@
 							<p>Es importante saber que para ver cualquier tipo de reporte es necesario dar click sobre
 								la opción <b>"Reportes"</b> como lo muestra la siguiente imagen.
 							</p>
-							<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes1.png" />
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes.png" />
 						</section><!--//docs-intro-->
 					</header>
 
@@ -433,8 +468,8 @@
 						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha
 							desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien puede descargarlo en
 							PDF
-							dandole click en el boton que dice <b>"PDF"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-periodo.gif" />
+							dandole click en el boton que dice <b>"PDF"</b> o en excel.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte01.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-impuestos">
@@ -451,7 +486,7 @@
 						<p>Para ver este reporte debe diligenciar el formulario, escoger el talonario, el grupo, la
 							fecha desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien puede descargarlo
 							en PDF dandole click en el boton que dice <b>"PDF"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reportes-grupo.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-grupos.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-ventas-vendedores">
@@ -467,9 +502,8 @@
 					<section class="docs-section" id="reportes-articulos">
 						<h2 class="section-heading"><a href="#reportes-articulos">Ventas por articulos o servicios</a>
 						</h2>
-						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, la fecha
-							desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton que
-							dice <b>"VER"</b>. Puede filtrar los reportes dependiendo si quiere por articulos, cliente y
+						<p>Para ver este reporte debe diligenciar el formulario , escoger el talonario, el articulo a buscar, la fecha
+							desde-hasta y si quiere un reporte detallado o resumiodo luego darle click en el boton correspondiente. Puede filtrar los reportes dependiendo si quiere por articulos, cliente y
 							fecha. Tambien puede descargarlo en PDF dandole click en el boton que dice <b>"PDF"</b></p>
 						<img class="figure-img img-fluid shadow-lg rounded"
 							src="images/reportes-ventas-articulos.gif" />
@@ -516,11 +550,41 @@
 
 					<section class="docs-section" id="reportes-exogena">
 						<h2 class="section-heading"><a href="#reportes-exogena">Exogena</a></h2>
+						<p>Para ver el reporte diario, solo debe seleccionar el talonario, los rangos de fechas y el tipo. Hecho esto se generará el informe en pdf  </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-exogena.gif" />
+					</section>
+
+					<section class="docs-section" id="reporte-diario">
+						<h2 class="section-heading"><a href="#reporte-diario">informe Diario</a></h2>
 						<p>Para ver el reporte de información exogena de venta solo debe seleccionar el año y darle
 							click en el boton que dice <b>"VER"</b>, Tambien puede descargarlo en formato Excel dandole
 							click en el boton Excel</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-exogena.gif" />
-					</section>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-diario.png" />
+						</section>					
+
+					<section class="docs-section" id="listas-precios">
+						<h2 class="section-heading"><a href="#listas-precios">Lista De Precios</a></h2>
+						<p>Para ver el reporte de los precios tendremos que seleccionar el o los grupos que encesitemos, y su precio de venta.
+							 Podemos quitar columnas(por defecto son Grupo, Nombre Largo, Referencia y precio venta )</p>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/lista-precios.gif" />
+						</section>					
+					<section class="docs-section" id="reporte-formas-pago">
+						<h2 class="section-heading"><a href="#reporte-formas-pago">Formas de Pago</a></h2>
+						<p>Para ver el reporte de los precios tendremos que seleccionar el o los grupos que encesitemos, y su precio de venta.
+							 Podemos quitar columnas(por defecto son GRUPO, Nombre Largo, Referencia y precio venta )</p>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/lista-precios.gif" />
+						</section>					
+
+						<section class="docs-section" id="reporte-comision-ventas">
+						<h2 class="section-heading"><a href="#reporte-comision-ventas">Comision De Ventas</a></h2>
+						<p>Aca veremos un reporte detallo sobre las comisiones de ventas hechos por los empleados, escogemos el vendedor o vendedores, el rengo de fecha y el tipo de reporte:</p>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/comision-ventas.gif" />
+						</section>					
+
+
+		
+
+
 
 				</article><!--//docs-article-->
 
@@ -533,6 +597,16 @@
 								podrá editarlos, eliminarlos y agregar nuevos</p>
 						</section><!--//docs-intro-->
 					</header>
+
+						<section class="docs-section" id="catalogos-formas-pago">
+						<h2 class="section-heading"><a href="#catalogos-formas-pago">Formas De Pago</a></h2>
+						<p>En ese modulo podemos agregar aquellos metodos de pago que vincularemos en una factura, Damos clien en <b>"Nuevo"</b> y por favor llena los espacios solicitados.</p>
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/formas-de-pago.gif" />
+							<br>
+						<p>Tambien podemos editar o eliminar la forma de pago: </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-formas-de-pago.gif" />
+
+						</section>					
 
 					<section class="docs-section" id="catalogos-terceros">
 						<h2 class="section-heading"><a href="#catalogos-terceros">Terceros</a></h2>
