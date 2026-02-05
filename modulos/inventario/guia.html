@@ -100,6 +100,7 @@
 						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-salidas">Salidas</a></li>
 						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-articulos-carga-agil">Articulos Carga Agil</a></li>						
 						<li class="nav-item"><a class="nav-link scrollto" href="#inventario-articulos">Articulos/Servicios</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#ajuste-grupal">Ajuste grupal</a></li>
 				    <li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#reportes">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-file-lines"></i></span>
@@ -107,7 +108,13 @@
 						</a>
 					</li>
 						<li class="nav-item"><a class="nav-link scrollto" href="#libro-de-inventarios">Libro de inventarios</a></li>
-						<li class="nav-item"><a class="nav-link scrollto" href="#kardex-articulos">Kardex articulos</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#kardex-articulos">Kardex Articulos</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#lista-precios">lista De precios</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#informe-mermas">Informe De Mermas</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#generacion-stickers">Generacion de Stickers</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reporte-salidas">Reportes De Salidas</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#reporte-entradas">Reportes De Entradas</a></li>
+						
 				    <li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#catalogos">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-folder-open"></i></span>
@@ -305,24 +312,58 @@
 
 					<section class="docs-section" id="inventario-articulos-carga-agil">
 						<h2 class="section-heading">Articulos Carga Agil<a href="#inventario-articulos-carga-agil">#</a></h2>
-						
+						<p>
+							Aquí encontramos la Lista de los articulos registrados. Sin filtros
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/carga-agil.gif">
+						<br>
+						<br>
+						<h3>Nuevo Articulo</h3>
+						<p>
+							Tenemos la posibilidad de crear uno, damos en el boton verde <b>"Nuevo"</b>
+							<br>
+							<br>
+							Vamos a llenar los datos, pero hay que tener en cuenta una cosa antes del llenado de datos.
+							<br>
+						</p>
+						<div class="d-flex justify-content-center">
+  							<img class="figure-img img-fluid shadow-lg rounded " src="images/nuevo-carga-agil.png">	
+						</div>
+						<p>
+							<b>Tipos de artículos disponibles:</b>
+
+							<h3>1. Artículo</h3> 
+							Es el producto principal que puedes comprar. Funciona por sí solo y puede personalizarse agregando
+							servicios o ingredientes.
+
+							<h3>2. Servicios</h3>
+							Son opciones adicionales que puedes añadir al artículo para mejorar o modificar tu compra, como extras o atenciones
+							especiales.
+							<h3>3. Ingredientes</h3>
+							Son los componentes que forman el artículo. Puedes elegirlos o combinarlos según tus preferencias.
+						</p>
 					</section><!--//section-->
 
 					<section class="docs-section" id="inventario-articulos">
-						<h2 class="section-heading">Articulos <a href="#inventario-articulos">#</a></h2>
+						<h2 class="section-heading">Articulos  y / o  Servicios<a href="#inventario-articulos">#</a></h2>
 						<p>En esta sección podra registrar todos los articulos que maneje su empresa. </p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/inventario-articulo.gif">
-						<h3 id="salidas-paso1"> Paso 1 <a href="#salidas-paso1">#</a></h3>
-						<p>Para crear un nuevo articulo usted deberá darle click en el boton verde que dice <b>NUEVO</b> </p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/articulo-paso1.gif">
-						<br>
-						<br>
-						<h3 id="salidas-paso2"> Paso 2 <a href="#salidas-paso2">#</a></h3>
-						<p>Debe llenar el formulario definiendo el codigo de barras,tipo de articulo, codigo de referencia, un nombre corto, un nombre largo, el valor del iva que le va a asignar y el estado. Ya diligenciado el formulario le da click en guardar</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/articulo-paso2.gif">
-						<br>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/inventario-articulos.png">						
+						<p>En este menú tiene las mismas funciones de carga agil, solo que aparecen campos como id y gruo, del resto su
+							funcionalidad es la misma, retoceda y vaya a <b><a href="#inventario-articulos-carga-agil">carga agil</a></b>
+						</p>
+						
 						<br>			
 					</section><!--//section-->
+
+					<section class="docs-section" id="ajuste-grupal">
+						<h2 class="section-heading">Ajuste Grupal <a href="#ajuste-grupal">#</a></h2>
+						<p>En esta sección podremos ajustar los saldos de los artivulos que pertenecen a una sola bodega, actualizamos y 
+							guradamos. </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/ajuste-grupal.gif">						
+						
+						<br>			
+					</section><!--//section-->
+
 
 			    </article><!--//docs-article-->
 			    	
@@ -338,34 +379,83 @@
 				
 					<section class="docs-section" id="libro-de-inventarios">
 						<h2 class="section-heading">Libro de inventarios <a href="#libro-de-inventarios">#</a></h2>
-						<p>Este reporte detalla las cantidades por tipo, las cantidades iniciales, entradas, salidas, y el saldo de los articulos filtrados por grupos.
+						<p>Este reporte detalla las cantidades por tipo, las cantidades iniciales, entradas, salidas, 
+							y el saldo de los articulos filtrados por grupos de cada bodega .
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-libroinventario.gif"/>
-						<h3 id="salidas-paso2"> Paso 1 <a href="#salidas-paso2">#</a></h3>
-						<p>le aparecerá un pequeño formulario donde debe indicar la bodega, el grupo, la cantidad, la fecha desde-hasta. Luego debe darle click en el boton que dice ver </p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/libroinventario-paso1.gif">
-						<br>
-						<br>
-						<h3 id="salidas-paso2"> Paso 2 <a href="#salidas-paso2">#</a></h3>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/libro-de-inventarios.gif"/>
+						
 						<p>Si desea optener un reporte en documento PDF solo debe darle click en el boton que dice <b>"PDF"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/inventariopdf.gif">
 						<br>
 						<br>	
 					</section><!--//section-->
 					
 					<section class="docs-section" id="kardex-articulos">
-						<h2 class="section-heading">kardex de articulos <a href="#kardex-articulos">#</a></h2>
-						<p>En esta seccion puede visualizar el movimiento desde el inventario inicial con las entradas y salidas del producto, este Kardex lo puede previsualizar por dada uno de las bodegas donde estan los productos. </p>
+						<h2 class="section-heading">kardex de articulos <a href="#kardex-inventarios">#</a></h2>
+						<p>En esta seccion puede visualizar el movimiento desde el inventario inicial con las entradas y salidas del producto, 
+							este Kardex lo puede previsualizar por dada uno de las bodegas donde estan los productos. </p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="images/kardex-articulo.gif"/>					
-						<br>
-						<br>
-						<h3 id="salidas-paso2"> Paso 1 <a href="#kardex-articulo-paso1">#</a></h3>
-						<p>le aparecerá un pequeño formulario donde debe indicar la bodega, el articulo, el tipo, la fecha desde-hasta. Luego debe darle click en el boton que dice ver </p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/kardex-paso1.gif">
-						<br>
+
 					</section><!--//section-->
-				
 					
+					<section class="docs-section" id="lista-precios">
+						<h2 class="section-heading">Lista De Precios <a href="#lista-precios">#</a></h2>
+						<p>Aca podemos ver la lista de precios dividos en grupos, podemos seleccionar uno o más, ademas de ver los precios 
+							de venta 1, 2 o 3. Esto genererá un pdf con el reporte listo para imprimir o visualizalo.
+						</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/lista-precios.gif"/>					
+
+					</section><!--//section-->				
+
+					<section class="docs-section" id="informe-mermas">
+						<h2 class="section-heading">Informe de mermas <a href="#informe-mermas">#</a></h2>
+						<p>Aca podemos ver la lista de mermas, osea las pérdidas o reducciónes de valor, cantidad o calidad de 
+							mercancías en el inventario de una empresa, debido a diferencias entre el stock físico y el contable, 
+							roturas, caducidad, robos o ineficiencias en la producción y transporte.
+						</p>
+						<p>Descarguelo en pdf si así lo necesita</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/informe-merma.gif"/>					
+
+					</section><!--//section-->									
+					
+					<section class="docs-section" id="informe-mermas">
+						<h2 class="section-heading">Informe de mermas <a href="#informe-mermas">#</a></h2>
+						<p>Aca podemos ver la lista de mermas, osea las pérdidas o reducciónes de valor, cantidad o calidad de 
+							mercancías en el inventario de una empresa, debido a diferencias entre el stock físico y el contable, 
+							roturas, caducidad, robos o ineficiencias en la producción y transporte.
+						</p>
+						<p>Descarguelo en pdf si así lo necesita</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/informe-merma.gif"/>					
+
+					</section><!--//section-->	
+					
+					<section class="docs-section" id="generacion-stickers">
+						<h2 class="section-heading">Informe de mermas <a href="#generacion-stickers">#</a></h2>
+						<p>En está sección podrás generar un codigo de barras para tus productos, selecciona los productos que
+						   deseas generar y ajusta las opciones a tu gusto.
+						</p>
+						<p>Podemos bsucar por grupo o por articulos, seleccionando uno o varios. Sigue los pasos del video de apoyo y haz el tuyo </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/stickers.gif"/>					
+						<p>En esa ventana puede ver los pasos para imprimirlo correctamente.</p>
+
+					</section><!--//section-->						
+					
+					<section class="docs-section" id="reporte-salidas">
+						<h2 class="section-heading">Reportes De Salidas<a href="#reporte-salidas">#</a></h2>
+						<p>Podemos ver el reporte de salidas realizadas segun el rango de fecha que se necesite:
+						</p>
+
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-salidas.gif"/>					
+
+					</section><!--//section-->	
+					<section class="docs-section" id="reporte-entradas">
+						<h2 class="section-heading">Reportes De Salidas<a href="#reporte-entradas">#</a></h2>
+						<p>Podemos ver el reporte de entradas realizadas segun el rango de fecha que se necesite:
+						</p>
+
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/reporte-entradas.gif"/>					
+
+					</section><!--//section-->						
+
 			    </article><!--//docs-article-->
 			    
 
@@ -374,31 +464,44 @@
 					<header class="docs-header">
 					    <h1 class="docs-heading">Catalogos<a href="#catalogos">#</a></h1>
 					    <section class="docs-intro">
-						    <p>En esta seccion podra configurar o definir diferentes aspectos de su negocio tales como, un grupo para sus articulos, añadir bodegas para almacenar sus articulos, crear unidades de medida, y añadir terceros </p>
+						    <p>En esta seccion podra configurar o definir diferentes aspectos de su negocio tales como,
+								 un grupo para sus articulos, añadir bodegas para almacenar sus articulos, crear unidades de medida,
+								  y añadir terceros </p>
 						</section><!--//docs-intro-->
 				    </header>
 
 					<section class="docs-section" id="catalogos-grupos">
 						<h2 class="section-heading">Grupos<a href="#catalogos-grupos">#</a></h2>
-						<p>Para agregar un nuevo grupo de articulos debe darle en el boton que dice <b>"NUEVO"</b>. Debe diligenciar el nombre del grupo, el estado Y darle click en el boton que dice <b>"GUARDAR"</b> </p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/grupos.gif"/>
+						<p>Para agregar un nuevo grupo de articulos debe darle en el boton que dice <b>"NUEVO"</b>.
+							 Debe diligenciar el nombre del grupo, el estado Y darle click en el boton que dice <b>"GUARDAR"</b> </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/catalogo-grupos.gif"/>
 					</section><!--//section-->
 					
 				     <section class="docs-section" id="catalogos-bodegas">
 						<h2 class="section-heading">Bodegas <a href="#catalogos-bodegas">#</a></h2>
-						<p>Para agregar una nueva Bodega debe darle en el boton que dice <b>"NUEVO"</b>. Debe diligenciar el nombre de la bodega, el estado Y darle click en el boton que dice <b>"GUARDAR"</b> </p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/bodegas.gif"/>
+						<p>Para agregar una nueva Bodega debe darle en el boton que dice <b>"NUEVO"</b>. 
+							Debe diligenciar el nombre de la bodega, el estado Y darle click en el boton que dice <b>"GUARDAR"</b> </p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/bodega1.gif"/>
+
+						<p>Para cambiar de bodega, ponemos una en activa y la que se desea en cerrada</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/bodega2.gif"/>
+
 					</section><!--//section-->
 
 					<section class="docs-section" id="catalogos-unidadesmedida">
 						<h2 class="section-heading">Unidades de medida <a href="#catalogos-unidadesmedida">#</a></h2>
-						<p>Para agregar una nueva unidad de medida debe darle en el boton que dice <b>"NUEVO"</b>. Debe diligenciar el nombre de la unidad Y darle click en el boton que dice <b>"GUARDAR"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/unidad.gif"/>
+						<p>De esta forma podemos ingresar un articulo, ya se por unidades, litros, libras, etc. </p>
+						<p>Para agregar una nueva unidad de medida debe darle en el boton que dice <b>"NUEVO"</b>. 
+							Debe diligenciar el nombre de la unidad Y darle click en el boton que dice <b>"GUARDAR"</b></p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/unidad-medida.gif"/>
 					</section><!--//section-->
 
 					<section class="docs-section" id="catalogos-terceros">
 						<h2 class="section-heading">Terceros<a href="#catalogos-terceros">#</a></h2>
-						<p>Para agregar un tercero a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle click en el boton que dice <b>"GUARDAR"</b></p>
+						<p>Para agregar un tercero a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. 
+							Debe diligenciar el formulario con los campos correspondientes de izquierda a derecha, 
+							los campos que tienen un asterisco rojo son obligatorios.
+							 Cuando complete el formualario debe darle click en el boton que dice <b>"GUARDAR"</b></p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="images/terceros.gif"/>
 					</section><!--//section-->
 
@@ -409,15 +512,21 @@
 					<header class="docs-header">
 					    <h1 class="docs-heading">Procesos <a href="#procesos">#</a></h1>
 					    <section class="docs-intro">
-						    <p>En esta seccion encontramos dos apartados, Costeo y salidas de inventario aquí podremos hacer una actualización de los inventarios finales si se hicieron modificaciones </p>
+						    <p>En esta seccion encontramos dos apartados, Costeo y salidas de inventario aquí podremos hacer una 
+								actualización de los inventarios finales si se hicieron modificaciones </p>
 						</section><!--//docs-intro-->
 				    </header>
 				
 					<section class="docs-section" id="procesos-costeo">
 						<h2 class="section-heading">Costeo <a href="#procesos-costeo">#</a></h2>
-						<p>Este proceso, calcula el costo de cada uno de los articulos (Costeables) en el periodo de tiempo seleccionado. El metodo utilizado para el costeo es promedio. En caso de seleccionar Crear Nota Contable en el Persey se mostrara una ventana con el detallado de la nota contable para su configuracion y guardado. Si no seleccionó Crear Nota Contable, debe repetir el proceso de costeo.</p>
+						<p>Este proceso, calcula el costo de cada uno de los articulos (Costeables) en el periodo de tiempo seleccionado. 
+							El metodo utilizado para el costeo es promedio. En caso de seleccionar Crear Nota Contable en el Persey se mostrara
+							 una ventana con el detallado de la nota contable para su configuracion y guardado. Si no seleccionó Crear Nota
+							  Contable, debe repetir el proceso de costeo.</p>
 						<br>						
-						<p>Para realizar el proceso de costeo debe seleccionar el año el mes y la bodega luego darle en el boton ejecutar. Persey hará un analisis y realizará el el proceso. Le mostrará una ventana emergente con los datos del costeo actual    </p>
+						<p>Para realizar el proceso de costeo debe seleccionar el año el mes y la bodega luego darle en el boton ejecutar.
+							 Persey hará un analisis y realizará el el proceso. Le mostrará una ventana emergente con los datos del costeo 
+							 actual    </p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="images/costeo.gif"/>
 					</section><!--//section-->
 					
@@ -425,7 +534,9 @@
 						<h2 class="section-heading">Salidas de inventario<a href="#procesos-salidas-de-inventario">#</a></h2>
 						<p>Este proceso permite crear salidas de inventario a partir de las facturas ya guardadas.</p>
 						<br>
-						<p>Debe seleccionar el talonario y el rango de fechas , luego seleccione las facturas de las cuales se deben hacer las salidas y dar click en el boton buscar. Le aparecerán todas las facturas que usted tenga en el rango de fecha </p>
+						<p>Debe seleccionar el talonario y el rango de fechas , luego seleccione las facturas de las cuales se deben
+							 hacer las salidas y dar click en el boton buscar. Le aparecerán todas las facturas que usted tenga en el
+							  rango de fecha </p>
 						<img class="figure-img img-fluid shadow-lg rounded" src="images/facturas-inventario.gif"/>						
 						<br>
 						<br>
