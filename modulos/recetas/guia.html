@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Manual Persey</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="../../favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="../../assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="../../assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="../../css/ejemplo.css">
+	<link id="theme-style" rel="stylesheet" href="../../css/filter.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+
+</head>
+
+<body class="docs-page">
+
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="../../assets/images/logopersey.png" alt="logo"><span class="logo-text"></span></a>
+					</div>
+				</div><!--//docs-logo-wrapper-->
+
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+					<div class="top-search-box buscador d-none d-lg-flex">
+						<form class="search-form">
+							<input id="search" type="text" autocomplete="off" placeholder="Buscar..." name="search"
+								class="form-control search-input">
+							<button type="submit" class="btn search-btn" value="Search"><i
+									class="fas fa-search"></i></button>
+						</form>
+						<table class="doc">
+							<tbody class="datos hidden">
+							</tbody>
+						</table>
+					</div>
+
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/stzEF"><i
+									class="fa-brands fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a target="_blank" href="http://www.sistematizar.co/"><i
+									class="fa-solid fa-globe"></i></a></li>
+						<li class="list-inline-item"><a target="_blank"
+								href="https://www.instagram.com/sistematizar_ef/"><i
+									class="fa-brands fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a target="_blank"
+								href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i
+									class="fa-brands fa-whatsapp"></i></a></li>
+					</ul><!--//social-list-->
+				</div><!--//docs-top-utilities-->
+			</div><!--//container-->
+		</div><!--//branding-->
+	</header><!--//header-->
+
+
+	<div class="docs-wrapper">
+
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Buscar..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+
+			<!--Aside bar elements-->
+			<nav id="docs-nav" class="docs-nav navbar">
+
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title">
+						<a class="nav-link scrollto " href="#inicio">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-gauge"></i></i></span>
+							<span class="section-title-text">Primeros pasos</span>
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#creando-articulos">Creando los articulos para ensamblar</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#existencias">Creando existencias</a></li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#ensambles">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-box-archive"></i></span>
+							<span class="section-title-text">Ensambles</span>
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#ensambles">Ensamble</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#articulos">Articulos</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#costos">Costos</a></li>
+
+					
+
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#reportes">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-box-archive"></i></span>
+							<span class="section-title-text">Reportes</span>
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#informe-de-recetas">Informe de Recetas</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#costo-de-recetas">Costo de Recetas</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#meseros">Utilidad De Ventas</a></li>
+					
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#catalogos">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-box-archive"></i></span>
+							<span class="section-title-text">Catalogos</span>
+						</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#clientes">Clientes</a></li>
+
+
+				</ul>
+
+			</nav><!--//docs-nav-->
+		</div><!--//docs-sidebar-->
+
+		<div class="docs-content">
+
+			<div class="container">
+				<article class="docs-article" id="inicio">
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#inicio">Primeros pasos</a></h1>
+						<section class="docs-intro">
+							<p>Primero tenemos que tener esta configuracion activada, para eso vamos a administracion,  seguido de Catalogos
+								, en parametros 	y finalmente inventarios, debe estar desactivado costeo y existencia manual   .</p>
+						</section>
+						<h5>Guia visual :</h5>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/configuracion-inicial.gif" />
+						</div>
+						<section class="docs-intro">
+							<p>Primero tenemos que tener un articulo Creado, y hacerlo de la forma correcta,
+								para esto tenemos que ir a articulos y creamos uno.</p>
+						</section><!--//docs-intro-->
+
+						<h5>Guia visual :</h5>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/ir-articulos2.gif" />
+						</div>
+						<p>
+							<br>
+							Nos vamos a fijar en tipo de articulo
+							<br>
+						</p>
+						<div class="d-flex justify-content-center">
+  							<img class="figure-img img-fluid shadow-lg rounded " src="images/nuevo-carga-agil.png">	
+						</div>
+						<p>
+							<b>Tipos de artículos disponibles:</b>
+
+							<h3>1. Artículo</h3> 
+							Es el producto principal que puedes comprar. Funciona por sí solo y puede personalizarse agregando
+							servicios o ingredientes.
+
+							<h3>2. Servicios</h3>
+							Son opciones adicionales que puedes añadir al artículo para mejorar o modificar tu compra, como extras o atenciones
+							especiales.
+							<h3>3. Ingredientes</h3>
+							Son los componentes que forman el artículo. Puedes elegirlos o combinarlos según tus preferencias.
+						</p>
+
+					</header>
+				</article>
+				<article class="docs-header" id="creando-articulos">
+					<header class="docs-header">
+						<p>
+							 <h1 class=" docs-heading text-center">Creando un tipo Articulo</h1> <br><br>
+							Para este ejemplo vamos a crear un plato principal llamado <b>huevos rancheros</b>, será nuestro plato principal,
+							en el haremos todos los ensambles.  
+
+						</p>
+
+						<p>Hay dos campos automaticos que son mayormente principales, estos son: costo y existencia,
+							 ya lo explicaremos mas adelante </p>
+                            <div class="col-12 col-md-12 mb-3">
+                                <img class="figure-img img-fluid shadow-lg rounded" src="images/articulo-principal.gif" />
+                            </div>						
+							<h1 class=" docs-heading text-center">Creando un tipo Ingredientes</h1> <br><br>
+						<p>
+							Para efecto de este ejemplo se crearan tres ingredientes:  
+							<br> - Huevos
+							<br> - Tomate
+							<br> - Cebolla
+							<br> - Salchicha Ranchera
+							<br> Todos estos los crearemos con el mismo tipo de articulo <b>Ingrediente</b>, Y tener activa la opcion costear y 
+							calcular existencia, asignamos el valor de venta que sea el indicado :
+							<div class="row">
+							<div class="col-12 col-6 col-md-6 col-lg-6">
+                                <img class="figure-img img-fluid shadow-lg rounded" src="images/ingredientes.png" />
+                            </div>									
+							<div class="col-12 col-md-6 col-lg-6">
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/auto.png" />
+                            </div>	
+						</div> 	
+						</p>
+						
+					</header>
+				</article>
+
+				<article class="docs-article" id="existencias">
+
+					<header class="docs-header">
+						<h1 class=" docs-heading text-center">Creando existencias</h1> <br><br>
+						<p>Lo primero que haremos es crear un entrada en el inventario inicial</p>
+						<h5>Guia visual:</h5>
+						    <div class="col-12 col-md-12 mb-3">
+                                <img class="figure-img img-fluid shadow-lg rounded" src="images/crear-entrada.gif" />
+                            </div>	
+						<p>Lo que hicimos fue crear una nueva entrada en el modulo de inventario, seleccionamos el tipo de movimiento,
+							la bodega y agregamos los articulos que estamos comprando </p>
+							<div class="col-12 col-md-12 mb-3">
+                                <img class="figure-img img-fluid shadow-lg rounded" src="images/finalizar-entrada.png" />
+                            </div>	
+							<p>Hemos dado una entrada a todos nuestros ingredientes.</p>
+							<div class="col-12 col-md-12 mb-3">
+                                <img class="figure-img img-fluid shadow-lg rounded" src="images/fin-entrada.png" />
+                            </div>
+						<p>El paso siguiente sera hacer el costeo, continuamos en el modulo de inventario,
+							procesos y costeo : 
+						
+						</p>
+						<div class="col-12 col-md-12 mb-3">
+                                <img class="figure-img img-fluid shadow-lg rounded" src="images/costear.gif" />
+                        </div>
+						<p>Comprobamos con un ingrediente y la entrada ya fue registrada !</p>
+					</header>
+				</article>
+				
+				<article class="docs-article" id="ensambles">
+
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#ensambles">Ensambles</a></h1>
+						<section class="docs-intro">
+							<p> Una vez hallamos hecho los pasos anteriores, podremos crear nuestro ensamble dar clic en nuevo </p>
+
+                            <h5>Guia visual :</h5>
+                            <div class="col-12 col-md-12 mb-3">
+                                <img class="figure-img img-fluid shadow-lg rounded" src="images/ensamble1.gif" />
+                            </div>
+							<p>Seleccionamos nuestro articulo principal, en este caso "Huevos rancheros" que es el que va a contener 
+								nuestros ingredientes
+								
+							</p>
+							<div class="col-12 col-md-12 mb-3">
+                                <img class="figure-img img-fluid shadow-lg rounded" src="images/ensamble2.gif" />
+                            </div>
+							<p>Ahora agregamos nuestros ingredientes, seleccionando cuales son personalizables o no, esto con efecto de Cuando
+								se haga el pedido, se pueda omitir cierto alimento o no
+							</p>
+							<div class="col-12 col-md-12 mb-3">
+                                <img class="figure-img img-fluid shadow-lg rounded" src="images/ensamble3.gif" />
+                            </div>
+
+						</section><!--//docs-intro-->
+					</header>
+
+                
+				</article>
+
+				<article class="docs-article" id="articulos">
+
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#articulos">Articulo</a></h1>
+						<section class="docs-intro">
+							
+                            <section class="docs-intro" id="ruta-ristocloud">
+								<p> Tenemos una lista de todos los articulos creados, creamos uno nuevo y editamos </p>
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/articulos.gif">
+								<br>
+                            </section>
+                            
+						</section><!--//docs-intro-->
+					</header>
+
+				</article>
+
+				<article class="docs-article" id="costos">
+
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#costos">Costos</a></h1>
+						<section class="docs-intro">
+							
+                            <section class="docs-intro" id="costos">
+								<p> Este proceso permite calcular y visualizar el costo real de cada receta o ensamble, teniendo en cuenta sus ingredientes 
+									y servicios asociados. Adicionalmente, ofrece la opción de actualizar automáticamente estos costos en la Carta de Venta, 
+									asegurando que la información refleje valores correctos y actualizados.</p>
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/costos-recetas.gif">
+								<br>
+                            </section>
+                            
+						</section><!--//docs-intro-->
+					</header>
+
+				</article>
+
+				<article class="docs-article" id="reportes">
+
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#reportes">Reportes</a></h1>
+						<section class="docs-intro">
+							
+                            <section class="docs-intro" id="informe-de-recetas">
+								<h2 class="docs-heading">Informe de Recetas</h2>
+								<p> Este reporte permite ver como estan estructurados los articulos con sus respectivos ingredientes o insumos.
+
+								</p>
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/informe-recetas.gif">
+								<br>
+								<p>Podemos ver que compone y cuantos ingredientes se necesitan para nuestro plato "Huevos Rancheros"</p>
+                            </section>
+
+                            <section class="docs-intro" id="costo-de-recetas">
+								<h2 class="docs-heading">Costo de Recetas</h2>
+								<p> Este reporte permite ver costo por recetas.</p>
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/costos-recetas2.gif">
+								<br>
+								<p>Podemos ver los precios de cada uno de los  ingredientes de nuestro plato "Huevos Rancheros"
+
+								</p>
+                            </section>
+
+<article class="docs-article" id="catalogos">
+
+					<header class="docs-header">
+						<h1 class="docs-heading"><a href="#catalogos">Catalogos</a></h1>
+						<section class="docs-intro">
+							
+                            <section class="docs-intro" id="clientes">
+								<h2 class="docs-heading">Listado de terceros</h2>
+								<p> En esta lista veremos todos nuestros terceros creados, podemos añadir uno nuevo como lo hemos venido haciendo.
+
+								</p>
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/terceros.gif">
+								<br>
+							
+                            </section>						
+
+						</section><!--//docs-intro-->
+					</header>
+
+				</article>
+
+				<footer class="footer">
+					<div class="container text-center py-5">
+						<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/stzEF"><i
+										class="fa-brands fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" href="http://www.sistematizar.co/"><i
+										class="fa-solid fa-globe"></i></a></li>
+							<li class="list-inline-item"><a target="_blank"
+									href="https://www.instagram.com/sistematizar_ef/"><i
+										class="fa-brands fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a target="_blank"
+									href="https://api.whatsapp.com/send?phone=573143945809&text=%C2%A1Me%20gustar%C3%ADa%20conocer%20mas%20sobre%20Dione!"><i
+										class="fa-brands fa-whatsapp"></i></a></li>
+						</ul><!--//social-list-->
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div><!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="../../assets/plugins/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="../../assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="../../assets/js/highlight-custom.js"></script>
+	<script src="../../assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="../../assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="../../assets/js/docs.js"></script>
+	<script src="filter-POS.js"></script>
+
+</body>
+
+</html>
