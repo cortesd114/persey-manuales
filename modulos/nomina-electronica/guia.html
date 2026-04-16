@@ -98,11 +98,27 @@
 							<span class="section-title-text">Primeros pasos</span>
 						</a>
 					</li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#parametros">
+							<span class="theme-icon-holder me-2"><i class="fa-solid fa-folder-open"></i></span>
+							<span class="section-title-text">Parametros</span>
+						</a>
+					</li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#configuraciones">Configuraciones</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#empleados">Empleados</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#conceptos-nomina">Conceptos De Nomina</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#contratos">Contratos</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#talonario">Talonarios</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#cargos">Cargos</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#departamentos">Departamentos</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#periodos">Periodos Nómina</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#asignacion-conceptos">Asignación de Conceptos</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#incapacidades">Incapacidades</a></li>
 
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#nomina">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-box-archive"></i></span>
-							<span class="section-title-text">Nomina</span>
+							<span class="section-title-text">Nómina</span>
 						</a>
 					</li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#liquidacion-nomina">Liquidación Nómina</a></li>
@@ -115,21 +131,9 @@
 						</a>
 					</li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-nomina">Reportes por Nomina</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-periodo">Reportes por periodos</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-comprobante-pago">Reportes por Comprobante de Pago</a></li>
 					
-					<li class="nav-item section-title mt-3">
-						<a class="nav-link scrollto" href="#parametros">
-							<span class="theme-icon-holder me-2"><i class="fa-solid fa-folder-open"></i></span>
-							<span class="section-title-text">Parametros</span>
-						</a>
-					</li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#configuraciones">Configuraciones</a></li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#empleados">Empleados</a></li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#contratos">Contratos</a></li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#talonarios">Talonarios</a></li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#cargos">Cargos</a></li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#departamentos">Departamentos</a></li>
-					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#asignacion-conceptos">Asignación de Conceptos</a></li>
 
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#documentos">
@@ -137,6 +141,8 @@
 							<span class="section-title-text">Documentos</span>
 						</a>
 					</li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#primas">Primas</a></li>
+					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#incapacidades">Incapacidades</a></li>
 					<li class="nav-item mt-3 "><a class="nav-link scrollto" href="#vacaciones">Vacaciones</a></li>
 
 				</ul>
@@ -156,53 +162,403 @@
 
 						<h5>Guia visual :</h5>
 						<div class="col-12 col-md-12 mb-3">
-							<img class="figure-img img-fluid shadow-lg rounded" src="images/inicio.png" />
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/01-inicio.png" />
 						</div>
 					</header>
 				</article>
+				
+				
+				<article class="docs-article" id="parametros">
+					
+					<header class="docs-header">
+						<h1 class="docs-heading">Parametros<a href="#parametros">#</a></h1>
+						<section class="docs-intro">
+							<p>Aquí podras guiarte paso a paso para hacer manipulación de los parametros de nomina electronica</p>
+						</section><!--//docs-intro-->
+					</header>
+					
+					<section class="docs-section" id="configuraciones">
+						<h3>Configuración: Visualización en el Reporte de Nómina</h3>
+						
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/02-configuracion.gif" />
+						</div>
+						<p>
+						En esta sección se define si un concepto aparecerá o no en el reporte de nómina.
+						</p>
+
+						<p>
+						Si el concepto está en estado <strong>“Visible”</strong>, se mostrará en el reporte. 
+						Si está en <strong>“No visible”</strong>, no será incluido.
+						</p>
+
+						<p>
+						Se recomienda activar solo los conceptos necesarios para mantener un reporte claro y organizado.
+						</p>
+
+					</section><!--//section-->
+					
+					<section class="docs-section" id="empleados">
+						<h3>Registro de Empleados</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/04-empleados.gif" />
+						</div>
+						<p>
+						En esta sección se realiza el registro de los empleados que harán parte de la nómina. 
+						Es necesario diligenciar la información personal, laboral y bancaria para garantizar 
+						una correcta liquidación.
+						</p>
+
+						<p>
+						Entre los datos principales que se deben registrar se encuentran:
+						</p>
+
+						<ul>
+							<li>Información personal: tipo y número de identificación, nombres y apellidos.</li>
+							<li>Datos generales: género, estado civil, fecha de nacimiento y dirección.</li>
+							<li>Información de contacto: teléfono y correo electrónico.</li>
+							<li>Ubicación: departamento y municipio.</li>
+							<li>Información bancaria: tipo de cuenta, número de cuenta y banco.</li>
+							<li>Datos de seguridad social: porcentajes de salud y pensión.</li>
+						</ul>
+
+						<p>
+						Es importante que la información sea correcta y esté completa, ya que estos datos 
+						son utilizados por el sistema para calcular automáticamente la nómina.
+						</p>
+					</section>
+
+					<section class="docs-section" id="conceptos-nomina">
+						<h3>Conceptos de Nómina</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/05-conceptos-nomina.gif" />
+						</div>
+						<p>
+						En esta sección se gestionan los conceptos de nómina que intervienen en el cálculo de los pagos a los empleados.
+						</p>
+
+						<p>
+						Los conceptos corresponden a los valores que hacen parte de la liquidación, como salarios, auxilios, 
+						horas extras, recargos y deducciones.
+						</p>
+
+						<ul>
+							<li><strong>Código:</strong> Identificador único del concepto.</li>
+							<li><strong>Nombre del concepto:</strong> Descripción del concepto (ejemplo: Días trabajados, 
+								Auxilio de transporte).</li>
+							<li><strong>Nombre corto:</strong> Abreviatura utilizada en reportes.</li>
+							<li><strong>Estado:</strong> Indica si el concepto está activo o inactivo.</li>
+						</ul>
+
+						<p>
+						Solo los conceptos en estado <strong>activo</strong> serán tenidos en cuenta en la liquidación de nómina.
+						</p>
+
+						<p>
+						Una correcta configuración de los conceptos permite que el sistema calcule automáticamente los valores de devengados y deducciones.
+						</p>
+					</section>
+
+					<section class="docs-section" id="contratos">
+						<h3>Contratos</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/06-contratos.gif" />
+						</div>
+						<p>
+						En esta sección se registran los contratos de los empleados, los cuales contienen la información necesaria
+						 para la correcta liquidación de la nómina.
+						</p>
+
+						<p>
+						El registro del contrato se realiza en varias etapas:
+						</p>
+
+						<h4>1. Datos Básicos</h4>
+						<ul>
+							<li>Número y nombre del contrato.</li>
+							<li>Fechas de inicio y finalización.</li>
+							<li>Tipo de contrato y tipo de empleado.</li>
+							<li>Salario y tipo de pago.</li>
+							<li>Configuraciones como salario integral y auxilio de transporte.</li>
+						</ul>
+
+						<h4>2. Seguridad Social</h4>
+						<ul>
+							<li>Entidad Promotora de Salud (EPS).</li>
+							<li>Fondo de Pensiones (AFP).</li>
+							<li>Administradora de Riesgos Laborales (ARL).</li>
+							<li>Caja de Compensación Familiar (CCF).</li>
+							<li>Nivel de riesgo laboral.</li>
+						</ul>
+
+						<h4>3. Salario Adicional</h4>
+						<ul>
+							<li>Permite definir valores adicionales al salario base.</li>
+							<li>Se pueden registrar conceptos adicionales si aplica.</li>
+						</ul>
+						<h4>4. Comentarios</h4>
+						<ul>
+							<li><strong>Comentarios del contrato:</strong> Notas generales sobre el contrato.</li>
+							<li><strong>Comentarios fin de contrato:</strong> Observaciones al finalizar el contrato.</li>
+							<li><strong>Recomienda contratar nuevamente:</strong> Indica si el empleado es apto para futura contratación.</li>
+							<li><strong>Observaciones:</strong> Información adicional relevante.</li>
+						</ul>
+						<p>
+						Es fundamental que la información del contrato sea correcta, ya que el sistema utiliza estos datos para calcular
+						 automáticamente la nómina del empleado.
+						</p>
+					</section>
+
+					<section class="docs-section" id="talonario">
+						<h3>Talonarios de Nómina</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/07-talonarios.gif" />
+						</div>
+
+						<p>
+						En esta sección se configuran los talonarios que serán utilizados para la generación de los comprobantes de nómina.
+						</p>
+
+						<p>
+						El talonario permite definir la numeración y estructura de los documentos generados por el sistema.
+						</p>
+
+						<ul>
+							<li><strong>Nombre de la Nómina:</strong> Nombre identificador del talonario.</li>
+							<li><strong>Prefijo:</strong> Código que antecede al número del comprobante.</li>
+							<li><strong>Consecutivo inicial:</strong> Número desde el cual inicia la numeración.</li>
+							<li><strong>Consecutivo final:</strong> Número límite de la numeración.</li>
+							<li><strong>Largo del consecutivo:</strong> Cantidad de dígitos que tendrá el número del comprobante.</li>
+						</ul>
+
+						<p>
+						Esta configuración es necesaria para garantizar un control adecuado de los comprobantes generados en la nómina.
+						</p>
+					</section>
+
+					<section class="docs-section" id="cargos">
+						<h3>Cargos de Nómina</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/08-cargos.gif" />
+						</div>
+						<p>
+						En esta sección se gestionan los cargos o roles que pueden ser asignados a los empleados dentro de la empresa.
+						</p>
+
+						<p>
+						Los cargos permiten clasificar a los empleados según sus funciones, facilitando la organización y administración
+						 de la información en la nómina.
+						</p>
+
+						<ul>
+							<li><strong>Nombre del cargo:</strong> Nombre que identifica el puesto o función del empleado.</li>
+							<li><strong>Estado:</strong> Indica si el cargo se encuentra activo o inactivo.</li>
+						</ul>
+
+						<p>
+						Solo los cargos en estado <strong>activo</strong> estarán disponibles para ser asignados a los empleados.
+						</p>
+					</section>
+
+					<section class="docs-section" id="departamentos">
+						<h3>Departamentos de Nómina</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/09-departamentos.gif" />
+						</div>
+						<p>
+						En esta sección se gestionan los departamentos de la empresa que serán asociados a los empleados dentro del sistema
+						 de nómina.
+						</p>
+
+						<p>
+						Los departamentos permiten organizar a los empleados según el área a la que pertenecen, 
+						facilitando la administración y generación de reportes.
+						</p>
+
+						<ul>
+							<li><strong>Nombre del departamento:</strong> Nombre que identifica el área de la empresa 
+							(ejemplo: Ventas, Contabilidad, Recursos Humanos).</li>
+							<li><strong>Estado:</strong> Indica si el departamento se encuentra activo o inactivo.</li>
+						</ul>
+
+						<p>
+						Solo los departamentos en estado <strong>activo</strong> estarán disponibles para ser asignados a los empleados.
+						</p>
+					</section>
+
+					<section class="docs-section" id="periodos">
+						<h3>Períodos de Nómina</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/10-peiodos.gif" />
+						</div>
+						<p>
+						En esta sección se crean los períodos de nómina que serán utilizados para realizar las liquidaciones.
+						</p>
+
+						<p>
+						El sistema permite generar automáticamente los períodos al seleccionar el año correspondiente.
+						</p>
+
+						<ul>
+							<li><strong>Año del período de nómina:</strong> Permite seleccionar el año para el cual se crearán 
+								los períodos.</li>
+						</ul>
+
+						<p>
+						Una vez seleccionado el año, el sistema generará los períodos necesarios (mensuales o según configuración), 
+						los cuales estarán disponibles al momento de liquidar la nómina.
+						</p>
+
+						<p>
+						Es necesario contar con los períodos creados antes de realizar cualquier proceso de liquidación.
+						</p>
+					</section>
+
+					<section class="docs-section" id="asignacion-conceptos">
+						<h3>Asignación de Conceptos de Nómina</h3>
+
+						<p>
+						En esta sección se asignan los conceptos de nómina a cada empleado, los cuales serán utilizados en el cálculo 
+						de la liquidación.
+						</p>
+
+						<p>
+						El sistema permite agregar o quitar conceptos de forma sencilla mediante arrastrar y soltar entre las listas
+						 disponibles y asignadas.
+						</p>
+
+						<ul>
+							<li><strong>Tipo de nómina:</strong> Define el tipo de nómina a configurar.</li>
+							<li><strong>Duplicar conceptos de:</strong> Permite copiar la configuración de conceptos desde otro empleado.</li>
+						</ul>
+
+						<p>
+						Los conceptos se organizan en categorías como devengados, deducciones y otros, facilitando su gestión.
+						</p>
+
+						<ul>
+							<li><strong>Conceptos disponibles:</strong> Lista de conceptos que pueden ser asignados.</li>
+							<li><strong>Conceptos del empleado:</strong> Lista de conceptos actualmente asignados al empleado.</li>
+						</ul>
+
+						<p>
+						Para asignar un concepto, se debe arrastrar desde la lista de conceptos disponibles hacia la lista del empleado. 
+						Para eliminarlo, se realiza el proceso inverso.
+						</p>
+
+						<p>
+						Una correcta asignación de conceptos garantiza que el cálculo de la nómina sea preciso para cada empleado.
+						</p>
+
+					</section>
+
+					<section class="docs-section" id="incapacidades">
+						<h3>Configuración de Incapacidades</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/11-incapacidades.gif" />
+						</div>
+						<p>
+						En esta sección se configuran las reglas para el manejo de incapacidades dentro de la nómina.
+						</p>
+
+						<p>
+						Las incapacidades permiten definir cómo se calculará el pago al empleado en caso de ausencias por motivos de salud 
+						u otras condiciones.
+						</p>
+
+						<ul>
+							<li><strong>Nombre de la incapacidad:</strong> Identifica el tipo de incapacidad (ejemplo: laboral, profesional).</li>
+							<li><strong>Días:</strong> Permite establecer a partir de cuántos días aplica una condición específica.</li>
+							<li><strong>Rango salarial:</strong> Define condiciones según el salario del empleado.</li>
+							<li><strong>Porcentaje de pago:</strong> Indica el porcentaje del salario que recibirá el empleado durante 
+								la incapacidad.</li>
+						</ul>
+
+						<p>
+						Es posible crear diferentes reglas y reducciones según el tipo de incapacidad y las condiciones definidas.
+						</p>
+
+						<p>
+						Una correcta configuración garantiza que los valores de incapacidades se calculen adecuadamente dentro de la 
+						liquidación de nómina.
+						</p>
+					</section>
+				</article><!--//docs-article-->
 
 				<article class="docs-article" id="nomina">
 
 					<header class="docs-header">
-						<h1 class="docs-heading">Compras<a href="#nomina">#</a></h1>
+						<h1 class="docs-heading">Liquidación Nomina <a href="#nomina">#</a></h1>
 						<section class="docs-intro">
-							<p>Aquí podras guiarte paso a paso para hacer compras de productos</p>
+							<p>Permite generar y gestionar los procesos de liquidación por períodos, 
+							facilitando el cálculo detallado de cada empleado de acuerdo con sus condiciones contractuales.</p>
 						</section><!--//docs-intro-->
 					</header>
 
 					<section class="docs-section" id="liquidacion-nomina">
-						<h2>Pasos para comprar productos</h2>
-						<br>
-						<h3 id="inicial-paso1"> Paso 1 </h3>
-						<p> Dirijase en el menú a la opcion de <b>Compras</b>, luego la opcion <b>Comprar</b></p>
-						<h3 id="inicial-paso2"> Paso 2 </h3>
-						<p>Pulse sobre el botón <b>"Nuevo"</b> en la parte superior derecha, Rellene los campos
-							correspondientes, teniendo en cuenta el ipoconsumo que debe ser menos al valor del producto.
-							Luego de eso proceda a darle <b>"Guardar"</b>. Para mas detalle vea el siguiente video</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/compra-productos.gif">
-						<p><b>Si usted lo requiere, puede crear un tercero rapidamente de la siguiente manera</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-tercero-gif.gif">
-						<br>
-						<p><b>Nota: No olvide que usted puede ver en PDF los productos comprados o ajustar su
-								información</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-producto.gif">
+						<h3>Liquidación de Nómina</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/12-liquidacion-nomina.gif">
+						</div>
+						<p>
+						Para generar una liquidación de nómina, el usuario debe seguir los siguientes pasos:
+					</p>
+					
+					<ol>
+						<li>Seleccionar el período correspondiente.</li>
+						<li>Ingresar un nombre para la nómina.</li>
+						<li>Definir las fechas de inicio, fin y pago.</li>
+						<li>Configurar la forma de pago.</li>
+						<li>Seleccionar los empleados que harán parte de la liquidación.</li>
+						<li>Verificar los valores calculados automáticamente.</li>
+						<li>Guardar la información para procesar la nómina.</li>
+					</ol>
+					
+						
+						<p>
+						El sistema calculará automáticamente los valores de <strong>devengados</strong>, 
+						<strong>deducciones</strong> y <strong>total a pagar</strong> según la configuración de cada empleado.
+						</p>
 					</section><!--//section-->
 
+					
+
+
 					<section class="docs-section" id="enviar">
-						<h2 class="section-heading">Enviar<a href="#enviar">#</a></h2>
-						<p>Para agregar un tercero a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe
-							diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos
-							que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle
-							click en el boton que dice <b>"GUARDAR"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-tercero-cajas.gif" />
-						<br>
-						<br>
-						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar un tercero
-							como se
-							observa en el video
+						<h3>Envío de Nómina Electrónica a la DIAN</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/13-enviar.png" />
+						</div>
+						<p>
+						En esta sección se realiza el envío de las nóminas previamente liquidadas a la DIAN para su validación.
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-tercero.gif" />
-					</section><!--//section-->
+
+						<p>
+						El sistema muestra un listado de las nóminas generadas, junto con su información principal:
+						</p>
+
+						<ul>
+							<li><strong>Código:</strong> Identificador de la nómina.</li>
+							<li><strong>Periodo:</strong> Periodo correspondiente a la nómina.</li>
+							<li><strong>Fechas:</strong> Rango de fechas de la liquidación.</li>
+							<li><strong>Valor a pagar:</strong> Total calculado de la nómina.</li>
+							<li><strong>Estado de liquidación:</strong> Indica el estado actual del proceso.</li>
+							<li><strong>Nóminas:</strong> Cantidad de registros incluidos.</li>
+							<li><strong>Aprobadas / Rechazadas:</strong> Resultado del envío a la DIAN.</li>
+						</ul>
+
+						<p>
+						Para realizar el envío, se debe seleccionar la opción correspondiente en la columna de acciones.
+						</p>
+
+						<p>
+						Una vez enviada, la DIAN validará la información y el sistema actualizará el estado indicando si fue aprobada o rechazada.
+						</p>
+
+						<p>
+						Es importante verificar que la nómina esté correctamente liquidada antes de realizar el envío.
+						</p>
+				</section><!--//section-->
 					
 				</article><!--//docs-article-->
 
@@ -211,80 +567,272 @@
 					<header class="docs-header">
 						<h1 class="docs-heading">Reportes<a href="#reportes">#</a></h1>
 						<section class="docs-intro">
-							<p>Aquí podras guiarte paso a paso como generar reportes para el posterior análisis</p>
+							<p>Aquí podras guiarte paso a paso como generar reportes</p>
 						</section><!--//docs-intro-->
 					</header>
 
 					<section class="docs-section" id="reportes-nomina">
-						<h2>Pasos para revisar Reportes de Compras por Periodos</h2>
-						<br>
-						<p>Dirijase hacia la sección de <b>"Reportes"</b> y elija la opción de <b>"Compras por
-							Periodo"</b>.
-							elija las fechas sobre las cuales quiere usted ver el reporte y posterior a ello oprima en
-						<b>"Ver"</b>
+						<h3>Reportes de Nómina</h3>
+
+						<p>
+						En esta sección se pueden consultar y generar los reportes de las nóminas liquidadas en el sistema.
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/ver-reportes-compras.gif" />
+
+						<p>
+						El reporte muestra la información consolidada de cada período de nómina, facilitando la revisión y
+						 control de los pagos realizados.
+						</p>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/14-reporte-nomina.png" />
+						</div>
+						<ul>
+							<li><strong>Periodo:</strong> Nombre del período de nómina.</li>
+							<li><strong>Fecha inicial y final:</strong> Rango de fechas correspondiente a la nómina.</li>
+							<li><strong>Días trabajados:</strong> Cantidad de días liquidados.</li>
+							<li><strong>Tipo de nómina:</strong> Clasificación de la nómina.</li>
+							<li><strong>Valor a pagar:</strong> Total generado en la liquidación.</li>
+							<li><strong>Estado de liquidación:</strong> Indica si la nómina está en prenómina, revisión o liquidada.</li>
+						</ul>
+
+						<p>
+						Desde la columna de acciones, el usuario puede visualizar o descargar el reporte correspondiente.
+						</p>
+
+						<p>
+						El sistema permite activar la opción de visualización de nombres de conceptos para obtener un mayor detalle en el reporte.
+						</p>
 					</section><!--//section-->
 					
-					<section class="docs-section" id="reportes-comprobante-pago">
-						<h2>Pasos para revisar Reportes de Compras por Impuestos</h2>
-						<br>
-						<p>Dirijase hacia la sección de <b>"Reportes"</b> y elija la opción de <b>"Compras por
-							Impuestos"</b>.
-							elija las fechas sobre las cuales quiere usted ver el reporte y posterior a ello oprima en
-						<b>"Ver"</b>
+
+					<section class="docs-section" id="reportes-periodo">
+						<h3>Reporte de Nómina por Período</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/15-reporte-periodos.gif" />
+						</div>
+						<p>
+						En esta sección se generan reportes consolidados de nómina por período, permitiendo visualizar la información
+						 de las nóminas liquidadas en un año específico.
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/compras-por-impuestos.gif" />
+
+						<p>
+						El usuario puede seleccionar los siguientes filtros:
+						</p>
+
+						<ul>
+							<li><strong>Año:</strong> Permite elegir el año del cual se desea generar el reporte.</li>
+							<li><strong>Mostrar por:</strong> Define el tipo de visualización del reporte (ejemplo: resumido).</li>
+						</ul>
+
+						<p>
+						El sistema generará un reporte que incluye información como:
+						</p>
+
+						<ul>
+							<li>Nómina por período.</li>
+							<li>Días trabajados.</li>
+							<li>Auxilio de transporte.</li>
+							<li>Devengados totales.</li>
+							<li>Aportes a salud y pensión (empleado y empresa).</li>
+							<li>Deducciones totales.</li>
+							<li>Total a pagar.</li>
+						</ul>
+
+						<p>
+						El reporte puede ser exportado en diferentes formatos:
+						</p>
+
+						<ul>
+							<li><strong>Exportar PDF:</strong> Genera un documento listo para impresión.</li>
+							<li><strong>Exportar Excel:</strong> Permite analizar la información en hojas de cálculo.</li>
+						</ul>
+
+						<p>
+						Este reporte facilita el análisis general de la nómina y el control de los pagos realizados durante el período seleccionado.
+						</p>
+
+					</section>
+					<section class="docs-section" id="reportes-comprobante-pago">
+						<h3>Comprobante de Pago por Empleado</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/16-comprobantes.gif" />
+						</div>
+						<p>
+						En esta sección se generan los comprobantes de pago individuales de los empleados, según la nómina previamente liquidada.
+						</p>
+
+						<p>
+						El usuario debe seleccionar los siguientes filtros:
+						</p>
+
+						<ul>
+							<li><strong>Tipo de nómina:</strong> Define el tipo de nómina a consultar.</li>
+							<li><strong>Año:</strong> Permite seleccionar el año correspondiente.</li>
+							<li><strong>Nómina:</strong> Selecciona el período específico de nómina.</li>
+						</ul>
+
+						<p>
+						Una vez seleccionados los filtros, el sistema mostrará el listado de empleados con la siguiente información:
+						</p>
+
+						<ul>
+							<li>Empleado.</li>
+							<li>Contrato asociado.</li>
+							<li>Valor del salario.</li>
+							<li>Valores devengados.</li>
+							<li>Valores deducidos.</li>
+							<li>Total a pagar.</li>
+						</ul>
+
+						<p>
+						Desde la columna de acciones, el usuario puede generar o visualizar el comprobante de pago individual de cada empleado.
+						</p>
+
+						<p>
+						Este comprobante sirve como soporte del pago realizado y puede ser utilizado para fines administrativos o legales.
+						</p>
 					</section><!--//section-->
 
 				</article><!--//docs-article-->
 
-				<article class="docs-article" id="parametros">
+
+				<article class="docs-article" id="documentos">
 
 					<header class="docs-header">
-						<h1 class="docs-heading">Parametros<a href="#parametros">#</a></h1>
+						<h1 class="docs-heading">Documentos<a href="#documentos">#</a></h1>
 						<section class="docs-intro">
-							<p>Aquí podras guiarte paso a paso para hacer manipulación de los parametros de nomina electronica</p>
+							<p>Aquí podras guiarte paso a paso como generar documentos</p>
 						</section><!--//docs-intro-->
 					</header>
 
-					<section class="docs-section" id="configuraciones">
-						<h2>Pasos para comprar productos</h2>
-						<br>
-						<h3 id="inicial-paso1"> Paso 1 </h3>
-						<p> Dirijase en el menú a la opcion de <b>Compras</b>, luego la opcion <b>Comprar</b></p>
-						<h3 id="inicial-paso2"> Paso 2 </h3>
-						<p>Pulse sobre el botón <b>"Nuevo"</b> en la parte superior derecha, Rellene los campos
-							correspondientes, teniendo en cuenta el ipoconsumo que debe ser menos al valor del producto.
-							Luego de eso proceda a darle <b>"Guardar"</b>. Para mas detalle vea el siguiente video</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/compra-productos.gif">
-						<p><b>Si usted lo requiere, puede crear un tercero rapidamente de la siguiente manera</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-tercero-gif.gif">
-						<br>
-						<p><b>Nota: No olvide que usted puede ver en PDF los productos comprados o ajustar su
-								información</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-producto.gif">
-					</section><!--//section-->
+					<section class="docs-section" id="primas">
+						<h3>Generación de Primas</h3>
 
-					<section class="docs-section" id="enviar">
-						<h2 class="section-heading">Enviar<a href="#enviar">#</a></h2>
-						<p>Para agregar un tercero a su empresa debe darle en el boton que dice <b>"NUEVO"</b>. Debe
-							diligenciar el formulario con los campos correspondientes de izquierda a derecha, los campos
-							que tienen un asterisco rojo son obligatorios. Cuando complete el formualario debe darle
-							click en el boton que dice <b>"GUARDAR"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/crear-tercero-cajas.gif" />
-						<br>
-						<br>
-						<p>Es de bien saber, que usted tambien tendrá la posibilidad de editar o eliminar un tercero
-							como se
-							observa en el video
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/17-primas.gif" />
+						</div>
+						<p>
+						En esta sección se generan las primas de los empleados, de acuerdo con el período seleccionado.
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/editar-tercero.gif" />
-					</section><!--//section-->
-					
-				</article><!--//docs-article-->
+
+						<p>
+						El usuario debe ingresar la siguiente información:
+						</p>
+
+						<ul>
+							<li><strong>Empleado:</strong> Selecciona el empleado al cual se le calculará la prima.</li>
+							<li><strong>Fecha inicial:</strong> Fecha de inicio del período a liquidar.</li>
+							<li><strong>Fecha final:</strong> Fecha final del período.</li>
+						</ul>
+
+						<p>
+						Al hacer clic en el botón <strong>“Agregar”</strong>, el sistema calculará automáticamente la información correspondiente al período, incluyendo:
+						</p>
+
+						<ul>
+							<li>Período de nómina.</li>
+							<li>Días trabajados.</li>
+							<li>Valor unitario.</li>
+							<li>Valor pagado.</li>
+						</ul>
+
+						<p>
+						El sistema mostrará el total de la prima calculada, permitiendo registrar observaciones adicionales si es necesario.
+						</p>
+
+						<p>
+						Finalmente, se debe definir el estado del documento y guardar la información para completar el proceso.
+						</p>
+					</section>
+
+					<section class="docs-section" id="incapacidades">
+						<h3>Registro de Incapacidades</h3>
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/18-incapacidades.gif" />
+						</div>
+						<p>
+						En esta sección se registran y gestionan las incapacidades de los empleados, permitiendo calcular los valores correspondientes según las reglas configuradas previamente.
+						</p>
+
+						<p>
+						Para generar una incapacidad, el usuario debe ingresar la siguiente información:
+						</p>
+
+						<ul>
+							<li><strong>Empleado:</strong> Selecciona el empleado al cual se le registrará la incapacidad.</li>
+							<li><strong>Fecha inicial:</strong> Fecha de inicio de la incapacidad.</li>
+							<li><strong>Fecha final:</strong> Fecha final de la incapacidad.</li>
+							<li><strong>Tipo de incapacidad:</strong> Define la clasificación (ejemplo: laboral, profesional).</li>
+						</ul>
+
+						<p>
+						Al hacer clic en el botón <strong>“Evaluar”</strong>, el sistema calculará automáticamente:
+						</p>
+
+						<ul>
+							<li>Días de incapacidad.</li>
+							<li>Valor unitario.</li>
+							<li>Valor total a pagar.</li>
+						</ul>
+
+						<p>
+						El sistema mostrará el detalle de la incapacidad tanto de forma general como por períodos, permitiendo una mejor visualización del cálculo.
+						</p>
+
+						<p>
+						Adicionalmente, se pueden registrar observaciones relacionadas con la incapacidad.
+						</p>
+
+						<p>
+						Una correcta gestión de incapacidades garantiza que los valores se reflejen adecuadamente en la liquidación de nómina.
+						</p>
+					</section>
+						<h3>Registro de Vacaciones</h3>	
+						<div class="col-12 col-md-12 mb-3">
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/19-vacaciones.gif" />
+						</div>
+
+						<p>
+						En esta sección se gestionan las vacaciones de los empleados, permitiendo calcular los valores correspondientes según los días de descanso.
+						</p>
+
+						<p>
+						Para registrar las vacaciones, el usuario debe ingresar la siguiente información:
+						</p>
+
+						<ul>
+							<li><strong>Empleado:</strong> Selecciona el empleado al cual se le asignarán las vacaciones.</li>
+							<li><strong>Fecha inicial de causación:</strong> Fecha desde la cual se generan las vacaciones.</li>
+							<li><strong>Fecha final de causación:</strong> Fecha final del período causado.</li>
+							<li><strong>Fecha inicial de disfrute:</strong> Fecha en la que inicia el descanso del empleado.</li>
+							<li><strong>Fecha final de disfrute:</strong> Fecha en la que finaliza el descanso.</li>
+						</ul>
+
+						<p>
+						El sistema calculará automáticamente:
+						</p>
+
+						<ul>
+							<li>Días de vacaciones.</li>
+							<li>Valor unitario.</li>
+							<li>Valor total a pagar.</li>
+						</ul>
+
+						<p>
+						También es posible registrar observaciones adicionales relacionadas con el período de vacaciones.
+						</p>
+
+						<p>
+						Una correcta gestión de las vacaciones permite llevar control sobre los días disfrutados y garantizar un cálculo adecuado en la nómina.
+						</p>
+					<section class="docs-section" id="vacaciones">Vacaciones</section>
+
 
 				
+				</article>
+
+
+
+
 
 				<footer class="footer">
 					<div class="container text-center py-5">
