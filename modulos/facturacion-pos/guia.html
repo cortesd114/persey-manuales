@@ -13,7 +13,7 @@
 	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
 	<link rel="shortcut icon" href="../../favicon.ico">
 
-	<!-- Google Font -->
+	<!-- Google Font -->	
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
 	<!-- FontAwesome JS-->
@@ -110,8 +110,7 @@
 					</li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#POS-facturar">Facturar</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#POS-listar">Listar</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#nota-credito">Notas Credito</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#imprimir-factura">Imprimir Factura</a></li>
+					
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#reportes">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-file-lines"></i></span>
@@ -123,6 +122,7 @@
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-impuestos">Ventas por impuesto</a>
 					</li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-grupos">Ventas por grupo</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#comisiones">Comisiones</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-ventas-vendedores">Ventas por
 							vendedores</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-articulos">Ventas
@@ -136,6 +136,9 @@
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-previo-articulos">Previos por
 							articulos </a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#reportes-exogena">Exogena</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#informe-diario">Informe Diario</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#lista-precios">Lista Precios</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#forma-pago">Reporte Formas de Pago</a></li>
 					<li class="nav-item section-title mt-3">
 						<a class="nav-link scrollto" href="#catalogos">
 							<span class="theme-icon-holder me-2"><i class="fa-solid fa-folder-open"></i></span>
@@ -143,23 +146,8 @@
 						</a>
 					</li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#catalogos-terceros">Terceros</a></li>
-					<li class="nav-item section-title mt-3">
-						<a class="nav-link scrollto" href="#previos">
-							<span class="theme-icon-holder me-2"><i class="fa-solid fa-spinner"></i></span>
-							<span class="section-title-text">Previos</span>
-						</a>
-					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#previo-nuevo">Nuevo previo</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#previo-lista">Lista previo</a></li>
-					<li class="nav-item section-title mt-3">
-						<a class="nav-link scrollto" href="#balanza">
-							<span class="theme-icon-holder me-2"><i class="fa-brands fa-whmcs"></i></span>
-							<span class="section-title-text">Balanza</span>
-						</a>
-					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#configInicial">Configuracion Inicial</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#facturacionBalanza">Facturación con balanza</a></li>
-
+					<li class="nav-item"><a class="nav-link scrollto" href="#formas-de-pago">Formas de pago</a></li>
+					
 				</ul>
 
 			</nav><!--//docs-nav-->
@@ -190,235 +178,217 @@
 						<section class="docs-intro">
 							<p> Aqui se podrá guiar paso a paso sobre como generar una factura POS, tambien aprenderá a
 								visualizar y imprimir su factura en impresora POS. </p>
+
+								<h3>Factura POS Electrónico</h3>
+
+								<p>
+								En esta sección se realiza la generación de facturas de venta mediante el sistema POS electrónico, permitiendo registrar toda la información necesaria para completar una transacción comercial.
+								</p>
+
+								<p>
+								Inicialmente, el usuario debe diligenciar la información del documento:
+								</p>
+
+								<ul>
+									<li><strong>Cliente:</strong> Selecciona o busca el cliente al cual se le realizará la venta.</li>
+									<li><strong>Fecha:</strong> Fecha de la transacción.</li>
+									<li><strong>Caja:</strong> Define la caja desde la cual se realiza la operación.</li>
+									<li><strong>Talonario:</strong> Selecciona el talonario de facturación.</li>
+									<li><strong>Vendedor:</strong> Usuario responsable de la venta.</li>
+									<li><strong>Medio de pago:</strong> Forma en que se realizará el pago.</li>
+									<li><strong>Forma de pago:</strong> Condición de pago (contado o crédito).</li>
+								</ul>
+
 						</section><!--//docs-intro-->
 					</header>
 
 					<!--//section-->
+
 					<section class="docs-section" id="POS-facturar">
+
+						
 						<h2 class="section-heading"><a href="#POS-facturar">Facturar </a></h2>
 						<p>En esta sección se podrá crear facturas diligenciando un formulario con los datos
 							correspondientes teniendo en cuenta la siguiente información en la imagen.</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/02-factura.png">
-						<br>
-						<br>
+							<div class="col-12 col-md-12 mb-3">
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/02-factura.png">
+							</div>
+							<br>
+							<br>
+							
+							<h3 id="pos-paso1"><a href="#pos-paso1">Paso 1 </a></h3>
+							<h4>Seleccionar o crear Tercero (Cliente)</h4>
 
-						<h3 id="pos-paso1"><a href="#pos-paso1">Paso 1 </a></h3>
-						<p>Para la creación de una factura POS es trascendental tener un cliente o proveedor creado con
-							anterioridad.
-							Si no tiene un cliente o proveedor, por favor registre un nuevo <b>cliente o proveedor</b>
-							para dicha facturación;
-							en caso de que ya tenga un cliente registrado, <b>se ignora el Paso 1</b>.</p>
-						<p>Para registrar un nuevo cliente lo puede hacer desde la misma ventana como se muestra en la
-							siguiente imagen
-							o dirigirse hacia el modulo de <b>"Administracion</b> en la sección de <b><a
-									href="#catalogos">"Terceros"</a></b>.
-						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/03-header-fact-pos.png">
-						<p>Es importante que se diligencien los campos del formulario teniendo en cuenta, si es persona
-							natural
-							o persona juridica, posterior a eso clickee el botón <b>"Guardar"</b> en la parte inferior.
-						</p>
+							<p>
+							En esta sección el sistema permite registrar un nuevo tercero (cliente) directamente desde 
+							el módulo de facturación POS, facilitando la creación rápida durante una venta.
+							</p>
 
-						<h3>IMPORTANTE: Campos Requeridos</h3>
-						<p>Por favor, los campos que tengan un asterisco (*), se deben llenar
-							obligatoriamente.</p>
-						<br>
-						<br>
-						<h3>IMPORTANTE: Campos a tener en cuenta en Formulario</h3>
-						<p><b>Razón Social y Nombre Comercial:</b> Tenga en cuenta que la razón social y el nombre
-							comercial
-							pueden ser diferentes dependiendo de la información de la empresa</p>
-						<p><b>Lista de Precios:</b> Tenga en cuenta que la lista de precios es dependiente de la
-							configuración
-							de precios que asigno a los articulos y sus listas.</p>
+							<p>
+							Cuando el cliente no se encuentra registrado, el usuario puede utilizar la opción de creación desde el
+							 campo de cliente.
+							</p>
 
-						<h4>Diligenciar Formulario si es Persona Natural</h4>
-						<p>En caso de seleccionar <b>"Persona Natural"</b> se bloqueará el campo de <b>"Razón
-								Social".</b></p>
-						<p>A continuación, se mostrará la vista de como se bloquean los campos si selecciona <b>"Persona
-								Natural"</b>
-							y como diligenciar el formulario:</p>
-						<img class="rounded mx-auto d-block" src="images/04-persona-natural.png">
-						<img class="figure-img2 img-fluid shadow-lg rounded" src="images/05-crear-clienteFact.png">
-						<br>
-						<br>
-						<h4>Diligenciar Formulario si es Persona Juridica</h4>
-						<p>En caso de seleccionar <b>"Persona Juridica"</b> se bloquearán los campos de <b>"Primer
-								nombre de la persona",
-								"Segundo nombre de la persona", "Primer apellido de la persona" y "Segundo apellido de
-								la persona".</b></p>
-						<p>A continuación, se motrará la vista de como se bloquean los campos si selecciona <b>"Persona
-								Juridica"</b>
-							y como diligenciar el formulario:</p>
-						<img class="rounded mx-auto d-block" src="images/06-persona-juridica.png">
-						<img class="figure-img2 img-fluid shadow-lg rounded" src="images/07-crear-cliente-juridico2.png">
-						<p>Por ultimo, se ilustrará como crear un cliente:</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/08-crear-cliente.gif">
-					</section><!--//section-->
+							<p>
+							El sistema desplegará un formulario donde se debe ingresar la información básica del tercero, como:
+							</p>
+							<div class="col-12 col-md-12 mb-3">
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/03-nuevo tercero.gif">
+							</div>
+							<ul>
+								<li>Tipo y número de identificación.</li>
+								<li>Tipo de persona</li>
+								<li>Nombres y apellidos o razón social.</li>
+								<li>Dirección.</li>
+								<li>Teléfono.</li>
+								<li>Correo electrónico.</li>
+							</ul>
+							<p>Ingresamos el numero de documento y damos clic en el boton  de Dian y ahi desplegará los datos.</p>
+							<p>
+							Una vez completada la información, se guarda el registro y el cliente quedará disponible automáticamente
+							 para ser seleccionado en la factura en curso.
+							</p>
+							<h4>Se puede seleccionar una prefactura</h4>
+							<div class="col-12 col-md-12 mb-3">
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/04-seleccionar-prefactura.gif">
+							</div>
+							<p>Para que funcione la prefactura tiene que estar a nombre del mismo cliente seleccionado.</p>
 
-					<section class="docs-section" id="POS-facturar">
+							
+							
+					</section>
+
+					<section class="docs-section">
 						<h3 id="pos-paso2"><a href="#pos-paso2">Paso 2 </a></h3>
-						<h4>Partes del formulario:</h4>
-						<h5>Encabezado: </h5>
-						<p>En esta sección debe diligenciar los campos correspondientes a la información del documento
-							, hay que tener en cuenta que si da click donde dice <b>"Seleccionar Prefactura"</b> y
-							la selecciona, automaticamente se le diligenciarán los campos del formulario con la
-							prefactura
-							y solo habria que darle a <b>"Guardar Factura"</b>.
-						</p>
-						<b>Nota: Es importante verificar los valores de las cantidades, descuentos y precios de los
-							prouctos para proceder a guardar</b>
-						<br>
-						<br>
-						<p>En caso de no tener prefactura, se deben llenar todos los campos correspondientes
-							teniendo
-							en cuenta los siguientes pasos:
-						</p>
-						<h5>Cuerpo del Formulario: </h5>
-						<ol>
-							<li>Se debe buscar un producto dando al botón de <b>"Buscar Producto"</b>.
-							</li>
-							<li>
-								Se debe añadir un producto, rellenar los
-								campos y posterior a eso oprimir el botón<b>"Agregar"</b> teniendo en cuenta que los
-								campos
-								se ajusten a lo requerido.
-							</li>
-							<li>
-								En la sección de produtos registrados, podrá visualizar los productos que se están
-								agregando
-								a la factura, editarlos o hasta eliminarlos, ademas en la parte inferior a esta sección
-								se
-								puede escribir las observaciones o novedades de la factura.
-							</li>
-							<li>
-								Se debe realizar este paso con cada producto que se desee agregar a la factura y
-								posteriormente
-								oprmir el botón <b>"Guardar Factura"</b>.
-							</li>
-						</ol>
-						<h4>Editar factura sin haberla guardado</h4>
-						<p>En ocasiones, puede que se necesite editar la factura sin si quiera haberla guardado, para lo
-							anterior
-							es necesario digirse hacia producto y, en la zona derecha del mismmo podrá editarlo o
-							eliminarlo según sea
-							el concepto. Cabe aclarar que si lo elimina, desaparecerá completamente de la factura, pero
-							si se elige la opción editar, el producto saldrá de la sección de Productos registrados y se
-							deberá
-							agregar nuevamente para que se regitre en la factura.
-						</p>
-						<b>NOTA: El anterior proceso funciona si se cargo una prefactura o si se está diligenciando una
-							factura manualmente.
-						</b>
-						<br>
-						<br>
-						<h4>Eliminación de modificaciones de articulos sin haberla guardado.</h4>
-						<h5>Eliminación de Articulos</h5>
-						<p>Para eliminar un producto se debe seleccionar la opción de eliminar que corresponde al
-							producto de interes</p>
-						<img class="figure-img img-fluid shadow-lg rounded"
-							src="images/09-eliminar-articulo-en-proceso.png">
-						<br>
-						<br>
-						<h5>Edición de Articulos</h5>
-						<ol>
-							<li>
-								<p>Se debe seleccionar la opción de editar articulo</p>
-								<img class="figure-img img-fluid shadow-lg rounded" src="images/10-editar-producto-1.png">
-							</li>
-							<li>
-								<p>Hay que tener en cuenta que el producto se direccioná hacia la sección <b> "detalle
-										de factura"</b>, por lo
-									tanto, cuando se edite el producto, se debe dar al botón <b>"Agregar"</b> nuevamente
-									y
-									cuando este completamente seguro de los cambios, se debe dar en <b>"Guardar
-										Factura".</b>
-								</p>
-								<img class="figure-img img-fluid shadow-lg rounded" src="images/11-editar-producto-2.png">
-							</li>
-						</ol>
+						<h4>Selección de Datos para la Facturación</h4>
 
+						<p>
+						Una vez creado o seleccionado el cliente, el usuario debe completar la información necesaria para continuar con el proceso de facturación.
+						</p>
+						<div class="col-12 col-md-12 mb-3">
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/05-llenar-datos.gif">
+						</div>
+						<p>
+						En esta etapa se deben definir los siguientes campos:
+						</p>
 
-						<h5>Retenciones</h5>
-						<P>Si la empresa tiene activado las retenciones le aparecerá un formulario al final donde las
-							puede diligenciar teniendo en cuenta campos como: <b>"Porcentaje de ReteFuente", "Tarifa X
-								1000
-								para la ReteICa", sus respectivas bases y los totales.
-							</b>.</P>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/12-retenciones.png">
-						<h5>Ilustración de una Facturación POS</h5>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/13-pos-facturar.gif">
-						<br>
-						<br>
-					</section><!--//section-->
+						<ul>
+							<li><strong>Caja:</strong> Selecciona la caja desde la cual se realiza la venta.</li>
+							<li><strong>Talonario:</strong> Define el consecutivo de facturación que se utilizará.</li>
+							<li><strong>Vendedor:</strong> Usuario responsable de la transacción.</li>
+							<li><strong>Medio de pago:</strong> Selecciona el tipo de pago (ejemplo: efectivo, tarjeta).</li>
+							<li><strong>Forma de pago:</strong> Indica si la venta es de contado o crédito.</li>
+						</ul>
+
+						<p>
+						Estos datos son obligatorios para garantizar que la factura se genere correctamente y quede registrada con la información completa.
+						</p>
+
+						<p>
+						Una vez diligenciados estos campos, el usuario puede continuar con el ingreso de los productos en la sección de detalle de la factura.
+						</p>
+					</section>
+						
+					<section class="docs-section">
+						<h3 id="pos-paso3"><a href="#pos-paso3">Paso 3</a></h3>
+						<h4>Ingreso de Productos a la Factura</h4>
+						<div class="col-12 col-md-12 mb-3">
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/06-seleccionar-producto.gif">
+						</div>
+
+						<p>
+						Una vez completada la información del cliente y los datos de la venta, el usuario debe proceder a registrar los productos en la factura.
+						</p>
+
+						<p>
+						En la sección <strong>Detalle de la Factura</strong>, el sistema permite agregar productos mediante las siguientes opciones:
+						</p>
+
+						<ul>
+							<li><strong>Buscar Producto:</strong> Permite buscar un producto en el sistema.</li>
+							<li><strong>Ver Producto:</strong> Muestra el listado de productos disponibles.</li>
+							<li><strong>Ventas Recurrentes:</strong> Permite cargar productos previamente utilizados con frecuencia.</li>
+						</ul>
+
+						<p>
+						Una vez seleccionado el producto, se deben ingresar o validar los siguientes datos:
+						</p>
+
+						<ul>
+							<li>Cantidad.</li>
+							<li>Descuento (si aplica).</li>
+							<li>Impuesto.</li>
+							<li>Valor unitario.</li>
+						</ul>
+
+						<p>
+						El producto se agrega mediante el botón <strong>“Agregar”</strong> o utilizando la tecla rápida indicada en el sistema.
+						</p>
+
+						<p>
+						Los productos registrados se visualizarán en la tabla inferior, donde se mostrará el detalle de cada ítem junto con su valor total.
+						</p>
+
+						<p>
+						El sistema actualizará automáticamente el total de la factura a medida que se agregan los productos.
+						</p>
+					</section>
+					
 
 					<section class="docs-section" id="POS-listar">
-						<h2 class="section-heading"><a href="#POS-listar">Listar Facturas</a></h2>
+						<h2 class="section-heading"><a href="#POS-listar">Listado de Documentos POS Electrónico</a></h2>
+
+						
+						<div class="col-12 col-md-12 mb-3">
+								<img class="figure-img img-fluid shadow-lg rounded" src="images/07-listar.png">
+						</div>
+						<p>
+						En esta sección se visualiza el listado de las facturas generadas en el sistema POS electrónico, permitiendo consultar, gestionar y realizar acciones sobre cada documento.
+						</p>
+
+						<p>
+						El sistema muestra la información principal de cada factura:
+						</p>
+
+						<ul>
+							<li><strong>N° Documento:</strong> Número consecutivo de la factura.</li>
+							<li><strong>Referencia:</strong> Identificador interno del documento.</li>
+							<li><strong>Identificación:</strong> Número de documento del cliente.</li>
+							<li><strong>Cliente:</strong> Nombre del cliente.</li>
+							<li><strong>Fecha:</strong> Fecha y hora de la transacción.</li>
+							<li><strong>Valor Total:</strong> Valor total de la factura.</li>
+							<li><strong>Estado:</strong> Indica si la factura está aprobada u otro estado.</li>
+						</ul>
+
+						<p>
+						El usuario puede filtrar la información por rango de fechas o realizar búsquedas específicas.
+						</p>
+
+						<p>
+						En la columna de acciones, el sistema ofrece múltiples opciones para gestionar cada documento:
+						</p>
+
+						<ul>
+							<li><strong>Visualizar:</strong> Permite ver el detalle de la factura.</li>
+							<li><strong>Duplicar:</strong> Genera una nueva factura con la misma información.</li>
+							<li><strong>NAC Nota Ajuste Crédito:</strong> Permite generar una nota crédito para la factura.</li>
+							<li><strong>NAD Nota Ajuste Débito:</strong> Permite generar una nota débito.</li>
+							<li><strong>Notificar:</strong> Envía la factura al cliente por medios electrónicos.</li>
+							<li><strong>PDF:</strong> Genera el documento en formato PDF.</li>
+							<li><strong>Imprimir:</strong> Permite imprimir la factura.</li>
+						</ul>
+
+						<p>
+						Estas opciones permiten una gestión completa de los documentos, facilitando la corrección, consulta y distribución de las facturas generadas.
+						</p>
+
+
+
 						<p>En esta sección podrá visualizar todas las facturas creadas, hacer una nota credito ,
 							duplicar la factura y imprimir la factura desde una impresora POS </p>
 						<p>Para ello dirijase hacia la parte izquierda y dele click sobre la sección <b>"Listar"</b>.
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/14-listar-facturas-pos.gif">
-						<br>
-						<br>
-						<strong>En caso de que se desee realizar diferentes acciones con da factura se puede hacer de la
-							siguiente manera:
-						</strong>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/15-listar.gif">
-						<br>
-						<br>
-						<h3>Visualización Factura</h3>
-						<p>Si desea visualizar la factura se debe dar click en <b>"visualizar"</b> en la lista de
-							opciones de la factura.
-						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/16-opcion-vista-factura.png">
-						<br>
-						<br>
-						<p>Cuando visualice la factura le aparecerá de la siguiente manera:</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/17-visualizar-factura.png">
-						<h3 id="nota-credito">Notas de credito</h3>
-						<p>Las notas credito son fundamentales para la anulación de una factura según sea el concepto.
-							Si se desea hacer una nota credito, se tiene que ubicar sobre la factura a la cual le quiere
-							realizar la
-							configuración y darle click sobre la opción <b>"Nota Credito"</b>.
-							Hay que tener en cuenta que si la factura ya tiene una nota credito, la opción de ajuste no
-							se
-							mostrará</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/18-opcion-notas-credito.png">
-						<br>
-						<br>
-						<h5>Pasos para hacer nota credito por anulación de factura</h5>
-						<p>Primero, se debe seleccionar el concepto de nota credito.
-							Si el concepto es <b>"Anulación de factura electrónica"</b> simplemente se procede a darle
-							al botón
-							<b>"Guardar Nota"</b> como se muestra en la siguiente imagen
-						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/19-nota-credito.gif">
-						<br>
-						<br>
-						<h5>Pasos para hacer nota credito por devolución de parte de bienes, no aceptación de partes del
-							servicio</h5>
-						<p>Si por otro lado, el concepto de nota de credito, corresponde a la opción <b>"Devolución de
-								parte de bienes, no aceptación de partes del servicio"</b>,
-							es trascendental realizar la acción que mas convenga por cada producto de la factura.
-						</p>
-						<p>Usted podrá modificar, elminar o anadir recargos a los productos</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/20-nota-credito-devolucion.gif">
-						<br>
-						<br>
-						<h5>Duplicación de Facturas</h5>
-						<p>Tambien se tendrá la opción de duplicar la factura si dado el caso, se repite una
-							transacción con los mismos elementos implicados y cabe aclarar que como no es la misma
-							factura, usted podrá añadir, eliminar o editar información de los productos.</p>
-						<strong>Hay que recordad que, se pueden duplicar facturas mas no pueden duplicar nota
-							creditos</strong>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/21-duplicar-facturas.png">
-						<br>
-						<br>
-						<h5 id="imprimir-factura">Imprimir Factura</h5>
-						<p>Por último el software provee la opción de imprimir la factura desde una impresora POS o una
-							impresora Bluetooth.</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/22-imprimir.png">
+						
 					</section>
 
 				</article><!--//docs-article-->
@@ -437,7 +407,7 @@
 							<p>Es importante saber que para ver cualquier tipo de reporte es necesario dar click sobre
 								la opción <b>"Reportes"</b> como lo muestra la siguiente imagen.
 							</p>
-							<img class="figure-img img-fluid shadow-lg rounded" src="images/23-reportes1.png" />
+							<img class="figure-img img-fluid shadow-lg rounded" src="images/08-reportes.gif" />
 						</section><!--//docs-intro-->
 					</header>
 
@@ -448,7 +418,7 @@
 							desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien se puede descargar en
 							PDF
 							dandole click en el boton que dice <b>"PDF"</b>.</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/24-reportes-periodo.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/09-ventas-periodo.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-impuestos">
@@ -457,7 +427,7 @@
 							desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien se puede decargar en
 							PDF o
 							Excel dando click en el boton <b>"PDF"</b> o <b>"Excel"</b>.</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/25-reporte-impuestos.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/10-reporte-impuestos.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-grupos">
@@ -467,7 +437,16 @@
 							fecha desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien se puede
 							descargar
 							en PDF dandole click en el boton que dice <b>"PDF"</b>.</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/26-reportes-grupo.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/11-reporte-grupos.gif" />
+					</section><!--//section-->
+
+					<section class="docs-section" id="comisiones">
+						<h2 class="section-heading"><a href="#comisiones">Comisiones</a></h2>
+						<p>Para poder ver este reporte se debe diligenciar el formulario, escoger el talonario, el
+							grupo, la
+							fecha desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien se puede
+							descargar  	en PDF dandole click en el boton que dice <b>"PDF"</b>.</p>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/12-comisiones.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-ventas-vendedores">
@@ -477,7 +456,7 @@
 							desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien se puede descargar en
 							PDF
 							dandole click en el boton que dice <b>"PDF"</b>.</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/27-reporte-vendedores.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/13-vendedores.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-articulos">
@@ -491,7 +470,7 @@
 							fecha. Tambien se puede descargar en PDF dandole click en el boton que dice <b>"PDF"</b>.
 						</p>
 						<img class="figure-img img-fluid shadow-lg rounded"
-							src="images/28-reportes-ventas-articulos.gif" />
+							src="images/14-articulos-servicios.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-tiponotas">
@@ -500,7 +479,7 @@
 							desde-hasta y luego darle click en el boton que dice <b>"VER"</b>. Tambien puede descargar
 							el
 							reporte en PDF dando click en el boton <b>"PDF"</b>.</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/29.reportes-tiponotas.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/15-reportes-tiponotas.gif" />
 					</section><!--//section-->
 
 					<section class="docs-section" id="reportes-clientes">
@@ -509,7 +488,7 @@
 							fecha desde-hasta y darle click en el boton que dice <b>"VER"</b>. Tambien se puede
 							descargar
 							en PDF dandole click en el boton que dice <b>"PDF"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/30-reporte-clientes.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/16-reporte-clientes.gif" />
 					</section>
 
 					<section class="docs-section" id="reportes-previo-vendedores">
@@ -520,7 +499,7 @@
 							que dice <b>"VER"</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice
 							<b>"PDF"</b>
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/31-previos-vendedores.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/16-previos-vendedores.gif" />
 					</section>
 
 					<section class="docs-section" id="reportes-previo-articulos">
@@ -531,7 +510,7 @@
 							que dice <b>"VER"</b>. Tambien puede descargarlo en PDF dandole click en el boton que dice
 							<b>"PDF"</b>
 						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/32-previo-articulos.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/17-previos-articulos.gif" />
 					</section>
 
 					<section class="docs-section" id="reportes-exogena">
@@ -539,7 +518,109 @@
 						<p>Para ver el reporte de información exogena de venta solo debe seleccionar el año y darle
 							click en el boton que dice <b>"VER"</b>, Tambien puede descargarlo en formato Excel dandole
 							click en el boton "Excel"</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/33-reporte-exogena.gif" />
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/18-exogena.gif" />
+					</section>
+
+					<section class="docs-section" id="informe-diario">
+						<h3>Comprobante Informe Diario</h3>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/19-informe.png" />
+						<p>
+						En esta sección se genera el informe diario de ventas del sistema POS, permitiendo visualizar las transacciones realizadas en un período de tiempo determinado.
+						</p>
+
+						<p>
+						El usuario debe seleccionar los siguientes parámetros para generar el reporte:
+						</p>
+
+						<ul>
+							<li><strong>Talonarios:</strong> Permite seleccionar uno o varios talonarios de facturación.</li>
+							<li><strong>Desde:</strong> Fecha inicial del período a consultar.</li>
+							<li><strong>Hasta:</strong> Fecha final del período.</li>
+							<li><strong>Tipo:</strong> Define el tipo de reporte (ejemplo: DIAN).</li>
+						</ul>
+
+						<p>
+						Una vez definidos los filtros, el usuario debe hacer clic en el botón <strong>“PDF”</strong> para generar el informe.
+						</p>
+
+						<p>
+						El sistema generará un documento con el resumen de las ventas realizadas en el período seleccionado, incluyendo la información correspondiente a los talonarios activos.
+						</p>
+
+						<p>
+						Este reporte es útil para control interno, auditoría y cumplimiento de obligaciones fiscales.
+						</p>
+					</section>
+
+					<section class="docs-section" id="lista-precios">
+						<h3>Lista de Precios</h3>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/20-lista-precios.png" />
+
+						<p>
+						En esta sección se permite consultar y gestionar las listas de precios de los productos registrados en el sistema.
+						</p>
+
+						<p>
+						El usuario puede filtrar la información mediante los siguientes criterios:
+						</p>
+
+						<ul>
+							<li><strong>Grupos:</strong> Permite seleccionar un grupo de productos específico.</li>
+							<li><strong>Precios:</strong> Selecciona la lista de precios a consultar.</li>
+						</ul>
+
+						<p>
+						Adicionalmente, el sistema ofrece opciones para facilitar la visualización de la información:
+						</p>
+
+						<ul>
+							<li><strong>Filtros:</strong> Permite aplicar filtros adicionales.</li>
+							<li><strong>Excel:</strong> Exporta la información a formato Excel.</li>
+							<li><strong>Ocultar columnas:</strong> Permite personalizar las columnas visibles.</li>
+						</ul>
+
+						<p>
+						La tabla de resultados muestra la siguiente información:
+						</p>
+
+						<ul>
+							<li>Grupo del producto.</li>
+							<li>Nombre del producto.</li>
+							<li>Referencia.</li>
+							<li>Precio de venta 1.</li>
+							<li>Precio de venta 2.</li>
+							<li>Precio de venta 3.</li>
+						</ul>
+
+						<p>
+						El usuario puede generar un reporte en formato PDF utilizando el botón correspondiente.
+						</p>
+
+						<p>
+						Esta funcionalidad permite consultar y validar los precios de los productos antes de realizar una venta, asegurando coherencia en la facturación.
+						</p>
+					</section>
+					<section class="docs-section" id="forma-pago">
+						<h3>Reporte de Formas de Pago</h3>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/21-forma-pago.png" />
+
+						<p>
+						Permite consultar las ventas realizadas según los medios de pago utilizados en un período determinado.
+						</p>
+
+						<ul>
+							<li><strong>Talonarios:</strong> Selección de documentos a consultar.</li>
+							<li><strong>Desde / Hasta:</strong> Rango de fechas.</li>
+							<li><strong>Tipo:</strong> Resumido o detallado.</li>
+						</ul>
+
+						<p>
+						El usuario puede visualizar el reporte o exportarlo en PDF.
+						</p>
+
+						<p>
+						Se muestra el valor total de las facturas y su distribución en efectivo, tarjeta u otros medios de pago.
+						</p>
 					</section>
 
 				</article><!--//docs-article-->
@@ -556,182 +637,118 @@
 					</header>
 
 					<section class="docs-section" id="catalogos-terceros">
-						<h2 class="section-heading"> <a href="#catalogos-terceros">Terceros</a>
-						</h2>
-						<p>Es de vital relevancia conocer que un tercero puede ser un cliente o un proveedor.
-							Le aparecerán todos los terceros que tenga en una lista, los terceros se pueden modificar
-							dando click
-							en el boton amarillo y crear uno nuevo dando click en el boton que dice <b>"NUEVO"</b></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/34-terceros.gif" />
-						<br>
-						<br>
-						<h3>IMPORTANTE: Campos Requeridos</h3>
-						<p>Por favor, los campos que tengan un asterisco (*), se deben llenar
-							obligatoriamente.</p>
-						<br>
-						<h3>IMPORTANTE: Campos a tener en cuenta en Formulario</h3>
-						<p><b>Razón Social y Nombre Comercial:</b> Tenga en cuenta que la razón social y el nombre
-							comercial
-							pueden ser diferentes dependiendo de la información de la empresa</p>
-						<p><b>Lista de Precios:</b> Tenga en cuenta que la lista de precios es dependiente de la
-							configuración
-							de precios que asigno a los articulos y sus listas.</p>
+						
+						<h2>Creación de Terceros (Clientes)</h2>
+						
+						<p>
+							En este módulo se registran los clientes que serán utilizados en la facturación POS electrónica.
+							Para crear un nuevo tercero, se debe hacer clic en el botón <strong>"Nuevo"</strong> y completar la información solicitada.
+						</p>
+						
+						<h3>Tipo de Persona</h3>
+						
+						<p>
+							Uno de los campos más importantes es el <strong>Tipo de Persona</strong>, ya que define cómo se diligencia la información del cliente:
+						</p>
+						
+						<h4>Persona Natural</h4>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/22-persona-natural.gif">
+						<ul>
+							<li>Corresponde a una persona individual.</li>
+							<li>Se identifica con <strong>cédula de ciudadanía</strong>.</li>
+							<li>Se deben diligenciar nombres y apellidos.</li>
+						</ul>
+						
+						<p><strong>Campos principales:</strong></p>
+						<ul>
+							<li>Tipo de identificación</li>
+							<li>CC/NIT</li>
+							<li>Primer nombre y segundo nombre</li>
+							<li>Primer apellido y segundo apellido</li>
+							<li>Nombre comercial (opcional)</li>
+						</ul>
 
-						<h4>Diligenciar Formulario si es Persona Natural</h4>
-						<p>En caso de seleccionar <b>"Persona Natural"</b> se bloqueará el campo de <b>"Razón
-								Social".</b></p>
-						<p>A continuación, se mostrará la vista de como se bloquean los campos si selecciona <b>"Persona
-								Natural"</b>
-							y como diligenciar el formulario:</p>
-						<img class="rounded mx-auto d-block" src="images/04-persona-natural.png">
-						<img class="figure-img2 img-fluid shadow-lg rounded" src="images/05-crear-clienteFact.png">
-						<br>
-						<br>
-						<h4>Diligenciar Formulario si es Persona Juridica</h4>
-						<p>En caso de seleccionar <b>"Persona Juridica"</b> se bloquearán los campos de <b>"Primer
-								nombre de la persona",
-								"Segundo nombre de la persona", "Primer apellido de la persona" y "Segundo apellido de
-								la persona".</b></p>
-						<p>A continuación, se motrará la vista de como se bloquean los campos si selecciona <b>"Persona
-								Juridica"</b>
-							y como diligenciar el formulario:</p>
-						<img class="rounded mx-auto d-block" src="images/06-persona-juridica.png">
-						<img class="figure-img2 img-fluid shadow-lg rounded" src="images/07-crear-cliente-juridico2.png">
-						<p>Por ultimo, se ilustrará como crear un cliente:</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/08-crear-cliente.gif">
+						<h4>Persona Jurídica</h4>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/23-persona-juridica.gif">
+						<ul>
+						<li>Corresponde a empresas o entidades.</li>
+						<li>Se identifica con <strong>NIT</strong>.</li>
+						<li>No requiere nombres y apellidos, sino razón social.</li>
+						</ul>
+
+						<p><strong>Campos principales:</strong></p>
+						<ul>
+						<li>NIT</li>
+						<li>Dígito de verificación (DV)</li>
+						<li>Razón social</li>
+						<li>Nombre comercial</li>
+						</ul>
+
+						<h3>Resumen</h3>
+						<ul>
+						<li><strong>Persona Natural:</strong> Cliente individual (ej: Juan Pérez)</li>
+						<li><strong>Persona Jurídica:</strong> Empresa (ej: Seguros Sura)</li>
+						</ul>
+
+						<h3>Recomendación</h3>
+						<p>
+						Seleccionar correctamente el tipo de persona garantiza que la facturación electrónica cumpla con los requisitos de la DIAN.
+						</p>
+
 					</section><!--//section-->
+
+					<section class="docs-section" id="formas-de-pago">
+						<h2>Formas de Pago</h2>
+						<img class="figure-img img-fluid shadow-lg rounded" src="images/24-formas-de-pago.gif">
+						<p>
+						En este módulo se configuran las formas de pago que estarán disponibles en el sistema de facturación POS electrónico.
+						Estas permiten registrar cómo se reciben los pagos de los clientes.
+						</p>
+
+						<h3>Listado de Formas de Pago</h3>
+
+						<p>
+						Se muestra un listado con las formas de pago creadas, incluyendo:
+						</p>
+
+						<ul>
+						<li><strong>Nombre:</strong> Tipo de pago (Ej: Efectivo, Tarjeta, Nequi, Cheque).</li>
+						<li><strong>Cuenta Contable:</strong> Cuenta asociada donde se registrará el movimiento.</li>
+						<li><strong>Naturaleza de la cuenta:</strong> Define si es Débito o Crédito.</li>
+						<li><strong>Acciones:</strong> Permite editar o gestionar la forma de pago.</li>
+						</ul>
+
+						<h3>Crear una Nueva Forma de Pago</h3>
+
+						<p>
+						Para registrar una nueva forma de pago, haga clic en el botón <strong>"Nuevo"</strong> y diligencie los campos correspondientes.
+						</p>
+
+						<ul>
+						<li>Nombre de la forma de pago</li>
+						<li>Cuenta contable asociada</li>
+						<li>Naturaleza de la cuenta (Débito o Crédito)</li>
+						</ul>
+
+						<h3>Uso en Facturación</h3>
+
+						<p>
+						Las formas de pago configuradas estarán disponibles al momento de realizar una factura, permitiendo distribuir el pago entre diferentes medios como efectivo, tarjeta u otros.
+						</p>
+
+						<h3>Recomendación</h3>
+
+						<p>
+						Se recomienda configurar correctamente la cuenta contable de cada forma de pago para garantizar una adecuada integración con la contabilidad.
+						</p>
+					</section>
 
 				</article>
 
 
 				
 
-				<article class="docs-article" id="previos">
-
-					<header class="docs-header">
-						<h1 class="docs-heading"><a href="#previos">Previos</a></h1>
-						<section class="docs-intro">
-							<p>En esta seccion se podrá registrar una prefactura y tambien podrá visualizar todas las
-								prefacturas que ha registrado</p>
-						</section><!--//docs-intro-->
-					</header>
-
-					<section class="docs-section" id="previo-nuevo">
-						<h2 class="section-heading"><a href="#previo-lista">Nuevo Previo</a></h2>
-						<p>Para crear un nuevo previo se debe escoger o crear el cliente(tercero). Buscar los productos
-							que
-							desea añadir a su prefactura y darle guardar </p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/35-nuevo-previo.gif" />
-					</section><!--//section-->
-
-					<section class="docs-section" id="previo-lista">
-						<h2 class="section-heading"><a href="#previo-lista">Listar previos</a></h2>
-						<p>Aqui apareceran todos los previos o prefacturas que haya generado y sus respectivas
-							opciones</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/36-lista-previos.png" />
-						<p>Cuando liste un previo, su vista será de la siguiente forma</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/37-visualizar-previo.gif" />
-						<p>Cuando liste un previo, usted tendrá la opción de agregar, modificar o eliminar sus productos
-						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/38-modificar-previo.gif" />
-						<strong>No olvidar siempre dar al botón <b>"Guardar"</b> para la persistencia de los cambios
-							realizados</strong>
-					</section><!--//section-->
-
-				</article>
-
-				<article class="docs-article" id="balanza">
-
-					<header class="docs-header">
-						<h1 class="docs-heading"><a href="#balanza">Balanza</a></h1>
-						<section class="docs-intro">
-							<p>En esta sección podrá vincular la balanza a los procesos de facturación
-								POS, prefactura, Inventario inicial, entradas y salidas.
-							</p>
-						</section><!--//docs-intro-->
-					</header>
-
-					<section class="docs-section" id="configInicial">
-						<h2 class="section-heading"><a href="#configInicial">Configuración Inicial</a></h2>
-						<h3>PASO 1: Conectar la balanza</h3>
-						<p>Para iniciar el proceso se necesita tener la balanza conectada al equipo donde 
-							se realizará todo el proceso. Se puede verificar que el dispositivo esté correctamente 
-							conectado y siendo reconocido a través del administrador de dispositivos.</p>
-						
-						
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/39-adm-disps.gif" />
-						<br>
-						<br>
-						<h3>PASO2: Instalar plugin de Aurora</h3>
-						<p>Descargar el plugin de Aurora directamente desde la página ofical de <a target="_blank" href="https://sistematizar.co/productos/AuroraPlugin">Sistematizar</a></p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/40-aurora-plugin-descargar.gif">
-						<br>
-						<p>Ejecutar el archivo <strong>AuroraPlugin.exe.</strong> La contraseña para poder ejecutar el instalador debe consultarse con el administrador</p>
-						<br>
-						<h3>IMPORTANTE: Error al instalar:</h3>
-						<p>Si aparece un error al instalar, es porque el plugin de Aurora ya se encontraba instalado y siendo ejecutado, en este caso debemos
-							cerrarlo desde iconos ocultos y continuar con la instalación.
-						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/41-error-instalacion.gif">
-						<br>
-						<h4>IMPORTANTE: Instalar también el archivo <strong>driverParaBalanzaRS232</strong></h4>
-						<br>
-						<h3>PASO 3: Verificar a Aurora como plugin de reconocimiento de dispositivos de impresión</h3>
-						<p>En el módulo de administración de Persey, en el menú de Catalogos-Parametros, verificamos que Aurora este siendo utilizado como plugin 
-							de reconocimiento de dispositivos en la pestaña <strong>Prefactura/PE.</strong> 
-						</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/42-persey-plugin.png">
-						<h3>NOTA: Usar Google Chrome</h3>
-						<p>Es recomendable utilizar el navegador Google Chrome para asegurar que se reconozcan los dispositivos de impresión</p>
-						<br>
-						<h3>PASO 4: Configurar balanza</h3>
-						<p>En la parte inferior, en la sección <strong>Obtención de Peso por Balanza (Procedimiento por Equipo)</strong>, debemos configurar la 
-						lectura y reconocimiento de la balanza.</p>
-						<br>
-						<p>Se configura el puerto donde se está escuchando la balanza (se verifica en panel administrador de dispositivos), se establece una 
-							velocidad de transmisión serial (por defecto es 9600), y en Formateo de peso se configura en <strong>Remover caracteres no numéricos</strong>
-						 para poder usar la balanza en los procesos de facturación.</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/43-config-balanza.gif">
-
-						<br>
-						<br>
-						<h3>PASO 5: Probar lectura de la balanza</h3>
-						<p>Dar click en probar para probar que los valores de la balanza se esten leyendo correctamente en Persey.</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/44-probar-balanza.gif">
-					</section><!--//section-->
-
-					<section class="docs-section" id="facturacionBalanza">
-						<h2 class="section-heading"><a href="#facturacionBalanza">Facturación con balanza</a></h2>
-						<p>En esta sección se demostrarán las pruebas de facturación con la balanza</p>
-						<br>
-						<h3>IMPORTANTE: Granel activado</h3>
-						<p>Los articulos que se quieran facturar usando la balanza, deben tener la opción <strong>Granel</strong> activada 
-						(Módulo inventarios - Articulos Carga Agil)</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/45-granel.png" />
-						<br>
-						<br>
-						<h3>Inventario inicial:</h3>
-						<p>Seleccionamos el producto</p>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/46-inv-inicial-balanza.gif" />
-						<br>
-						<br>
-						<h3>Facturación POS:</h3>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/47-POS-balanza.gif">
-						<br>
-						<br>
-						<h3>Entradas:</h3>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/48-entradas-balanza.gif">
-						<br>
-						<br>
-						<h3>Salidas:</h3>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/49-salidas-balanza.gif">
-						<br>
-						<br>
-						<h3>Prefactura:</h3>
-						<img class="figure-img img-fluid shadow-lg rounded" src="images/50-prefactura-balanza.gif">
-					</section><!--//section-->
-
-				</article>
+				
 
 
 				<footer class="footer">
