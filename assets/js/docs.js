@@ -9,7 +9,7 @@ const sidebarLinks = document.querySelectorAll('#docs-sidebar .scrollto');
 
 /* ===== Responsive Sidebar ====== */
 
-window.onload=function()
+window.onload=function() 
 { 
     responsiveSidebar(); 
 };
